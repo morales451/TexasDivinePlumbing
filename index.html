@@ -6,9 +6,9 @@
     <title>Texas Divine Plumbing | Commercial & Residential Plumbing Services</title>
     <meta name="description" content="Texas Divine Plumbing - Commercial new construction and expert residential plumbing services. 65 years combined experience. Serving the Texas Triangle.">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='15' fill='%23003366'/%3E%3Ctext x='50' y='38' font-family='Arial,sans-serif' font-size='24' font-weight='bold' fill='white' text-anchor='middle'%3ETDP%3C/text%3E%3Cpath d='M30 55 L30 75 L40 75 L40 65 L60 65 L60 75 L70 75 L70 55 L65 55 L65 50 L55 50 L55 55 L45 55 L45 50 L35 50 L35 55 Z' fill='white'/%3E%3C/svg%3E">
-    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='15' fill='%23003366'/%3E%3Ctext x='50' y='38' font-family='Arial,sans-serif' font-size='24' font-weight='bold' fill='white' text-anchor='middle'%3ETDP%3C/text%3E%3Cpath d='M30 55 L30 75 L40 75 L40 65 L60 65 L60 75 L70 75 L70 55 L65 55 L65 50 L55 50 L55 55 L45 55 L45 50 L35 50 L35 55 Z' fill='white'/%3E%3C/svg%3E">
+    <!-- Favicon - uses logo.png -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,20 +92,11 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 10px;
         }
 
-        .logo-icon {
-            width: 45px;
-            height: 45px;
-            background-color: var(--deep-blue);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            font-weight: 900;
-            font-size: 1.2rem;
+        .logo img {
+            height: 60px;
+            width: auto;
         }
 
         .logo-text {
@@ -797,14 +788,10 @@
             margin-bottom: 50px;
         }
 
-        .footer-brand .logo-text {
-            color: var(--white);
-            font-size: 1.6rem;
+        .footer-logo {
+            height: 100px;
+            width: auto;
             margin-bottom: 20px;
-        }
-
-        .footer-brand .logo-text span {
-            color: rgba(255, 255, 255, 0.6);
         }
 
         .footer-brand p {
@@ -1098,13 +1085,12 @@
                 padding: 12px 15px;
             }
 
-            .logo-icon {
-                width: 40px;
-                height: 40px;
+            .logo img {
+                height: 50px;
             }
 
-            .logo-text {
-                font-size: 1.2rem;
+            .footer-logo {
+                height: 80px;
             }
 
             .hero {
@@ -1143,11 +1129,7 @@
     <header>
         <div class="header-container">
             <a href="#home" class="logo">
-                <div class="logo-icon">TDP</div>
-                <div class="logo-text">
-                    Texas Divine
-                    <span>Plumbing</span>
-                </div>
+                <img src="logo.png" alt="Texas Divine Plumbing">
             </a>
 
             <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
@@ -1379,10 +1361,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <div class="logo-text">
-                        Texas Divine Plumbing
-                        <span>Commercial & Residential</span>
-                    </div>
+                    <img src="logo.png" alt="Texas Divine Plumbing" class="footer-logo">
                     <p>The Texas Triangle's trusted family plumbing team. 65 years of combined experience serving Houston and surrounding areas with integrity and expertise.</p>
                 </div>
 
