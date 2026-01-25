@@ -349,23 +349,16 @@
         }
 
         .trusted-logo-img {
-            height: 40px;
+            height: 70px;
             width: auto;
-            filter: brightness(0) invert(1);
-            opacity: 0.9;
+            background-color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
             transition: var(--transition);
         }
 
         .trusted-logo-img:hover {
-            opacity: 1;
-        }
-
-        .trusted-logo-img.no-invert {
-            filter: none;
-            background-color: white;
-            padding: 8px 12px;
-            border-radius: 5px;
-            height: 50px;
+            transform: scale(1.05);
         }
 
         .trusted-divider {
@@ -1375,7 +1368,7 @@
                 <div class="trusted-logos">
                     <img src="whataburger-logo.png" alt="Whataburger" class="trusted-logo-img">
                     <span class="trusted-divider">|</span>
-                    <img src="wier-logo.png" alt="Wier Commercial Construction" class="trusted-logo-img no-invert">
+                    <img src="wier-logo.png" alt="Wier Commercial Construction" class="trusted-logo-img">
                     <span class="trusted-divider">|</span>
                     <span>Automotive Dealerships</span>
                 </div>
