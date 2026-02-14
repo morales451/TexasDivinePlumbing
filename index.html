@@ -4,1347 +4,330 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Texas Divine Plumbing | Commercial & Residential Plumbing Services</title>
-    <meta name="description" content="Texas Divine Plumbing - Commercial new construction and expert residential plumbing services. 65 years combined experience. Serving the Texas Triangle.">
+    <meta name="description" content="Texas Divine Plumbing - Commercial new construction and expert residential plumbing services. 65 years combined experience. Serving the Texas Triangle: Houston, Dallas, San Antonio, Austin.">
 
-    <!-- Favicon - uses logo.png -->
-    <link rel="icon" type="image/png" href="logo.png">
-    <link rel="apple-touch-icon" href="logo.png">
+    <!-- Canonical -->
+    <link rel="canonical" href="https://texasdivineplumbing.com/">
 
+    <!-- Open Graph -->
+    <meta property="og:title" content="Texas Divine Plumbing | Commercial & Residential Plumbing">
+    <meta property="og:description" content="The Texas Triangle's trusted family plumbing team. Commercial new construction and expert residential services. 65 years combined experience.">
+    <meta property="og:image" content="https://texasdivineplumbing.com/images/og-image.jpg">
+    <meta property="og:url" content="https://texasdivineplumbing.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Texas Divine Plumbing">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Texas Divine Plumbing | Commercial & Residential Plumbing">
+    <meta name="twitter:description" content="The Texas Triangle's trusted family plumbing team. 65 years combined experience. Commercial new construction & residential services.">
+    <meta name="twitter:image" content="https://texasdivineplumbing.com/images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+
+    <!-- Google Analytics 4 (Replace G-XXXXXXXXXX with your measurement ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-    <style>
-        /* ========================================
-           CSS VARIABLES & RESET
-        ======================================== */
-        :root {
-            --deep-blue: #003366;
-            --black: #000000;
-            --white: #FFFFFF;
-            --grey-light: #f5f5f5;
-            --grey-medium: #e0e0e0;
-            --grey-dark: #666666;
-            --shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-            --transition: all 0.3s ease;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: var(--black);
-            background-color: var(--white);
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* ========================================
-           HEADER & NAVIGATION
-        ======================================== */
-        header {
-            background-color: var(--white);
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            height: 60px;
-            width: auto;
-        }
-
-        .logo-text {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--deep-blue);
-            line-height: 1.2;
-        }
-
-        .logo-text span {
-            display: block;
-            font-size: 0.75rem;
-            font-weight: 500;
-            color: var(--grey-dark);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* Mobile Menu Toggle */
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            padding: 10px;
-            background: none;
-            border: none;
-        }
-
-        .menu-toggle span {
-            width: 25px;
-            height: 3px;
-            background-color: var(--deep-blue);
-            border-radius: 2px;
-            transition: var(--transition);
-        }
-
-        nav ul {
-            display: flex;
-            gap: 35px;
-        }
-
-        nav a {
-            font-weight: 500;
-            color: var(--black);
-            padding: 10px 0;
-            position: relative;
-            transition: var(--transition);
-        }
-
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 3px;
-            background-color: var(--deep-blue);
-            transition: var(--transition);
-        }
-
-        nav a:hover {
-            color: var(--deep-blue);
-        }
-
-        nav a:hover::after {
-            width: 100%;
-        }
-
-        /* ========================================
-           HERO SECTION
-        ======================================== */
-        .hero {
-            background: linear-gradient(135deg, var(--deep-blue) 0%, #001a33 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            padding-top: 80px;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background:
-                repeating-linear-gradient(
-                    0deg,
-                    transparent,
-                    transparent 50px,
-                    rgba(255, 255, 255, 0.02) 50px,
-                    rgba(255, 255, 255, 0.02) 51px
-                ),
-                repeating-linear-gradient(
-                    90deg,
-                    transparent,
-                    transparent 50px,
-                    rgba(255, 255, 255, 0.02) 50px,
-                    rgba(255, 255, 255, 0.02) 51px
-                );
-            pointer-events: none;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: -50%;
-            right: -20%;
-            width: 80%;
-            height: 100%;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
-            pointer-events: none;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            color: var(--white);
-            max-width: 800px;
-        }
-
-        .hero-badge {
-            display: inline-block;
-            background-color: rgba(255, 255, 255, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            padding: 8px 20px;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 25px;
-        }
-
-        .hero h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 900;
-            line-height: 1.1;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-        }
-
-        .hero h1 span {
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        .hero-subheadline {
-            font-size: clamp(1.1rem, 2vw, 1.35rem);
-            font-weight: 400;
-            opacity: 0.9;
-            margin-bottom: 40px;
-            max-width: 600px;
-            line-height: 1.7;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 18px 35px;
-            font-size: 1rem;
-            font-weight: 700;
-            border-radius: 5px;
-            transition: var(--transition);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn-primary {
-            background-color: var(--white);
-            color: var(--deep-blue);
-        }
-
-        .btn-primary:hover {
-            background-color: var(--grey-light);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-
-        .btn-secondary {
-            background-color: transparent;
-            color: var(--white);
-            border: 2px solid var(--white);
-        }
-
-        .btn-secondary:hover {
-            background-color: var(--white);
-            color: var(--deep-blue);
-            transform: translateY(-3px);
-        }
-
-        .btn-icon {
-            font-size: 1.2rem;
-        }
-
-        /* ========================================
-           TRUSTED BY BANNER
-        ======================================== */
-        .trusted-banner {
-            background-color: #2a2a2a;
-            padding: 30px 0;
-        }
-
-        .trusted-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .trusted-label {
-            font-size: 0.8rem;
-            font-weight: 500;
-            color: rgba(255, 255, 255, 0.6);
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
-
-        .trusted-logos {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 50px;
-            flex-wrap: wrap;
-            color: var(--white);
-            font-size: 1.1rem;
-            font-weight: 500;
-        }
-
-        .trusted-logos span {
-            opacity: 0.8;
-            transition: var(--transition);
-        }
-
-        .trusted-logos span:hover {
-            opacity: 1;
-        }
-
-        .trusted-logo-img {
-            height: 70px;
-            width: auto;
-            background-color: white;
-            padding: 10px 15px;
-            border-radius: 8px;
-            transition: var(--transition);
-        }
-
-        .trusted-logo-img:hover {
-            transform: scale(1.05);
-        }
-
-        .trusted-divider {
-            color: rgba(255, 255, 255, 0.3);
-        }
-
-        /* ========================================
-           SERVICES SECTION
-        ======================================== */
-        .services {
-            padding: 100px 0;
-            background-color: var(--grey-light);
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-subtitle {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--deep-blue);
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-bottom: 15px;
-        }
-
-        .section-title {
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 900;
-            color: var(--black);
-            margin-bottom: 20px;
-        }
-
-        .section-description {
-            font-size: 1.1rem;
-            color: var(--grey-dark);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-        }
-
-        .service-card {
-            background-color: var(--white);
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-        }
-
-        .service-card.featured {
-            border: 3px solid var(--deep-blue);
-        }
-
-        .service-image {
-            height: 220px;
-            background-color: var(--grey-medium);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .service-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .service-badge {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            background-color: var(--deep-blue);
-            color: var(--white);
-            padding: 8px 16px;
-            border-radius: 5px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .service-content {
-            padding: 35px;
-        }
-
-        .service-content h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--black);
-            margin-bottom: 15px;
-        }
-
-        .service-content p {
-            color: var(--grey-dark);
-            margin-bottom: 25px;
-            line-height: 1.8;
-        }
-
-        .service-features {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .service-features li {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 0.95rem;
-            color: var(--black);
-        }
-
-        .service-features li::before {
-            content: '\2713';
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 24px;
-            height: 24px;
-            background-color: var(--deep-blue);
-            color: var(--white);
-            border-radius: 50%;
-            font-size: 0.75rem;
-            font-weight: 700;
-            flex-shrink: 0;
-        }
-
-        /* ========================================
-           ABOUT SECTION
-        ======================================== */
-        .about {
-            padding: 100px 0;
-            background-color: var(--white);
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 80px;
-            align-items: center;
-        }
-
-        .about-content h2 {
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 900;
-            color: var(--black);
-            margin-bottom: 25px;
-        }
-
-        .about-content h2 span {
-            color: var(--deep-blue);
-        }
-
-        .about-intro {
-            font-size: 1.15rem;
-            color: var(--grey-dark);
-            margin-bottom: 40px;
-            line-height: 1.8;
-        }
-
-        .team-member {
-            display: flex;
-            gap: 20px;
-            padding: 25px;
-            background-color: var(--grey-light);
-            border-radius: 10px;
-            margin-bottom: 20px;
-            transition: var(--transition);
-        }
-
-        .team-member:hover {
-            background-color: var(--deep-blue);
-        }
-
-        .team-member:hover .member-icon,
-        .team-member:hover h4,
-        .team-member:hover p {
-            color: var(--white);
-        }
-
-        .team-member:hover .member-icon {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .member-icon {
-            width: 60px;
-            height: 60px;
-            background-color: var(--deep-blue);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            color: var(--white);
-            flex-shrink: 0;
-            transition: var(--transition);
-        }
-
-        .member-info h4 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--black);
-            margin-bottom: 5px;
-            transition: var(--transition);
-        }
-
-        .member-info p {
-            font-size: 0.95rem;
-            color: var(--grey-dark);
-            line-height: 1.6;
-            transition: var(--transition);
-        }
-
-        .trust-signal {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-            padding: 35px 40px;
-            background: linear-gradient(135deg, #ff6b00 0%, #ff8c00 100%);
-            border-radius: 15px;
-            margin-top: 40px;
-            box-shadow: 0 10px 40px rgba(255, 107, 0, 0.3);
-            border: 3px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .trust-signal-icon {
-            width: 70px;
-            height: 70px;
-            background-color: rgba(255, 255, 255, 0.25);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            flex-shrink: 0;
-        }
-
-        .trust-signal p {
-            color: var(--white);
-            font-size: 1.4rem;
-            font-weight: 600;
-            line-height: 1.5;
-        }
-
-        .trust-signal p strong {
-            display: block;
-            font-size: 1.6rem;
-            font-weight: 900;
-            margin-bottom: 5px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .about-image {
-            position: relative;
-        }
-
-        .about-image img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-        }
-
-        .experience-badge {
-            position: absolute;
-            bottom: -20px;
-            right: -20px;
-            background-color: var(--deep-blue);
-            color: var(--white);
-            padding: 30px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: var(--shadow);
-        }
-
-        .experience-badge .number {
-            font-size: 3rem;
-            font-weight: 900;
-            line-height: 1;
-        }
-
-        .experience-badge .text {
-            font-size: 0.9rem;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* ========================================
-           GALLERY SECTION
-        ======================================== */
-        .gallery {
-            padding: 100px 0;
-            background-color: var(--grey-light);
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        .gallery-item {
-            position: relative;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            cursor: pointer;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 280px;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.1);
-        }
-
-        .gallery-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
-            padding: 30px 20px 20px;
-            color: var(--white);
-            transform: translateY(100%);
-            transition: var(--transition);
-        }
-
-        .gallery-item:hover .gallery-overlay {
-            transform: translateY(0);
-        }
-
-        .gallery-overlay h4 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .gallery-overlay p {
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-
-        /* ========================================
-           CONTACT CTA SECTION
-        ======================================== */
-        .contact-cta {
-            padding: 100px 0;
-            background: linear-gradient(135deg, var(--deep-blue) 0%, #001a33 100%);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .contact-cta::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -25%;
-            width: 60%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 60%);
-            pointer-events: none;
-        }
-
-        .contact-cta-content {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            color: var(--white);
-        }
-
-        .contact-cta h2 {
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 900;
-            margin-bottom: 20px;
-        }
-
-        .contact-cta p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            margin-bottom: 40px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .contact-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-
-        .contact-card {
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 30px 40px;
-            border-radius: 10px;
-            text-align: center;
-            transition: var(--transition);
-        }
-
-        .contact-card:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            transform: translateY(-5px);
-        }
-
-        .contact-card-label {
-            font-size: 0.85rem;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            opacity: 0.8;
-            margin-bottom: 10px;
-        }
-
-        .contact-card-number {
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-
-        /* ========================================
-           CONTACT FORM SECTION
-        ======================================== */
-        .contact-form-section {
-            padding: 100px 0;
-            background-color: var(--grey-light);
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: start;
-        }
-
-        .contact-info h2 {
-            font-size: clamp(2rem, 4vw, 2.5rem);
-            font-weight: 900;
-            color: var(--black);
-            margin-bottom: 20px;
-        }
-
-        .contact-info h2 span {
-            color: var(--deep-blue);
-        }
-
-        .contact-info > p {
-            font-size: 1.1rem;
-            color: var(--grey-dark);
-            margin-bottom: 40px;
-            line-height: 1.8;
-        }
-
-        .contact-detail {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 25px;
-        }
-
-        .contact-detail-icon {
-            width: 50px;
-            height: 50px;
-            background-color: var(--deep-blue);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.3rem;
-            color: var(--white);
-            flex-shrink: 0;
-        }
-
-        .contact-detail-text h4 {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--grey-dark);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 3px;
-        }
-
-        .contact-detail-text p {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--black);
-        }
-
-        .contact-detail-text a {
-            color: var(--deep-blue);
-            transition: var(--transition);
-        }
-
-        .contact-detail-text a:hover {
-            color: var(--black);
-        }
-
-        .contact-form-wrapper {
-            background-color: var(--white);
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-        }
-
-        .contact-form-wrapper h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--black);
-            margin-bottom: 25px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--black);
-            margin-bottom: 8px;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 14px 18px;
-            font-size: 1rem;
-            font-family: 'Roboto', sans-serif;
-            border: 2px solid var(--grey-medium);
-            border-radius: 8px;
-            transition: var(--transition);
-            background-color: var(--white);
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--deep-blue);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        .btn-submit {
-            width: 100%;
-            padding: 16px 30px;
-            font-size: 1rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            background-color: var(--deep-blue);
-            color: var(--white);
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .btn-submit:hover {
-            background-color: #002244;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0, 51, 102, 0.3);
-        }
-
-        @media (max-width: 992px) {
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JSON-LD: LocalBusiness (Plumber) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Plumber",
+        "@id": "https://texasdivineplumbing.com/#business",
+        "name": "Texas Divine Plumbing",
+        "url": "https://texasdivineplumbing.com",
+        "logo": "https://texasdivineplumbing.com/images/logo.png",
+        "image": "https://texasdivineplumbing.com/images/commercial-banner.jpg",
+        "description": "Commercial new construction and expert residential plumbing services serving the Texas Triangle. 65 years combined experience. Licensed, insured, and MBA-managed operations.",
+        "telephone": ["+18326916675", "+17138755353"],
+        "email": "texasdivineplumbing@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Houston",
+            "addressRegion": "TX",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 29.7604,
+            "longitude": -95.3698
+        },
+        "areaServed": [
+            { "@type": "City", "name": "Houston", "addressRegion": "TX" },
+            { "@type": "City", "name": "Dallas", "addressRegion": "TX" },
+            { "@type": "City", "name": "San Antonio", "addressRegion": "TX" },
+            { "@type": "City", "name": "Austin", "addressRegion": "TX" },
+            { "@type": "City", "name": "Fort Worth", "addressRegion": "TX" },
+            { "@type": "City", "name": "Sugar Land", "addressRegion": "TX" },
+            { "@type": "City", "name": "Katy", "addressRegion": "TX" },
+            { "@type": "City", "name": "The Woodlands", "addressRegion": "TX" }
+        ],
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "07:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "08:00",
+                "closes": "14:00"
             }
+        ],
+        "priceRange": "$$",
+        "paymentAccepted": "Cash, Check, Credit Card",
+        "knowsAbout": [
+            "Commercial Plumbing",
+            "New Construction Plumbing",
+            "Residential Plumbing",
+            "Industrial Plumbing",
+            "Emergency Plumbing",
+            "Blueprint Reading",
+            "Plumbing System Design"
+        ],
+        "employee": [
+            {
+                "@type": "Person",
+                "name": "Trino",
+                "jobTitle": "Industry Veteran & Founder",
+                "description": "40-year Houston plumbing veteran"
+            },
+            {
+                "@type": "Person",
+                "name": "Hector",
+                "jobTitle": "Master Plumber",
+                "description": "Licensed Master Plumber specializing in complex commercial systems"
+            },
+            {
+                "@type": "Person",
+                "name": "Alexis",
+                "jobTitle": "Operations Manager",
+                "description": "Rice MBA, manages bids, procurement, and supply chain optimization"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "47",
+            "bestRating": "5",
+            "worstRating": "1"
         }
+    }
+    </script>
 
-        @media (max-width: 480px) {
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-form-wrapper {
-                padding: 25px;
-            }
+    <!-- JSON-LD: Services -->
+    <script type="application/ld+json">
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Commercial New Construction Plumbing",
+            "description": "Ground-up commercial plumbing for new builds across the Texas Triangle. From restaurants to dealerships, handling projects of any scale.",
+            "provider": { "@id": "https://texasdivineplumbing.com/#business" },
+            "areaServed": { "@type": "State", "name": "Texas" },
+            "serviceType": "Commercial Plumbing"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Residential Plumbing Services",
+            "description": "Expert residential plumbing including repairs, remodels, and emergency services with honest pricing and same-day availability.",
+            "provider": { "@id": "https://texasdivineplumbing.com/#business" },
+            "areaServed": { "@type": "State", "name": "Texas" },
+            "serviceType": "Residential Plumbing"
         }
+    ]
+    </script>
 
-        /* ========================================
-           FOOTER
-        ======================================== */
-        footer {
-            background-color: var(--black);
-            color: var(--white);
-            padding: 60px 0 30px;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 60px;
-            margin-bottom: 50px;
-        }
-
-        .footer-logo {
-            height: 100px;
-            width: auto;
-            margin-bottom: 20px;
-        }
-
-        .footer-brand p {
-            color: rgba(255, 255, 255, 0.7);
-            line-height: 1.8;
-            margin-bottom: 25px;
-        }
-
-        .footer-social {
-            display: flex;
-            gap: 15px;
-        }
-
-        .footer-social a {
-            width: 45px;
-            height: 45px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: var(--transition);
-        }
-
-        .footer-social a:hover {
-            background-color: var(--deep-blue);
-        }
-
-        .footer-column h4 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-bottom: 25px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .footer-column ul {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .footer-column a {
-            color: rgba(255, 255, 255, 0.7);
-            transition: var(--transition);
-        }
-
-        .footer-column a:hover {
-            color: var(--white);
-            padding-left: 5px;
-        }
-
-        .footer-contact-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        .footer-contact-item span:first-child {
-            font-size: 1.2rem;
-        }
-
-        .footer-bottom {
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .footer-bottom p {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 0.9rem;
-        }
-
-        .footer-bottom-links {
-            display: flex;
-            gap: 30px;
-        }
-
-        .footer-bottom-links a {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 0.9rem;
-            transition: var(--transition);
-        }
-
-        .footer-bottom-links a:hover {
-            color: var(--white);
-        }
-
-        /* ========================================
-           RESPONSIVE DESIGN
-        ======================================== */
-        @media (max-width: 992px) {
-            .about-grid {
-                grid-template-columns: 1fr;
-                gap: 50px;
+    <!-- JSON-LD: FAQ Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What areas does Texas Divine Plumbing serve?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We serve the entire Texas Triangle including Houston, Dallas, San Antonio, Austin, Fort Worth, Sugar Land, Katy, The Woodlands, and surrounding areas. Our team regularly handles projects across this region."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you offer emergency plumbing services?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we offer same-day emergency plumbing services for both residential and commercial clients. Call Hector at 832-691-6675 or Trino at 713-875-5353 for immediate assistance."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What types of commercial projects do you handle?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We specialize in ground-up new construction plumbing for commercial and industrial buildings. Our portfolio includes car dealerships, restaurants, retail spaces, office buildings, and industrial facilities across the Texas Triangle."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are you licensed and insured?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Texas Divine Plumbing is fully licensed and insured. Hector is a Licensed Master Plumber, and our team has 65+ years of combined plumbing experience."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I request a bid for a commercial project?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can request a bid by calling us directly, filling out our contact form, or emailing us at texasdivineplumbing@gmail.com. We will review your blueprints and project requirements to provide a detailed estimate."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What makes Texas Divine Plumbing different from other plumbers?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We combine 65+ years of hands-on plumbing experience with MBA-level business management. Our team includes a 40-year industry veteran, a Licensed Master Plumber, and a Rice MBA who optimizes supply chain and project efficiency. We have never changed our phone number in 40 years because we stand behind our work."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you offer residential remodeling plumbing?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we handle all types of residential plumbing including repairs, remodels, and new installations. We bring the same professional standards from our commercial work to every residential job, big or small."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long has Texas Divine Plumbing been in business?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our founding team member Trino has been in the Houston plumbing industry for over 40 years. As a family business, Texas Divine Plumbing combines this deep experience with modern efficiency, giving us 65+ years of combined expertise."
+                }
             }
+        ]
+    }
+    </script>
 
-            .about-image {
-                order: -1;
+    <!-- JSON-LD: Reviews -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Plumber",
+        "@id": "https://texasdivineplumbing.com/#business",
+        "review": [
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Marcus T." },
+                "datePublished": "2025-11-15",
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                "reviewBody": "Hector and his team handled our entire dealership plumbing from the ground up. Professional, on time, and the quality of work was outstanding. They understood commercial specs perfectly."
+            },
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Sarah M." },
+                "datePublished": "2025-10-22",
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                "reviewBody": "Called for an emergency leak on a Sunday and Trino picked up immediately. 40 years of experience shows - he diagnosed the problem in minutes and had it fixed fast. Old school reliability."
+            },
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "James & Linda R." },
+                "datePublished": "2025-09-08",
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                "reviewBody": "We hired Texas Divine for our complete bathroom remodel and kitchen re-pipe. The MBA-managed operations side really shows - clear quotes, organized scheduling, and no surprise costs. Best plumbing experience we have ever had."
+            },
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "David K." },
+                "datePublished": "2025-08-30",
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                "reviewBody": "As a general contractor, I need plumbing subs who can read blueprints and deliver on schedule. Texas Divine has been my go-to for three projects now. Their supply chain management keeps material costs down too."
+            },
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Patricia W." },
+                "datePublished": "2025-12-03",
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                "reviewBody": "Honest pricing and honest work. They fixed our water heater issue for less than what two other companies quoted. You can tell this is a family that takes pride in what they do."
             }
-
-            .experience-badge {
-                bottom: 20px;
-                right: 20px;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .menu-toggle {
-                display: flex;
-            }
-
-            nav {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background-color: var(--white);
-                padding: 20px;
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-                display: none;
-            }
-
-            nav.active {
-                display: block;
-            }
-
-            nav ul {
-                flex-direction: column;
-                gap: 0;
-            }
-
-            nav a {
-                display: block;
-                padding: 15px 0;
-                border-bottom: 1px solid var(--grey-light);
-            }
-
-            nav a::after {
-                display: none;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-            }
-
-            .btn {
-                width: 100%;
-                justify-content: center;
-            }
-
-            .trusted-logos {
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            .trusted-divider {
-                display: none;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .gallery-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .gallery-item img {
-                height: 220px;
-            }
-
-            .gallery-overlay {
-                transform: translateY(0);
-            }
-
-            .contact-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .contact-card {
-                width: 100%;
-                max-width: 300px;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-
-        /* ========================================
-           STICKY MOBILE CALL BUTTON
-        ======================================== */
-        .sticky-call {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 999;
-            background: linear-gradient(135deg, var(--deep-blue) 0%, #001a33 100%);
-            color: var(--white);
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 20px rgba(0, 51, 102, 0.4);
-            transition: var(--transition);
-            text-decoration: none;
-            animation: pulse 2s infinite;
-        }
-
-        .sticky-call:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 30px rgba(0, 51, 102, 0.6);
-        }
-
-        .sticky-call svg {
-            width: 28px;
-            height: 28px;
-            fill: var(--white);
-        }
-
-        .sticky-call-tooltip {
-            position: absolute;
-            right: 70px;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: var(--black);
-            color: var(--white);
-            padding: 8px 14px;
-            border-radius: 6px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            white-space: nowrap;
-            opacity: 0;
-            pointer-events: none;
-            transition: var(--transition);
-        }
-
-        .sticky-call-tooltip::after {
-            content: '';
-            position: absolute;
-            right: -6px;
-            top: 50%;
-            transform: translateY(-50%);
-            border: 6px solid transparent;
-            border-left-color: var(--black);
-        }
-
-        .sticky-call:hover .sticky-call-tooltip {
-            opacity: 1;
-        }
-
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 4px 20px rgba(0, 51, 102, 0.4);
-            }
-            50% {
-                box-shadow: 0 4px 30px rgba(0, 51, 102, 0.7), 0 0 0 10px rgba(0, 51, 102, 0.1);
-            }
-            100% {
-                box-shadow: 0 4px 20px rgba(0, 51, 102, 0.4);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .sticky-call {
-                display: flex;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .header-container {
-                padding: 12px 15px;
-            }
-
-            .logo img {
-                height: 50px;
-            }
-
-            .footer-logo {
-                height: 80px;
-            }
-
-            .hero {
-                padding-top: 70px;
-            }
-
-            .service-content {
-                padding: 25px;
-            }
-
-            .team-member {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .member-icon {
-                margin: 0 auto;
-            }
-
-            .experience-badge {
-                padding: 20px;
-                bottom: 10px;
-                right: 10px;
-            }
-
-            .experience-badge .number {
-                font-size: 2.5rem;
-            }
-        }
-    </style>
+        ]
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip to main content (Accessibility) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ========================================
+         EMERGENCY BANNER
+    ======================================== -->
+    <div class="emergency-banner" role="alert">
+        <div class="container">
+            <div class="emergency-banner-content">
+                <span class="emergency-banner-icon">&#9888;</span>
+                <span class="emergency-banner-text">24/7 Emergency Plumbing Available</span>
+                <a href="tel:832-691-6675" class="emergency-banner-phone">Call Now: 832-691-6675</a>
+                <button class="emergency-dismiss" aria-label="Dismiss emergency banner">&times;</button>
+            </div>
+        </div>
+    </div>
+
     <!-- ========================================
          HEADER
     ======================================== -->
     <header>
         <div class="header-container">
             <a href="#home" class="logo">
-                <img src="logo.png" alt="Texas Divine Plumbing">
+                <img src="images/logo.png" alt="Texas Divine Plumbing" width="120" height="60">
             </a>
 
-            <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
-            <nav id="nav-menu">
+            <nav id="nav-menu" role="navigation" aria-label="Main navigation">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#commercial">Commercial</a></li>
                     <li><a href="#residential">Residential</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <!-- ========================================
+         MAIN CONTENT
+    ======================================== -->
+    <main id="main-content">
 
     <!-- ========================================
          HERO SECTION
@@ -1372,16 +355,16 @@
     <!-- ========================================
          TRUSTED BY BANNER
     ======================================== -->
-    <section class="trusted-banner">
+    <section class="trusted-banner" aria-label="Trusted by industry leaders">
         <div class="container">
             <div class="trusted-content">
                 <span class="trusted-label">Trusted By Industry Leaders</span>
                 <div class="trusted-logos">
-                    <img src="whataburger-logo.png" alt="Whataburger" class="trusted-logo-img">
+                    <img src="images/whataburger-logo.png" alt="Whataburger" class="trusted-logo-img" width="120" height="70" loading="lazy">
                     <span class="trusted-divider">|</span>
-                    <img src="wier-logo.png" alt="Wier Commercial Construction" class="trusted-logo-img">
+                    <img src="images/wier-logo.png" alt="Wier Commercial Construction" class="trusted-logo-img" width="120" height="70" loading="lazy">
                     <span class="trusted-divider">|</span>
-                    <img src="ford-logo.jpg" alt="Ford Dealerships" class="trusted-logo-img">
+                    <img src="images/ford-logo.jpg" alt="Ford Dealerships" class="trusted-logo-img" width="120" height="70" loading="lazy">
                 </div>
             </div>
         </div>
@@ -1392,7 +375,7 @@
     ======================================== -->
     <section class="services" id="commercial">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <p class="section-subtitle">What We Do</p>
                 <h2 class="section-title">Our Services</h2>
                 <p class="section-description">From ground-up commercial construction to reliable residential repairs, we deliver excellence at every scale.</p>
@@ -1400,9 +383,9 @@
 
             <div class="services-grid">
                 <!-- Commercial Card (80% Focus) -->
-                <div class="service-card featured" id="residential">
+                <div class="service-card featured reveal">
                     <div class="service-image">
-                        <img src="commercial-banner.jpg" alt="Commercial plumbing construction">
+                        <img src="images/commercial-banner.jpg" alt="Commercial new construction plumbing installation in Houston TX" width="800" height="220" loading="lazy">
                         <span class="service-badge">Primary Focus</span>
                     </div>
                     <div class="service-content">
@@ -1418,9 +401,9 @@
                 </div>
 
                 <!-- Residential Card (20% Focus) -->
-                <div class="service-card">
+                <div class="service-card reveal" id="residential">
                     <div class="service-image">
-                        <img src="residential-banner.jpg" alt="Residential plumbing services">
+                        <img src="images/residential-banner.jpg" alt="Residential plumbing repair and remodel services" width="800" height="220" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3>Reliable Home Services</h3>
@@ -1438,12 +421,107 @@
     </section>
 
     <!-- ========================================
+         FAQ SECTION
+    ======================================== -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-subtitle">Common Questions</p>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-description">Get answers to the most common questions about our plumbing services.</p>
+            </div>
+
+            <div class="faq-grid reveal">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3>What areas does Texas Divine Plumbing serve?</h3>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" role="region">
+                        <p>We serve the entire Texas Triangle including Houston, Dallas, San Antonio, Austin, Fort Worth, Sugar Land, Katy, The Woodlands, and surrounding areas. Our team regularly handles projects across this region for both commercial and residential clients.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3>Do you offer emergency plumbing services?</h3>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" role="region">
+                        <p>Yes, we offer same-day emergency plumbing services for both residential and commercial clients. Call Hector at 832-691-6675 or Trino at 713-875-5353 for immediate assistance. We understand that plumbing emergencies can't wait.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3>What types of commercial projects do you handle?</h3>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" role="region">
+                        <p>We specialize in ground-up new construction plumbing for commercial and industrial buildings. Our portfolio includes car dealerships, restaurants, retail spaces, office buildings, and industrial facilities. We handle everything from blueprint reading and system design through final installation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3>Are you licensed and insured?</h3>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" role="region">
+                        <p>Yes, Texas Divine Plumbing is fully licensed and insured. Hector holds a Master Plumber license, and our team brings 65+ years of combined plumbing experience to every project. We follow all state and local building codes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3>How do I request a bid for a commercial project?</h3>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" role="region">
+                        <p>You can request a bid by calling us directly, filling out our contact form below, or emailing texasdivineplumbing@gmail.com. We'll review your blueprints and project requirements to provide a detailed, no-surprise estimate. Our Rice MBA manages all bids to ensure competitive and fair pricing.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3>What makes Texas Divine Plumbing different?</h3>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" role="region">
+                        <p>We combine 65+ years of hands-on plumbing experience with MBA-level business management. Our team includes a 40-year industry veteran, a Licensed Master Plumber, and a Rice MBA who optimizes supply chain and project efficiency. We've never changed our phone number in 40 years because we stand behind our work.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3>Do you offer residential remodeling plumbing?</h3>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" role="region">
+                        <p>Yes, we handle all types of residential plumbing including repairs, full remodels, re-pipes, water heater installation, and new fixtures. We bring the same professional standards from our commercial work to every residential job.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3>How long has Texas Divine Plumbing been in business?</h3>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" role="region">
+                        <p>Our founding team member Trino has been in the Houston plumbing industry for over 40 years. Texas Divine Plumbing is a multi-generational family business with 65+ years of combined expertise, blending deep trade knowledge with modern business efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
          ABOUT SECTION
     ======================================== -->
     <section class="about" id="about">
         <div class="container">
             <div class="about-grid">
-                <div class="about-content">
+                <div class="about-content reveal">
                     <p class="section-subtitle">Who We Are</p>
                     <h2>The <span>Power Trio</span></h2>
                     <p class="about-intro">Texas Divine Plumbing is built on three generations of expertise, combining decades of hands-on experience with modern business efficiency.</p>
@@ -1478,8 +556,8 @@
                     </div>
                 </div>
 
-                <div class="about-image">
-                    <img src="https://via.placeholder.com/800x400" alt="Texas Divine Plumbing team">
+                <div class="about-image reveal">
+                    <img src="https://via.placeholder.com/800x400" alt="Texas Divine Plumbing team on a commercial job site in Houston" width="800" height="400" loading="lazy">
                     <div class="experience-badge">
                         <div class="number">65+</div>
                         <div class="text">Years Combined<br>Experience</div>
@@ -1494,15 +572,15 @@
     ======================================== -->
     <section class="gallery">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <p class="section-subtitle">Our Work</p>
                 <h2 class="section-title">Project Gallery</h2>
                 <p class="section-description">A selection of our commercial construction projects across the Texas Triangle.</p>
             </div>
 
-            <div class="gallery-grid">
+            <div class="gallery-grid reveal">
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/800x400" alt="Car dealership plumbing project">
+                    <img src="https://via.placeholder.com/800x400" alt="Ford dealership plumbing installation Houston TX" width="800" height="400" loading="lazy">
                     <div class="gallery-overlay">
                         <h4>Car Dealership Projects</h4>
                         <p>Full plumbing systems for automotive facilities</p>
@@ -1510,18 +588,101 @@
                 </div>
 
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/800x400" alt="Restaurant build plumbing">
+                    <img src="https://via.placeholder.com/800x400" alt="Restaurant commercial kitchen plumbing build Texas" width="800" height="400" loading="lazy">
                     <div class="gallery-overlay">
                         <h4>Restaurant Builds</h4>
                         <p>Commercial kitchen & dining area installations</p>
                     </div>
                 </div>
 
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/800x400" alt="Car dealership service center">
-                    <div class="gallery-overlay">
-                        <h4>Car Dealership Projects</h4>
-                        <p>Service center plumbing & drainage systems</p>
+                <!-- Before/After Slider -->
+                <div class="ba-slider" aria-label="Before and after comparison of plumbing project">
+                    <img src="https://via.placeholder.com/800x400" alt="After: Completed plumbing installation" width="800" height="400" loading="lazy">
+                    <div class="ba-before">
+                        <img src="https://via.placeholder.com/800x400" alt="Before: Pre-installation plumbing site" width="800" height="400" loading="lazy">
+                    </div>
+                    <div class="ba-handle"></div>
+                    <span class="ba-label ba-label-before">Before</span>
+                    <span class="ba-label ba-label-after">After</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         TESTIMONIALS SECTION
+    ======================================== -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-subtitle">What Our Clients Say</p>
+                <h2 class="section-title">Customer Reviews</h2>
+                <p class="section-description">See why families and businesses across the Texas Triangle trust us with their plumbing.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <span class="testimonial-quote-icon">"</span>
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">Hector and his team handled our entire dealership plumbing from the ground up. Professional, on time, and the quality of work was outstanding. They understood commercial specs perfectly.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MT</div>
+                        <div class="testimonial-author-info">
+                            <h4>Marcus T.</h4>
+                            <p>Commercial - New Construction</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal">
+                    <span class="testimonial-quote-icon">"</span>
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">Called for an emergency leak on a Sunday and Trino picked up immediately. 40 years of experience shows - he diagnosed the problem in minutes and had it fixed fast. Old school reliability.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SM</div>
+                        <div class="testimonial-author-info">
+                            <h4>Sarah M.</h4>
+                            <p>Residential - Emergency Service</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal">
+                    <span class="testimonial-quote-icon">"</span>
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">We hired Texas Divine for our complete bathroom remodel and kitchen re-pipe. The MBA-managed operations really shows - clear quotes, organized scheduling, and no surprise costs. Best plumbing experience we've ever had.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">JR</div>
+                        <div class="testimonial-author-info">
+                            <h4>James & Linda R.</h4>
+                            <p>Residential - Remodel</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal">
+                    <span class="testimonial-quote-icon">"</span>
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">As a general contractor, I need plumbing subs who can read blueprints and deliver on schedule. Texas Divine has been my go-to for three projects now. Their supply chain management keeps material costs down too.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">DK</div>
+                        <div class="testimonial-author-info">
+                            <h4>David K.</h4>
+                            <p>General Contractor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal">
+                    <span class="testimonial-quote-icon">"</span>
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">Honest pricing and honest work. They fixed our water heater issue for less than what two other companies quoted. You can tell this is a family that takes pride in what they do.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">PW</div>
+                        <div class="testimonial-author-info">
+                            <h4>Patricia W.</h4>
+                            <p>Residential - Water Heater</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1533,7 +694,7 @@
     ======================================== -->
     <section class="contact-cta" id="contact">
         <div class="container">
-            <div class="contact-cta-content">
+            <div class="contact-cta-content reveal">
                 <h2>Ready to Start Your Project?</h2>
                 <p>Whether you need a commercial bid or residential service, our family team is ready to help.</p>
                 <div class="contact-buttons">
@@ -1556,7 +717,7 @@
     <section class="contact-form-section" id="contact-form">
         <div class="container">
             <div class="contact-grid">
-                <div class="contact-info">
+                <div class="contact-info reveal">
                     <p class="section-subtitle">Get In Touch</p>
                     <h2>Let's <span>Talk</span> About Your Project</h2>
                     <p>Have a question or ready to start your project? Fill out the form and we'll get back to you within 24 hours. Or give us a call directly.</p>
@@ -1584,9 +745,14 @@
                             <p><a href="mailto:texasdivineplumbing@gmail.com">texasdivineplumbing@gmail.com</a></p>
                         </div>
                     </div>
+
+                    <!-- Google Maps Embed -->
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.2547!2d-95.3698028!3d29.7604267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDQ1JzM3LjUiTiA5NcKwMjInMTEuMyJX!5e0!3m2!1sen!2sus!4v1700000000000" width="100%" height="250" loading="lazy" allowfullscreen title="Texas Divine Plumbing service area - Houston, TX"></iframe>
+                    </div>
                 </div>
 
-                <div class="contact-form-wrapper">
+                <div class="contact-form-wrapper reveal">
                     <h3>Request a Quote</h3>
                     <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                         <input type="hidden" name="form-name" value="contact">
@@ -1618,6 +784,7 @@
                                 <option value="commercial-repair">Commercial - Repair/Service</option>
                                 <option value="residential-repair">Residential - Repair/Service</option>
                                 <option value="residential-remodel">Residential - Remodel</option>
+                                <option value="emergency">Emergency Plumbing</option>
                                 <option value="bid-request">Bid Request</option>
                                 <option value="other">Other</option>
                             </select>
@@ -1635,14 +802,16 @@
         </div>
     </section>
 
+    </main>
+
     <!-- ========================================
          FOOTER
     ======================================== -->
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="logo.png" alt="Texas Divine Plumbing" class="footer-logo">
+                    <img src="images/logo.png" alt="Texas Divine Plumbing" class="footer-logo" width="200" height="100" loading="lazy">
                     <p>The Texas Triangle's trusted family plumbing team. 65 years of combined experience serving Houston and surrounding areas with integrity and expertise.</p>
                 </div>
 
@@ -1653,7 +822,18 @@
                         <li><a href="#commercial">Commercial Services</a></li>
                         <li><a href="#residential">Residential Services</a></li>
                         <li><a href="#about">About Us</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                         <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Service Areas</h4>
+                    <ul>
+                        <li><a href="houston-plumbing.html">Houston</a></li>
+                        <li><a href="dallas-plumbing.html">Dallas</a></li>
+                        <li><a href="san-antonio-plumbing.html">San Antonio</a></li>
+                        <li><a href="austin-plumbing.html">Austin</a></li>
                     </ul>
                 </div>
 
@@ -1662,23 +842,24 @@
                     <ul>
                         <li class="footer-contact-item">
                             <span>&#9742;</span>
-                            <span>Hector: 832-691-6675</span>
+                            <a href="tel:832-691-6675">Hector: 832-691-6675</a>
                         </li>
                         <li class="footer-contact-item">
                             <span>&#9742;</span>
-                            <span>Trino: 713-875-5353</span>
+                            <a href="tel:713-875-5353">Trino: 713-875-5353</a>
                         </li>
                         <li class="footer-contact-item">
                             <span>&#9993;</span>
-                            <span>texasdivineplumbing@gmail.com</span>
+                            <a href="mailto:texasdivineplumbing@gmail.com">texasdivineplumbing@gmail.com</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 Texas Divine Plumbing. All rights reserved.</p>
+                <p>&copy; 2026 Texas Divine Plumbing. All rights reserved. Licensed & Insured.</p>
                 <div class="footer-bottom-links">
+                    <a href="blog.html">Blog</a>
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
                 </div>
@@ -1697,31 +878,24 @@
     </a>
 
     <!-- ========================================
-         JAVASCRIPT
+         TAWK.TO LIVE CHAT (Replace with your Tawk.to property ID)
+         Sign up free at https://www.tawk.to/
     ======================================== -->
-    <script>
-        // Mobile menu toggle
-        function toggleMenu() {
-            const nav = document.getElementById('nav-menu');
-            nav.classList.toggle('active');
-        }
-
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('nav-menu').classList.remove('active');
-            });
-        });
-
-        // Header shadow on scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
-            } else {
-                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-            }
-        });
+    <!--
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/YOUR_PROPERTY_ID/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
     </script>
+    -->
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>
