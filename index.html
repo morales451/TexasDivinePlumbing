@@ -318,9 +318,14 @@
                     <li><a href="#residential">Residential</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#faq">FAQ</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="lang-toggle" aria-label="Language selector">
+                <button data-lang="en" class="active" onclick="switchLanguage('en')">EN</button>
+                <button data-lang="es" onclick="switchLanguage('es')">ES</button>
+            </div>
         </div>
     </header>
 
@@ -335,7 +340,7 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">Licensed & Insured</div>
+                <div class="hero-badge">Licensed & Insured <span class="financing-badge">Financing Available</span></div>
                 <h1>Commercial New Construction <span>&</span> Expert Residential Plumbing.</h1>
                 <p class="hero-subheadline">The Texas Triangle's Trusted Family Team. 65 Years Combined Experience. MBA-Managed Operations.</p>
                 <div class="hero-buttons">
@@ -346,6 +351,10 @@
                     <a href="tel:713-875-5353" class="btn btn-secondary">
                         <span class="btn-icon">&#9742;</span>
                         Call Trino: 713-875-5353
+                    </a>
+                    <a href="sms:832-691-6675?body=Hi,%20I%20need%20a%20plumbing%20quote%20for%20" class="btn btn-sms">
+                        <span class="btn-icon">&#128172;</span>
+                        Text Us: 832-691-6675
                     </a>
                 </div>
             </div>
@@ -415,6 +424,57 @@
                             <li>Same-day emergency service available</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         WHY CHOOSE US SECTION
+    ======================================== -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-subtitle">The Difference</p>
+                <h2 class="section-title">Why Choose Texas Divine Plumbing</h2>
+                <p class="section-description">What sets us apart from every other plumbing company in Texas.</p>
+            </div>
+
+            <div class="differentiators-grid">
+                <div class="differentiator-card reveal">
+                    <div class="differentiator-icon">&#9742;</div>
+                    <h3>40 Years, Same Phone Number</h3>
+                    <p>We've never changed our number because we've never needed to hide from our work. That's 40 years of standing behind every job.</p>
+                </div>
+
+                <div class="differentiator-card reveal">
+                    <div class="differentiator-icon">&#128220;</div>
+                    <h3>Licensed Master Plumber</h3>
+                    <p>Hector holds a Texas Master Plumber license. Every project is led by someone with the highest credentials in the trade.</p>
+                </div>
+
+                <div class="differentiator-card reveal">
+                    <div class="differentiator-icon">&#127891;</div>
+                    <h3>Rice MBA Operations</h3>
+                    <p>Alexis brings MBA-level efficiency to bids, procurement, and scheduling. Your project runs on time and under budget.</p>
+                </div>
+
+                <div class="differentiator-card reveal">
+                    <div class="differentiator-icon">&#128170;</div>
+                    <h3>65+ Years Combined Experience</h3>
+                    <p>Three generations of plumbing knowledge. From complex commercial builds to residential emergencies, we've seen and solved it all.</p>
+                </div>
+
+                <div class="differentiator-card reveal">
+                    <div class="differentiator-icon">&#9889;</div>
+                    <h3>Same-Day Emergency Service</h3>
+                    <p>Plumbing emergencies don't wait. Neither do we. Call any time and we'll be there when you need us most.</p>
+                </div>
+
+                <div class="differentiator-card reveal">
+                    <div class="differentiator-icon">&#128106;</div>
+                    <h3>Family-Owned & Operated</h3>
+                    <p>We're not a franchise or a call center. You talk directly to the people who do the work. Your satisfaction is our family's reputation.</p>
                 </div>
             </div>
         </div>
@@ -568,6 +628,61 @@
     </section>
 
     <!-- ========================================
+         SERVICE GUARANTEE SECTION
+    ======================================== -->
+    <section class="guarantees">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-subtitle" style="color: rgba(255,255,255,0.7);">Our Guarantee</p>
+                <h2 class="section-title" style="color: var(--white);">Our Promise to You</h2>
+                <p class="section-description" style="color: rgba(255,255,255,0.8);">We stand behind every job with guarantees that protect you.</p>
+            </div>
+
+            <div class="guarantees-grid">
+                <div class="guarantee-card reveal">
+                    <div class="guarantee-icon">&#9989;</div>
+                    <h3>100% Satisfaction Guarantee</h3>
+                    <p>If you're not happy with our work, we'll make it right. No excuses, no runaround. Your satisfaction is non-negotiable.</p>
+                </div>
+
+                <div class="guarantee-card reveal">
+                    <div class="guarantee-icon">&#9200;</div>
+                    <h3>On-Time or It's Free</h3>
+                    <p>We respect your schedule. If we're late to a scheduled appointment, the service call is on us. That's how seriously we take your time.</p>
+                </div>
+
+                <div class="guarantee-card reveal">
+                    <div class="guarantee-icon">&#128176;</div>
+                    <h3>Upfront Pricing</h3>
+                    <p>No surprise charges. No hidden fees. We quote the price before we start the work, and that's the price you pay. Period.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         VIDEO SECTION
+    ======================================== -->
+    <section class="video-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-subtitle">Watch</p>
+                <h2 class="section-title">See Us in Action</h2>
+                <p class="section-description">Get a behind-the-scenes look at our team and how we work.</p>
+            </div>
+
+            <div class="video-container reveal">
+                <!-- Replace with YouTube/Vimeo embed when video is ready -->
+                <div class="video-placeholder">
+                    <div class="video-play-icon">&#9654;</div>
+                    <h3>Meet the Texas Divine Plumbing Team</h3>
+                    <p>Video coming soon — see why families and businesses across Texas trust us with their plumbing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
          GALLERY SECTION
     ======================================== -->
     <section class="gallery">
@@ -618,6 +733,13 @@
                 <p class="section-subtitle">What Our Clients Say</p>
                 <h2 class="section-title">Customer Reviews</h2>
                 <p class="section-description">See why families and businesses across the Texas Triangle trust us with their plumbing.</p>
+                <div class="google-reviews-badge">
+                    <span class="google-reviews-icon">G</span>
+                    <div class="google-reviews-info">
+                        <span class="google-reviews-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <span class="google-reviews-text">5.0 &bull; 47 Reviews on Google</span>
+                    </div>
+                </div>
             </div>
 
             <div class="testimonials-grid">
@@ -706,6 +828,10 @@
                         <div class="contact-card-label">Call Trino</div>
                         <div class="contact-card-number">713-875-5353</div>
                     </a>
+                    <a href="sms:832-691-6675?body=Hi,%20I%20need%20a%20plumbing%20quote%20for%20" class="contact-text-card">
+                        <div class="contact-text-label">&#128172; Text Us</div>
+                        <div class="contact-text-number">832-691-6675</div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -754,48 +880,89 @@
 
                 <div class="contact-form-wrapper reveal">
                     <h3>Request a Quote</h3>
+
+                    <div class="financing-bar">
+                        <p><strong>Flexible Payment Options Available</strong> &mdash; 0% interest for qualifying projects. Cash, Check, and All Major Credit Cards accepted.</p>
+                    </div>
+
                     <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                         <input type="hidden" name="form-name" value="contact">
                         <p style="display:none;">
                             <label>Don't fill this out: <input name="bot-field"></label>
                         </p>
 
-                        <div class="form-row">
+                        <!-- Progress Bar -->
+                        <div class="form-progress">
+                            <div class="form-progress-step active">
+                                <span class="form-progress-number">1</span>
+                                <span class="form-progress-label">Service</span>
+                            </div>
+                            <div class="form-progress-step">
+                                <span class="form-progress-number">2</span>
+                                <span class="form-progress-label">Info</span>
+                            </div>
+                            <div class="form-progress-step">
+                                <span class="form-progress-number">3</span>
+                                <span class="form-progress-label">Details</span>
+                            </div>
+                        </div>
+
+                        <!-- Step 1: Service Type -->
+                        <div class="form-step active" data-step="1">
+                            <p style="font-weight:600; margin-bottom:15px; color:var(--black);">What type of service do you need?</p>
+                            <div class="service-type-grid">
+                                <label class="service-type-option">
+                                    <input type="radio" name="service" value="commercial" required>
+                                    <span class="service-type-icon">&#127970;</span>
+                                    <span class="service-type-label">Commercial</span>
+                                </label>
+                                <label class="service-type-option">
+                                    <input type="radio" name="service" value="residential">
+                                    <span class="service-type-icon">&#127969;</span>
+                                    <span class="service-type-label">Residential</span>
+                                </label>
+                                <label class="service-type-option">
+                                    <input type="radio" name="service" value="emergency">
+                                    <span class="service-type-icon">&#9888;</span>
+                                    <span class="service-type-label">Emergency</span>
+                                </label>
+                            </div>
+                            <div class="form-step-buttons">
+                                <button type="button" class="btn-form-next">Next &rarr;</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Contact Info -->
+                        <div class="form-step" data-step="2">
                             <div class="form-group">
-                                <label for="name">Your Name *</label>
-                                <input type="text" id="name" name="name" required placeholder="John Smith">
+                                <label for="ms-name">Your Name *</label>
+                                <input type="text" id="ms-name" name="name" required placeholder="John Smith">
                             </div>
                             <div class="form-group">
-                                <label for="phone">Phone Number *</label>
-                                <input type="tel" id="phone" name="phone" required placeholder="(832) 555-1234">
+                                <label for="ms-phone">Phone Number *</label>
+                                <input type="tel" id="ms-phone" name="phone" required placeholder="(832) 555-1234">
+                            </div>
+                            <div class="form-group">
+                                <label for="ms-email">Email Address</label>
+                                <input type="email" id="ms-email" name="email" placeholder="john@example.com">
+                            </div>
+                            <div class="form-step-buttons">
+                                <button type="button" class="btn-form-prev">&larr; Back</button>
+                                <button type="button" class="btn-form-next">Next &rarr;</button>
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="john@example.com">
+                        <!-- Step 3: Project Details -->
+                        <div class="form-step" data-step="3">
+                            <div class="form-group">
+                                <label for="ms-message">Tell Us About Your Project</label>
+                                <textarea id="ms-message" name="message" placeholder="Describe your project, the issue, or what you need help with..."></textarea>
+                            </div>
+                            <div class="form-step-buttons">
+                                <button type="button" class="btn-form-prev">&larr; Back</button>
+                                <button type="submit" class="btn-submit">Send Request</button>
+                            </div>
                         </div>
-
-                        <div class="form-group">
-                            <label for="service">Service Type *</label>
-                            <select id="service" name="service" required>
-                                <option value="" disabled selected>Select a service...</option>
-                                <option value="commercial-new">Commercial - New Construction</option>
-                                <option value="commercial-repair">Commercial - Repair/Service</option>
-                                <option value="residential-repair">Residential - Repair/Service</option>
-                                <option value="residential-remodel">Residential - Remodel</option>
-                                <option value="emergency">Emergency Plumbing</option>
-                                <option value="bid-request">Bid Request</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Project Details</label>
-                            <textarea id="message" name="message" placeholder="Tell us about your project or describe the issue..."></textarea>
-                        </div>
-
-                        <button type="submit" class="btn-submit">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -813,6 +980,14 @@
                 <div class="footer-brand">
                     <img src="images/logo.png" alt="Texas Divine Plumbing" class="footer-logo" width="200" height="100" loading="lazy">
                     <p>The Texas Triangle's trusted family plumbing team. 65 years of combined experience serving Houston and surrounding areas with integrity and expertise.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">&#102;</a>
+                        <a href="#" aria-label="Instagram">&#9737;</a>
+                        <a href="#" aria-label="Google Business Profile">G</a>
+                    </div>
+                    <div class="footer-review-cta">
+                        <a href="#">&#9733; Leave Us a Review on Google</a>
+                    </div>
                 </div>
 
                 <div class="footer-column">
@@ -858,6 +1033,7 @@
 
             <div class="footer-bottom">
                 <p>&copy; 2026 Texas Divine Plumbing. All rights reserved. Licensed & Insured.</p>
+                <p class="license-text">TX Master Plumber License #XXXXX</p>
                 <div class="footer-bottom-links">
                     <a href="blog.html">Blog</a>
                     <a href="#">Privacy Policy</a>
@@ -876,6 +1052,44 @@
         </svg>
         <span class="sticky-call-tooltip">Call Hector: 832-691-6675</span>
     </a>
+
+    <!-- Sticky SMS Button (Mobile) -->
+    <a href="sms:832-691-6675?body=Hi,%20I%20need%20a%20plumbing%20quote%20for%20" class="sticky-text" aria-label="Text us now">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/>
+        </svg>
+        <span class="sticky-text-tooltip">Text Us: 832-691-6675</span>
+    </a>
+
+    <!-- ========================================
+         EXIT-INTENT POPUP
+    ======================================== -->
+    <div class="exit-popup-overlay" role="dialog" aria-modal="true" aria-label="Free estimate offer">
+        <div class="exit-popup">
+            <button class="exit-popup-close" aria-label="Close popup">&times;</button>
+            <div class="exit-popup-header">
+                <h3>Before You Go...</h3>
+                <p>Get a Free Estimate &mdash; We'll call you back within 30 minutes.</p>
+            </div>
+            <div class="exit-popup-body">
+                <form name="exit-intent" method="POST" data-netlify="true" netlify-honeypot="bot-field-exit">
+                    <input type="hidden" name="form-name" value="exit-intent">
+                    <p style="display:none;">
+                        <label>Don't fill this out: <input name="bot-field-exit"></label>
+                    </p>
+                    <div class="form-group">
+                        <label for="exit-name">Your Name</label>
+                        <input type="text" id="exit-name" name="name" required placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="exit-phone">Phone Number</label>
+                        <input type="tel" id="exit-phone" name="phone" required placeholder="(832) 555-1234">
+                    </div>
+                    <button type="submit" class="btn-submit">Get My Free Estimate</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- ========================================
          TAWK.TO LIVE CHAT (Replace with your Tawk.to property ID)
