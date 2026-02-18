@@ -1981,3 +1981,704 @@ footer {
     border-radius: 10px;
     box-shadow: var(--shadow);
 }
+
+/* ========================================
+   WHY CHOOSE US SECTION
+======================================== */
+.why-choose-us {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.differentiators-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.differentiator-card {
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 10px;
+    background-color: var(--grey-light);
+    transition: var(--transition);
+}
+
+.differentiator-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.differentiator-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.differentiator-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.differentiator-card p {
+    color: var(--grey-dark);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* ========================================
+   SERVICE GUARANTEE SECTION
+======================================== */
+.guarantees {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--deep-blue) 0%, #001a33 100%);
+    color: var(--white);
+}
+
+.guarantees-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.guarantee-card {
+    text-align: center;
+    padding: 40px 30px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.guarantee-card:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+.guarantee-icon {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 20px;
+}
+
+.guarantee-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.guarantee-card p {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    line-height: 1.7;
+}
+
+/* ========================================
+   VIDEO SECTION
+======================================== */
+.video-section {
+    padding: 80px 0;
+    background-color: var(--grey-light);
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(135deg, var(--deep-blue) 0%, #001a33 100%);
+}
+
+.video-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+    padding: 30px;
+}
+
+.video-play-icon {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.video-placeholder h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.video-placeholder p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* ========================================
+   MULTI-STEP FORM
+======================================== */
+.form-progress {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.form-progress::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15%;
+    right: 15%;
+    height: 3px;
+    background-color: var(--grey-medium);
+    z-index: 0;
+}
+
+.form-progress-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    z-index: 1;
+    flex: 1;
+}
+
+.form-progress-number {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--grey-medium);
+    color: var(--grey-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.form-progress-step.active .form-progress-number {
+    background-color: var(--deep-blue);
+    color: var(--white);
+}
+
+.form-progress-step.completed .form-progress-number {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.form-progress-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--grey-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-progress-step.active .form-progress-label {
+    color: var(--deep-blue);
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+.service-type-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.service-type-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 25px 15px;
+    border: 2px solid var(--grey-medium);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.service-type-option:hover {
+    border-color: var(--deep-blue);
+    background-color: rgba(0, 51, 102, 0.03);
+}
+
+.service-type-option.selected {
+    border-color: var(--deep-blue);
+    background-color: rgba(0, 51, 102, 0.08);
+}
+
+.service-type-option input {
+    display: none;
+}
+
+.service-type-icon {
+    font-size: 2rem;
+}
+
+.service-type-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.form-step-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-form-next,
+.btn-form-prev {
+    flex: 1;
+    padding: 14px 20px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-form-next {
+    background-color: var(--deep-blue);
+    color: var(--white);
+}
+
+.btn-form-next:hover {
+    background-color: #002244;
+    transform: translateY(-2px);
+}
+
+.btn-form-prev {
+    background-color: var(--grey-light);
+    color: var(--black);
+    border: 2px solid var(--grey-medium);
+}
+
+.btn-form-prev:hover {
+    background-color: var(--grey-medium);
+}
+
+/* ========================================
+   SMS BUTTONS
+======================================== */
+.btn-sms {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 35px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: var(--white);
+}
+
+.btn-sms:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+}
+
+.sticky-text {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: var(--white);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.sticky-text:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+}
+
+.sticky-text svg {
+    width: 26px;
+    height: 26px;
+    fill: var(--white);
+}
+
+.sticky-text-tooltip {
+    position: absolute;
+    left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--black);
+    color: var(--white);
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition);
+}
+
+.sticky-text-tooltip::after {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-right-color: var(--black);
+}
+
+.sticky-text:hover .sticky-text-tooltip {
+    opacity: 1;
+}
+
+/* ========================================
+   FINANCING BADGE & BAR
+======================================== */
+.financing-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: var(--white);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.financing-bar {
+    background-color: rgba(0, 51, 102, 0.06);
+    border: 1px solid rgba(0, 51, 102, 0.12);
+    border-radius: 10px;
+    padding: 18px 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.financing-bar p {
+    font-size: 0.9rem;
+    color: var(--black);
+    font-weight: 500;
+    margin: 0;
+}
+
+.financing-bar strong {
+    color: var(--deep-blue);
+}
+
+/* ========================================
+   EXIT-INTENT POPUP
+======================================== */
+.exit-popup-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 10001;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.exit-popup-overlay.active {
+    display: flex;
+}
+
+.exit-popup {
+    background-color: var(--white);
+    border-radius: 15px;
+    max-width: 480px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: popupSlideIn 0.35s ease;
+}
+
+@keyframes popupSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.exit-popup-header {
+    background: linear-gradient(135deg, var(--deep-blue) 0%, #001a33 100%);
+    padding: 35px 30px;
+    text-align: center;
+    color: var(--white);
+}
+
+.exit-popup-header h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.exit-popup-header p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.exit-popup-body {
+    padding: 30px;
+}
+
+.exit-popup-body .form-group {
+    margin-bottom: 15px;
+}
+
+.exit-popup-close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px;
+    line-height: 1;
+    transition: var(--transition);
+    z-index: 1;
+}
+
+.exit-popup-close:hover {
+    color: var(--white);
+}
+
+/* ========================================
+   GOOGLE REVIEWS BADGE
+======================================== */
+.google-reviews-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--white);
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-top: 20px;
+}
+
+.google-reviews-icon {
+    font-size: 1.8rem;
+}
+
+.google-reviews-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.google-reviews-stars {
+    color: #ffc107;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.google-reviews-text {
+    font-size: 0.8rem;
+    color: var(--grey-dark);
+    font-weight: 600;
+}
+
+/* ========================================
+   LANGUAGE TOGGLE
+======================================== */
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-left: 15px;
+    border: 2px solid var(--grey-medium);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.lang-toggle button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--grey-dark);
+    font-family: inherit;
+}
+
+.lang-toggle button.active {
+    background-color: var(--deep-blue);
+    color: var(--white);
+}
+
+/* ========================================
+   LICENSE DISPLAY
+======================================== */
+.license-text {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 5px;
+}
+
+/* ========================================
+   FOOTER SOCIAL & REVIEW CTA
+======================================== */
+.footer-review-cta {
+    margin-top: 15px;
+}
+
+.footer-review-cta a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--orange);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.footer-review-cta a:hover {
+    color: var(--orange-light);
+}
+
+/* Contact text card */
+.contact-text-card {
+    background-color: rgba(37, 211, 102, 0.15);
+    border: 1px solid rgba(37, 211, 102, 0.3);
+    padding: 30px 40px;
+    border-radius: 10px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.contact-text-card:hover {
+    background-color: rgba(37, 211, 102, 0.25);
+    transform: translateY(-5px);
+}
+
+.contact-text-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.contact-text-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* ========================================
+   PHASE 2 RESPONSIVE
+======================================== */
+@media (max-width: 992px) {
+    .differentiators-grid,
+    .guarantees-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .differentiators-grid,
+    .guarantees-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-type-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sticky-text {
+        display: flex;
+    }
+
+    .btn-sms {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .lang-toggle {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .google-reviews-badge {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-text-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-progress-label {
+        display: none;
+    }
+
+    .exit-popup-header {
+        padding: 25px 20px;
+    }
+
+    .exit-popup-body {
+        padding: 20px;
+    }
+}
