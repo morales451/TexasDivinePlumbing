@@ -30,18 +30,15 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Emergency banner dismiss
-var dismissBtn = document.querySelector('.emergency-dismiss');
-if (dismissBtn) {
-    dismissBtn.addEventListener('click', function() {
-        var banner = document.querySelector('.emergency-banner');
-        var header = document.querySelector('header');
-        if (banner) {
-            banner.style.display = 'none';
-            header.classList.add('banner-dismissed');
+// Mobile dropdown toggle for Service Areas
+document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
+    toggle.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            this.closest('.nav-dropdown').classList.toggle('active');
         }
     });
-}
+});
 
 // FAQ Accordion
 document.querySelectorAll('.faq-question').forEach(function(question) {
@@ -257,11 +254,9 @@ document.querySelectorAll('a[href^="sms:"]').forEach(function(link) {
 // ========================================
 (function() {
     var translations = {
-        '.emergency-banner-text': { en: '24/7 Emergency Plumbing Available', es: 'Plomer\u00eda de Emergencia 24/7 Disponible' },
-        '.emergency-banner-phone': { en: 'Call Now: 832-691-6675', es: 'Llame Ahora: 832-691-6675' },
         '.hero-badge': { en: 'Licensed & Insured', es: 'Licenciado y Asegurado' },
         '.hero h1': { en: 'Commercial New Construction <span>&</span> Expert Residential Plumbing.', es: 'Construcci\u00f3n Comercial Nueva <span>&</span> Plomer\u00eda Residencial Experta.' },
-        '.hero-subheadline': { en: "The Texas Triangle's Trusted Family Team. 65 Years Combined Experience. MBA-Managed Operations.", es: 'El Equipo Familiar de Confianza del Tri\u00e1ngulo de Texas. 65 A\u00f1os de Experiencia Combinada.' },
+        '.hero-subheadline': { en: "Texas' Trusted Family Team. Serving Statewide. 65 Years Combined Experience. MBA-Managed Operations.", es: 'El Equipo Familiar de Confianza de Texas. Servicio en Todo el Estado. 65 A\u00f1os de Experiencia Combinada.' },
         '.services .section-subtitle': { en: 'What We Do', es: 'Lo Que Hacemos' },
         '.services .section-title': { en: 'Our Services', es: 'Nuestros Servicios' },
         '.services .section-description': { en: 'From ground-up commercial construction to reliable residential repairs, we deliver excellence at every scale.', es: 'Desde construcci\u00f3n comercial hasta reparaciones residenciales confiables, ofrecemos excelencia en cada escala.' },
