@@ -255,8 +255,8 @@ document.querySelectorAll('a[href^="sms:"]').forEach(function(link) {
 (function() {
     var translations = {
         '.hero-badge': { en: 'Licensed & Insured', es: 'Licenciado y Asegurado' },
-        '.hero h1': { en: 'Commercial New Construction <span>&</span> Expert Residential Plumbing.', es: 'Construcci\u00f3n Comercial Nueva <span>&</span> Plomer\u00eda Residencial Experta.' },
-        '.hero-subheadline': { en: "Texas' Trusted Family Team. Serving Statewide. 65 Years Combined Experience. MBA-Managed Operations.", es: 'El Equipo Familiar de Confianza de Texas. Servicio en Todo el Estado. 65 A\u00f1os de Experiencia Combinada.' },
+        '.hero h1': { en: 'The Plumbing Sub Your GC Can Count On.', es: 'El Plomero de Confianza Para Su Contratista General.' },
+        '.hero-subheadline': { en: "Commercial New Construction & Residential Experts. 65 Years Combined Experience. On Schedule. On Budget. MBA-Managed Operations.", es: 'Expertos en Construcci\u00f3n Comercial y Residencial. 65 A\u00f1os de Experiencia. A Tiempo. Dentro del Presupuesto.' },
         '.services .section-subtitle': { en: 'What We Do', es: 'Lo Que Hacemos' },
         '.services .section-title': { en: 'Our Services', es: 'Nuestros Servicios' },
         '.services .section-description': { en: 'From ground-up commercial construction to reliable residential repairs, we deliver excellence at every scale.', es: 'Desde construcci\u00f3n comercial hasta reparaciones residenciales confiables, ofrecemos excelencia en cada escala.' },
