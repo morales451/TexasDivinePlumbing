@@ -231,10 +231,15 @@ document.querySelectorAll('a[href^="sms:"]').forEach(function(link) {
         popupOverlay.classList.remove('active');
     }
 
+    var exitTimer = null;
     document.addEventListener('mouseleave', function(e) {
         if (e.clientY < 5) {
-            showPopup();
+            exitTimer = setTimeout(showPopup, 600);
         }
+    });
+    document.addEventListener('mouseenter', function() {
+        clearTimeout(exitTimer);
+        exitTimer = null;
     });
 
     var closeBtn = popupOverlay.querySelector('.exit-popup-close');

@@ -272,8 +272,8 @@ section[id] {
 }
 
 .nav-dropdown-toggle {
-    display: inline-flex;
-    align-items: center;
+    display: inline;
+    vertical-align: middle;
 }
 
 .nav-dropdown-menu {
