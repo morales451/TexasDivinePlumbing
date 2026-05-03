@@ -296,3 +296,30 @@ document.querySelectorAll('a[href^="sms:"]').forEach(function(link) {
         });
     };
 })();
+
+/* ========================================
+   PORTFOLIO SECTOR FILTER
+======================================== */
+(function() {
+    var filters = document.querySelectorAll('.portfolio-filter');
+    var cards = document.querySelectorAll('.portfolio-card');
+    if (!filters.length || !cards.length) return;
+
+    filters.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var sector = btn.getAttribute('data-filter');
+            filters.forEach(function(b) {
+                var active = b === btn;
+                b.classList.toggle('active', active);
+                b.setAttribute('aria-pressed', active ? 'true' : 'false');
+            });
+            cards.forEach(function(card) {
+                if (sector === 'all' || card.getAttribute('data-sector') === sector) {
+                    card.hidden = false;
+                } else {
+                    card.hidden = true;
+                }
+            });
+        });
+    });
+})();
