@@ -961,9 +961,29 @@ section[id] {
     display: none;
 }
 
+.work-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+    background-color: #16a34a;
+    color: var(--white);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
 .work-caption {
     padding: 20px 22px 24px;
     border-top: 3px solid var(--orange);
+}
+
+.work-item-permit .work-caption {
+    border-top-color: #16a34a;
 }
 
 .work-caption h4 {
