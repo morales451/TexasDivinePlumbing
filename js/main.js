@@ -212,49 +212,6 @@ document.querySelectorAll('a[href^="sms:"]').forEach(function(link) {
 })();
 
 // ========================================
-// Exit-Intent Popup
-// ========================================
-(function() {
-    var shown = false;
-    var popupOverlay = document.querySelector('.exit-popup-overlay');
-    if (!popupOverlay) return;
-
-    function showPopup() {
-        if (shown) return;
-        if (sessionStorage.getItem('exitPopupShown')) return;
-        shown = true;
-        sessionStorage.setItem('exitPopupShown', '1');
-        popupOverlay.classList.add('active');
-    }
-
-    function hidePopup() {
-        popupOverlay.classList.remove('active');
-    }
-
-    var exitTimer = null;
-    document.addEventListener('mouseleave', function(e) {
-        if (e.clientY < 5) {
-            exitTimer = setTimeout(showPopup, 600);
-        }
-    });
-    document.addEventListener('mouseenter', function() {
-        clearTimeout(exitTimer);
-        exitTimer = null;
-    });
-
-    var closeBtn = popupOverlay.querySelector('.exit-popup-close');
-    if (closeBtn) closeBtn.addEventListener('click', hidePopup);
-
-    popupOverlay.addEventListener('click', function(e) {
-        if (e.target === popupOverlay) hidePopup();
-    });
-
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') hidePopup();
-    });
-})();
-
-// ========================================
 // Spanish Language Toggle
 // ========================================
 (function() {
