@@ -1,12 +1,10 @@
 Place customer-facing downloadable documents here.
 
-Expected files (referenced from the live site):
+This folder is available for any downloadable files you want to link from the
+site (spec sheets, warranty info, etc.). Reference them from index.html with a
+standard link, e.g.:
 
-  prequalification-packet.pdf
-      Linked from index.html (#credentials section, "Download Prequalification Packet" button).
-      Should bundle: W-9, sample COI, license verification, safety manual summary,
-      EMR letter, project references, bonding capacity letter, self-perform scope matrix.
+  <a href="documents/your-file.pdf" download>Download</a>
 
-When the real PDF is ready, drop it in this folder using the exact filename above
-(or update the href in index.html accordingly). No code changes needed if the
-filename matches.
+Drop the file in this folder and point the href at it — no other code changes
+needed as long as the filename matches.
