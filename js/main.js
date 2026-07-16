@@ -231,8 +231,7 @@ document.querySelectorAll('a[href^="sms:"]').forEach(function(link) {
         '.guarantees .section-description': { en: 'We stand behind every job with guarantees that protect you.', es: 'Respaldamos cada trabajo con garant\u00edas que lo protegen.' },
         '.why-choose-us .section-title': { en: 'Why Choose Texas Divine Plumbing', es: '\u00bfPor Qu\u00e9 Elegirnos?' },
         '.why-choose-us .section-description': { en: 'What sets us apart from every other plumbing company in Texas.', es: 'Lo que nos diferencia de cualquier otra empresa de plomer\u00eda en Texas.' },
-        '.testimonials .section-title': { en: 'Customer Reviews', es: 'Rese\u00f1as de Clientes' },
-        '.video-section .section-title': { en: 'See Us in Action', es: 'V\u00e9anos en Acci\u00f3n' }
+        '.testimonials .section-title': { en: 'Customer Reviews', es: 'Rese\u00f1as de Clientes' }
     };
 
     var currentLang = 'en';
