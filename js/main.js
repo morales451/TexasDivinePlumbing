@@ -217,8 +217,8 @@ document.querySelectorAll('a[href^="sms:"]').forEach(function(link) {
 (function() {
     var translations = {
         '.hero-badge': { en: 'Licensed & Insured', es: 'Licenciado y Asegurado' },
-        '.hero h1': { en: 'The Plumbing Sub Your GC Can Count On.', es: 'El Plomero de Confianza Para Su Contratista General.' },
-        '.hero-subheadline': { en: "Commercial New Construction & Residential Experts. 65 Years Combined Experience. On Schedule. On Budget. MBA-Managed Operations.", es: 'Expertos en Construcci\u00f3n Comercial y Residencial. 65 A\u00f1os de Experiencia. A Tiempo. Dentro del Presupuesto.' },
+        '.hero h1': { en: 'Plumbing You Can Actually Count On.', es: 'Plomer\u00eda en la Que Puede Confiar de Verdad.' },
+        '.hero-subheadline': { en: "A plumbing problem can stall your build or turn your day upside down. Our family team has been fixing that for 65 years \u2014 we show up on time, do the job right, and tell you the truth. Big commercial builds or a leak at home, we make it simple.", es: 'Un problema de plomer\u00eda puede detener su obra o arruinarle el d\u00eda. Nuestro equipo familiar lleva 65 a\u00f1os resolvi\u00e9ndolo: llegamos a tiempo, hacemos el trabajo bien y decimos la verdad. Grandes obras comerciales o una fuga en casa, lo hacemos simple.' },
         '.services .section-subtitle': { en: 'What We Do', es: 'Lo Que Hacemos' },
         '.services .section-title': { en: 'Our Services', es: 'Nuestros Servicios' },
         '.services .section-description': { en: 'From ground-up commercial construction to reliable residential repairs, we deliver excellence at every scale.', es: 'Desde construcci\u00f3n comercial hasta reparaciones residenciales confiables, ofrecemos excelencia en cada escala.' },
@@ -254,29 +254,3 @@ document.querySelectorAll('a[href^="sms:"]').forEach(function(link) {
     };
 })();
 
-/* ========================================
-   PORTFOLIO SECTOR FILTER
-======================================== */
-(function() {
-    var filters = document.querySelectorAll('.portfolio-filter');
-    var cards = document.querySelectorAll('.portfolio-card');
-    if (!filters.length || !cards.length) return;
-
-    filters.forEach(function(btn) {
-        btn.addEventListener('click', function() {
-            var sector = btn.getAttribute('data-filter');
-            filters.forEach(function(b) {
-                var active = b === btn;
-                b.classList.toggle('active', active);
-                b.setAttribute('aria-pressed', active ? 'true' : 'false');
-            });
-            cards.forEach(function(card) {
-                if (sector === 'all' || card.getAttribute('data-sector') === sector) {
-                    card.hidden = false;
-                } else {
-                    card.hidden = true;
-                }
-            });
-        });
-    });
-})();
