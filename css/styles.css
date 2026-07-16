@@ -2867,7 +2867,7 @@ footer {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 28px;
 }
 
@@ -2894,19 +2894,46 @@ footer {
     position: relative;
     aspect-ratio: 3 / 2;
     overflow: hidden;
-    background-color: var(--grey-light);
+    background: linear-gradient(135deg, #eef2f8 0%, #dbe3ef 100%);
+}
+
+/* Fallback shown until the real project photo is added to /images/ */
+.portfolio-card-image::after {
+    content: 'Photo coming soon';
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--grey-dark);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .portfolio-card-image img {
+    position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: var(--transition);
+}
+
+.portfolio-card:hover .portfolio-card-image img {
+    transform: scale(1.05);
+}
+
+.portfolio-card-image img.img-missing {
+    display: none;
 }
 
 .portfolio-card-sector {
     position: absolute;
     top: 12px;
     left: 12px;
+    z-index: 2;
     padding: 5px 12px;
     border-radius: 999px;
     background-color: var(--deep-blue);
