@@ -2678,3 +2678,8 @@ a.fact:hover {
         display: none;
     }
 }
+
+/* Breathing room between the pinned headline's actions and the first message */
+.pin + .thread > .group:first-child {
+    margin-top: 44px;
+}
