@@ -15,8 +15,8 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Texas Divine Plumbing">
 
-    <link rel="icon" type="image/png" href="../images/logo.png">
-    <link rel="apple-touch-icon" href="../images/logo.png">
+    <link rel="icon" type="image/png" href="../images/web/logo-256.png">
+    <link rel="apple-touch-icon" href="../images/web/logo-256.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
@@ -25,10 +25,10 @@
       gtag('js', new Date());
       gtag('config', 'G-XXXXXXXXXX');
     </script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#072a68">
 
     <link rel="stylesheet" href="../css/styles.css">
 
@@ -57,130 +57,137 @@
     </script>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <header>
-        <div class="header-container">
-            <a href="../index.html" class="logo">
-                <img src="../images/logo.png" alt="Texas Divine Plumbing" width="120" height="60">
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+        <symbol id="i-text" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 17v5"/><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"/></symbol>
+        <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+        <symbol id="i-out" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></symbol>
+        <symbol id="i-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+        <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></symbol>
+        <symbol id="i-forward" viewBox="0 0 24 24"><path d="M15 17l5-5-5-5"/><path d="M4 18v-2a4 4 0 0 1 4-4h12"/></symbol>
+        <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+        <symbol id="i-reddit" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 0C5.373 0 0 5.373 0 12c0 3.313 1.344 6.312 3.516 8.484L1.5 24l3.797-1.969A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm5.6 12.29a1.4 1.4 0 0 1 .01.24c0 2.45-2.85 4.43-6.37 4.43s-6.37-1.98-6.37-4.43c0-.08.003-.16.01-.24a1.56 1.56 0 1 1 1.72-2.53 7.7 7.7 0 0 1 4.2-1.33l.8-3.76 2.61.56a1.12 1.12 0 1 1-.13.61l-2.33-.5-.71 3.35a7.7 7.7 0 0 1 4.14 1.33 1.56 1.56 0 1 1 1.72 2.54zM8.9 13.4a1.12 1.12 0 1 0 0-2.24 1.12 1.12 0 0 0 0 2.24zm6.2 0a1.12 1.12 0 1 0 0-2.24 1.12 1.12 0 0 0 0 2.24zm-.42 1.9a.4.4 0 0 1 .56.56 3.9 3.9 0 0 1-2.74 1 3.9 3.9 0 0 1-2.74-1 .4.4 0 0 1 .56-.56c.6.53 1.4.79 2.18.79.78 0 1.58-.26 2.18-.79z"/></symbol>
+        <symbol id="i-google" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12.48 10.92v3.28h7.84c-.24 1.84-.85 3.19-1.79 4.13-1.15 1.15-2.93 2.4-6.05 2.4-4.83 0-8.6-3.89-8.6-8.72s3.77-8.72 8.6-8.72c2.6 0 4.51 1.03 5.91 2.35l2.31-2.31C18.75 1.44 16.13 0 12.48 0 5.87 0 .31 5.39.31 12s5.56 12 12.17 12c3.57 0 6.27-1.17 8.37-3.36 2.16-2.16 2.84-5.21 2.84-7.67 0-.76-.05-1.47-.17-2.05H12.48z"/></symbol>
+    </svg>
+    <header class="topbar">
+        <div class="topbar__inner">
+            <a class="brand" href="../index.html" aria-label="Texas Divine Plumbing, home">
+                <span class="brand__mark"><img src="../images/web/logo-256.png" alt="" width="40" height="40"></span>
+                <span class="brand__text">
+                    <span class="brand__name">Texas Divine Plumbing</span>
+                    <span class="brand__meta" data-i18n="meta">Trino, Hector, Alexis + 7 uncles</span>
+                </span>
             </a>
-            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleMenu()">
-                <span></span><span></span><span></span>
-            </button>
-            <nav id="nav-menu" role="navigation" aria-label="Main navigation">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../index.html#commercial">Commercial</a></li>
-                    <li><a href="../index.html#residential">Residential</a></li>
-                    <li><a href="../index.html#about">About</a></li>
-                    <li class="nav-dropdown">
-                        <a href="#service-areas" class="nav-dropdown-toggle">Service Areas <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-left:3px"><polyline points="6 9 12 15 18 9"/></svg></a>
-                        <ul class="nav-dropdown-menu">
+            <nav class="nav" id="site-nav" aria-label="Main">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="../index.html#work" data-i18n="nav.work">Our work</a></li>
+                    <li><a class="nav__link" href="../index.html#reviews" data-i18n="nav.reviews">Reviews</a></li>
+                    <li><a class="nav__link" href="../faq.html">FAQ</a></li>
+                    <li class="nav__item--has-sub">
+                        <button class="nav__link" type="button" aria-expanded="false" data-sub-toggle><span data-i18n="nav.areas">Service areas</span> <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></button>
+                        <ul class="nav__sub">
                             <li><a href="../houston-plumbing.html">Houston</a></li>
                             <li><a href="../dallas-plumbing.html">Dallas</a></li>
                             <li><a href="../san-antonio-plumbing.html">San Antonio</a></li>
                             <li><a href="../austin-plumbing.html">Austin</a></li>
                         </ul>
                     </li>
-                    <li><a href="../blog.html">Blog</a></li>
-                    <li><a href="../index.html#contact">Contact</a></li>
+                    <li><a class="nav__link" href="../blog.html" aria-current="page">Blog</a></li>
+                    <li><a class="nav__link" href="../index.html#message" data-i18n="nav.message">Message us</a></li>
+                    <li class="nav__lang">
+                        <div class="lang" role="group" aria-label="Language">
+                            <button type="button" data-lang="en" class="active" aria-pressed="true">English</button>
+                            <button type="button" data-lang="es" aria-pressed="false">Español</button>
+                        </div>
+                        <a class="chip chip--alexis chip--xl nav__call" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="cta.call">Call Alexis</span> <span class="chip__num">281-840-8062</span></a>
+                    </li>
                 </ul>
             </nav>
+            <div class="lang" role="group" aria-label="Language">
+                <button type="button" data-lang="en" class="active" aria-pressed="true">EN</button>
+                <button type="button" data-lang="es" aria-pressed="false">ES</button>
+            </div>
+            <a class="topbar__call" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="call">Call Alexis</span><span class="topbar__call-num">&nbsp;· 281-840-8062</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
         </div>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" class="layout layout--solo layout--read">
+        <section class="pin pin--article" aria-labelledby="pin-title">
+            <h1 class="pin__title pin__title--article" id="pin-title">5 Signs Your Commercial Building Needs a Plumbing Inspection</h1>
+        </section>
 
-    <section class="blog-post-hero">
-        <div class="container">
-            <p class="blog-post-meta">February 14, 2026 &bull; 5 min read &bull; Texas Divine Plumbing Team</p>
-            <h1>5 Signs Your Commercial Building Needs a Plumbing Inspection</h1>
+        <div class="thread">
+            <article class="article">
+                <div class="article__meta"><span class="avatar avatar--family" aria-hidden="true"><img src="../images/web/logo-256.png" alt="" width="40" height="40"></span><span>February 14, 2026 · 5 min read · Texas Divine Plumbing Team</span></div>
+                <div class="prose">
+                    <p>Commercial plumbing systems are complex networks that serve dozens or even hundreds of people daily. Unlike residential systems, they endure constant heavy use, and when something goes wrong, the consequences can be costly — both in repair bills and lost business. After 40+ years of working on commercial buildings across Texas, we've seen firsthand what happens when warning signs get ignored.</p>
+<p>Here are the five most common signs that your commercial building needs a professional plumbing inspection — and what you should do about each one.</p>
+<h2>1. Unexplained Increases in Water Bills</h2>
+<p>If your water bill has jumped without a corresponding increase in building usage, you likely have a leak somewhere in the system. Commercial buildings have extensive piping that runs behind walls, under slabs, and through ceilings. A hidden leak can waste thousands of gallons per month before anyone notices standing water.</p>
+<p>What to look for: Compare your water bills month over month. An increase of 15% or more without explanation is a red flag. In Texas, where water costs are rising steadily, even a small leak can add hundreds to your monthly operating expenses.</p>
+<p>A professional inspection includes pressure testing your supply lines to identify leaks that aren't visible to the naked eye. We use specialized equipment to trace pipes and pinpoint exactly where water is escaping — before it causes structural damage.</p>
+<h2>2. Slow or Frequently Clogging Drains</h2>
+<p>In a commercial building, slow drains are more than an inconvenience — they're a sign that your drainage system is struggling. Restaurant kitchens deal with grease buildup. Office buildings accumulate mineral deposits. Retail spaces see all manner of foreign objects find their way into drain lines.</p>
+<p>A single slow drain might be a localized clog, but when multiple fixtures across your building drain slowly, it usually indicates a problem deeper in the main sewer line. Tree root intrusion is common in older Texas buildings, especially in areas with clay soil like much of Houston and Dallas. Roots seek out moisture, and a small crack in a sewer pipe becomes a root highway.</p>
+<p>If your staff is plunging toilets weekly or tenants are complaining about slow sinks, schedule an inspection. Camera inspections of your main sewer line can reveal the exact condition of your pipes without any excavation.</p>
+<h2>3. Discolored or Unusual-Smelling Water</h2>
+<p>Brown, yellow, or rusty water coming from your commercial fixtures is never normal. It typically indicates one of several issues: corroding galvanized pipes (common in buildings built before the 1980s), sediment buildup in your water heater, or problems with the municipal supply affecting your building specifically.</p>
+<p>Unusual odors are equally concerning. A sulfur or "rotten egg" smell can indicate bacterial growth in your water heater. Sewage smells from drains may signal a dried-out P-trap (common in rarely used fixtures) or a more serious vent stack problem that's allowing sewer gas into your building.</p>
+<p>In Texas, our hard water accelerates mineral buildup and pipe corrosion. Buildings that haven't had their plumbing inspected in several years may be surprised at the internal condition of their pipes. We've pulled galvanized pipes out of Houston commercial buildings where the internal diameter had narrowed to a fraction of its original size from scale buildup.</p>
+<h2>4. Low Water Pressure Across Multiple Fixtures</h2>
+<p>Consistent low water pressure across your building — not just one fixture — points to a systemic issue. The most common causes in commercial buildings include: partially closed main valves (sometimes left from a previous repair), significant mineral buildup restricting flow, a failing pressure regulator, or undersized supply lines for your building's actual demand.</p>
+<p>Low pressure also affects fire suppression systems, which is a code compliance concern. If your building's sprinkler system isn't receiving adequate pressure, you could face inspection violations and insurance complications.</p>
+<p>A thorough plumbing inspection measures pressure at multiple points throughout your system to identify where the drop is occurring. Often the fix is straightforward — a valve adjustment, a regulator replacement, or targeted descaling. But left unaddressed, low pressure forces pumps and fixtures to work harder, shortening their lifespan and increasing maintenance costs.</p>
+<h2>5. Aging Pipes (25+ Years Without Inspection)</h2>
+<p>Even if you're not experiencing obvious symptoms, any commercial building with plumbing that hasn't been inspected in 25+ years should schedule a comprehensive evaluation. Pipe materials have lifespans: galvanized steel lasts 20-50 years, copper lasts 50-70 years, and even PVC degrades over time under Texas heat and UV exposure.</p>
+<p>Proactive inspection is dramatically cheaper than emergency repair. A planned re-pipe of a problem section costs a fraction of the emergency mitigation, water damage restoration, and business interruption that comes from a catastrophic failure. We've seen building owners save tens of thousands of dollars by catching deteriorating pipes early.</p>
+<p>For buildings built before 1990, we recommend an inspection every 3-5 years. For newer buildings under heavy use (restaurants, medical facilities, multi-tenant offices), every 5-7 years is appropriate. During an inspection, we document the condition of accessible pipes, check water heaters and supply lines, test backflow preventers, and provide a prioritized list of any needed repairs.</p>
+<h2>Don't Wait for the Emergency</h2>
+<p>Commercial plumbing failures don't happen at convenient times. They happen on your busiest day, during your most important client meeting, or over a holiday weekend when emergency rates apply. Every one of the warning signs above is your building's way of telling you something needs attention.</p>
+<p>A professional plumbing inspection gives you a clear picture of your system's health and a plan for addressing any issues — on your timeline and your budget, not in crisis mode.</p>
+                </div>
+                <aside class="article__cta">
+                    <h2>Schedule a Commercial Plumbing Inspection</h2>
+                    <p>Texas Divine Plumbing provides comprehensive commercial plumbing inspections across Texas. 65+ years of combined experience. Licensed Master Plumber on every project.</p>
+                    <div class="chips">
+                        <a class="chip chip--alexis" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Call Alexis · 281-840-8062</a>
+                        <a class="chip" href="sms:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg>Text Alexis</a>
+                        <a class="chip chip--ghost" href="../index.html#message"><svg class="icon" aria-hidden="true"><use href="#i-send"/></svg>Send the details</a>
+                    </div>
+                </aside>
+            </article>
         </div>
-    </section>
-
-    <article class="blog-post-content">
-        <div class="container">
-            <p>Commercial plumbing systems are complex networks that serve dozens or even hundreds of people daily. Unlike residential systems, they endure constant heavy use, and when something goes wrong, the consequences can be costly — both in repair bills and lost business. After 40+ years of working on commercial buildings across Texas, we've seen firsthand what happens when warning signs get ignored.</p>
-
-            <p>Here are the five most common signs that your commercial building needs a professional plumbing inspection — and what you should do about each one.</p>
-
-            <h2>1. Unexplained Increases in Water Bills</h2>
-
-            <p>If your water bill has jumped without a corresponding increase in building usage, you likely have a leak somewhere in the system. Commercial buildings have extensive piping that runs behind walls, under slabs, and through ceilings. A hidden leak can waste thousands of gallons per month before anyone notices standing water.</p>
-
-            <p>What to look for: Compare your water bills month over month. An increase of 15% or more without explanation is a red flag. In Texas, where water costs are rising steadily, even a small leak can add hundreds to your monthly operating expenses.</p>
-
-            <p>A professional inspection includes pressure testing your supply lines to identify leaks that aren't visible to the naked eye. We use specialized equipment to trace pipes and pinpoint exactly where water is escaping — before it causes structural damage.</p>
-
-            <h2>2. Slow or Frequently Clogging Drains</h2>
-
-            <p>In a commercial building, slow drains are more than an inconvenience — they're a sign that your drainage system is struggling. Restaurant kitchens deal with grease buildup. Office buildings accumulate mineral deposits. Retail spaces see all manner of foreign objects find their way into drain lines.</p>
-
-            <p>A single slow drain might be a localized clog, but when multiple fixtures across your building drain slowly, it usually indicates a problem deeper in the main sewer line. Tree root intrusion is common in older Texas buildings, especially in areas with clay soil like much of Houston and Dallas. Roots seek out moisture, and a small crack in a sewer pipe becomes a root highway.</p>
-
-            <p>If your staff is plunging toilets weekly or tenants are complaining about slow sinks, schedule an inspection. Camera inspections of your main sewer line can reveal the exact condition of your pipes without any excavation.</p>
-
-            <h2>3. Discolored or Unusual-Smelling Water</h2>
-
-            <p>Brown, yellow, or rusty water coming from your commercial fixtures is never normal. It typically indicates one of several issues: corroding galvanized pipes (common in buildings built before the 1980s), sediment buildup in your water heater, or problems with the municipal supply affecting your building specifically.</p>
-
-            <p>Unusual odors are equally concerning. A sulfur or "rotten egg" smell can indicate bacterial growth in your water heater. Sewage smells from drains may signal a dried-out P-trap (common in rarely used fixtures) or a more serious vent stack problem that's allowing sewer gas into your building.</p>
-
-            <p>In Texas, our hard water accelerates mineral buildup and pipe corrosion. Buildings that haven't had their plumbing inspected in several years may be surprised at the internal condition of their pipes. We've pulled galvanized pipes out of Houston commercial buildings where the internal diameter had narrowed to a fraction of its original size from scale buildup.</p>
-
-            <h2>4. Low Water Pressure Across Multiple Fixtures</h2>
-
-            <p>Consistent low water pressure across your building — not just one fixture — points to a systemic issue. The most common causes in commercial buildings include: partially closed main valves (sometimes left from a previous repair), significant mineral buildup restricting flow, a failing pressure regulator, or undersized supply lines for your building's actual demand.</p>
-
-            <p>Low pressure also affects fire suppression systems, which is a code compliance concern. If your building's sprinkler system isn't receiving adequate pressure, you could face inspection violations and insurance complications.</p>
-
-            <p>A thorough plumbing inspection measures pressure at multiple points throughout your system to identify where the drop is occurring. Often the fix is straightforward — a valve adjustment, a regulator replacement, or targeted descaling. But left unaddressed, low pressure forces pumps and fixtures to work harder, shortening their lifespan and increasing maintenance costs.</p>
-
-            <h2>5. Aging Pipes (25+ Years Without Inspection)</h2>
-
-            <p>Even if you're not experiencing obvious symptoms, any commercial building with plumbing that hasn't been inspected in 25+ years should schedule a comprehensive evaluation. Pipe materials have lifespans: galvanized steel lasts 20-50 years, copper lasts 50-70 years, and even PVC degrades over time under Texas heat and UV exposure.</p>
-
-            <p>Proactive inspection is dramatically cheaper than emergency repair. A planned re-pipe of a problem section costs a fraction of the emergency mitigation, water damage restoration, and business interruption that comes from a catastrophic failure. We've seen building owners save tens of thousands of dollars by catching deteriorating pipes early.</p>
-
-            <p>For buildings built before 1990, we recommend an inspection every 3-5 years. For newer buildings under heavy use (restaurants, medical facilities, multi-tenant offices), every 5-7 years is appropriate. During an inspection, we document the condition of accessible pipes, check water heaters and supply lines, test backflow preventers, and provide a prioritized list of any needed repairs.</p>
-
-            <h2>Don't Wait for the Emergency</h2>
-
-            <p>Commercial plumbing failures don't happen at convenient times. They happen on your busiest day, during your most important client meeting, or over a holiday weekend when emergency rates apply. Every one of the warning signs above is your building's way of telling you something needs attention.</p>
-
-            <p>A professional plumbing inspection gives you a clear picture of your system's health and a plan for addressing any issues — on your timeline and your budget, not in crisis mode.</p>
-
-            <div class="blog-post-cta">
-                <h3>Schedule a Commercial Plumbing Inspection</h3>
-                <p>Texas Divine Plumbing provides comprehensive commercial plumbing inspections across Texas. 65+ years of combined experience. Licensed Master Plumber on every project.</p>
-                <a href="tel:832-691-6675" class="btn btn-primary">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call Hector: 832-691-6675
-                </a>
-            </div>
-        </div>
-    </article>
-
     </main>
 
-    <footer role="contentinfo">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <img src="../images/logo.png" alt="Texas Divine Plumbing" class="footer-logo" width="200" height="100" loading="lazy">
-                    <p>Texas' trusted family plumbing team. 65 years of combined experience.</p>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <span class="brand__mark"><img src="../images/web/logo-256.png" alt="" width="72" height="72" loading="lazy"></span>
+                    <div>
+                        <p class="footer__line" data-i18n="footer.line">Same number for 40 years.</p>
+                        <p data-i18n="footer.sub">A family of plumbers in Houston, serving all of Texas. Licensed &amp; insured.</p>
+                    </div>
                 </div>
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
+                <div>
+                    <h3>Call</h3>
                     <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../index.html#commercial">Commercial</a></li>
-                        <li><a href="../index.html#residential">Residential</a></li>
-                        <li><a href="../blog.html">Blog</a></li>
-                        <li><a href="../index.html#contact">Contact</a></li>
+                        <li><a href="tel:+12818408062">Alexis · 281-840-8062</a></li>
+                        <li><a href="tel:+18326916675">Hector · 832-691-6675</a></li>
+                        <li><a href="tel:+17138755353">Trino · 713-875-5353</a></li>
+                        <li><a href="mailto:texasdivineplumbing@gmail.com">texasdivineplumbing@gmail.com</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Service Areas</h4>
+                <div>
+                    <h3 data-i18n="nav.areas">Service areas</h3>
                     <ul>
                         <li><a href="../houston-plumbing.html">Houston</a></li>
                         <li><a href="../dallas-plumbing.html">Dallas</a></li>
@@ -188,30 +195,32 @@
                         <li><a href="../austin-plumbing.html">Austin</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Contact Us</h4>
+                <div>
+                    <h3>More</h3>
                     <ul>
-                        <li class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:832-691-6675">Hector: 832-691-6675</a></li>
-                        <li class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:713-875-5353">Trino: 713-875-5353</a></li>
-                        <li class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:281-840-8062">Alexis: 281-840-8062</a></li>
-                        <li class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> <a href="mailto:texasdivineplumbing@gmail.com">texasdivineplumbing@gmail.com</a></li>
+                        <li><a href="../index.html#work" data-i18n="nav.work">Our work</a></li>
+                        <li><a href="../index.html#reviews" data-i18n="nav.reviews">Reviews</a></li>
+                        <li><a href="../faq.html">FAQ</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Texas Divine Plumbing. All rights reserved. Licensed & Insured.</p>
-                <div class="footer-bottom-links">
-                    <a href="../blog.html">Blog</a>
-                    <a href="#">Privacy Policy</a>
-                </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Texas Divine Plumbing</span>
+                <span>Mon–Fri 7am–6pm · Sat 8am–2pm</span>
+                <!-- TODO: add the Texas Master Plumber license number (M-XXXXX) here once confirmed -->
+                <nav aria-label="Footer">
+                    <a href="https://www.reddit.com/r/houston/comments/1hpouwl/plumbers_for_houston/m4j86ie/" target="_blank" rel="noopener">r/houston thread</a>
+                    <a href="../index.html#message" data-i18n="nav.message">Message us</a>
+                </nav>
             </div>
         </div>
     </footer>
 
-    <a href="tel:832-691-6675" class="sticky-call" aria-label="Call us now">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-        <span class="sticky-call-tooltip">Call Hector: 832-691-6675</span>
-    </a>
+    <nav class="dock" aria-label="Call or text Alexis">
+        <a class="dock__alexis" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="cta.call">Call Alexis</span></a>
+        <a class="dock__textalexis" href="sms:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg><span data-i18n="cta.text">Text Alexis</span></a>
+    </nav>
 
     <script src="../js/main.js"></script>
 </body>

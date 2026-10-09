@@ -20,8 +20,8 @@
     <meta name="twitter:description" content="Expert commercial new construction and residential plumbing in Austin TX.">
     <meta name="twitter:image" content="https://texasdivineplumbing.com/images/og-image.jpg">
 
-    <link rel="icon" type="image/png" href="images/logo.png">
-    <link rel="apple-touch-icon" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/web/logo-256.png">
+    <link rel="apple-touch-icon" href="images/web/logo-256.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
@@ -30,10 +30,10 @@
       gtag('js', new Date());
       gtag('config', 'G-XXXXXXXXXX');
     </script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#072a68">
 
     <link rel="stylesheet" href="css/styles.css">
 
@@ -71,164 +71,252 @@
     </script>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <header>
-        <div class="header-container">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Texas Divine Plumbing" width="120" height="60">
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+        <symbol id="i-text" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 17v5"/><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"/></symbol>
+        <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+        <symbol id="i-out" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></symbol>
+        <symbol id="i-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+        <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></symbol>
+        <symbol id="i-forward" viewBox="0 0 24 24"><path d="M15 17l5-5-5-5"/><path d="M4 18v-2a4 4 0 0 1 4-4h12"/></symbol>
+        <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+        <symbol id="i-reddit" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 0C5.373 0 0 5.373 0 12c0 3.313 1.344 6.312 3.516 8.484L1.5 24l3.797-1.969A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm5.6 12.29a1.4 1.4 0 0 1 .01.24c0 2.45-2.85 4.43-6.37 4.43s-6.37-1.98-6.37-4.43c0-.08.003-.16.01-.24a1.56 1.56 0 1 1 1.72-2.53 7.7 7.7 0 0 1 4.2-1.33l.8-3.76 2.61.56a1.12 1.12 0 1 1-.13.61l-2.33-.5-.71 3.35a7.7 7.7 0 0 1 4.14 1.33 1.56 1.56 0 1 1 1.72 2.54zM8.9 13.4a1.12 1.12 0 1 0 0-2.24 1.12 1.12 0 0 0 0 2.24zm6.2 0a1.12 1.12 0 1 0 0-2.24 1.12 1.12 0 0 0 0 2.24zm-.42 1.9a.4.4 0 0 1 .56.56 3.9 3.9 0 0 1-2.74 1 3.9 3.9 0 0 1-2.74-1 .4.4 0 0 1 .56-.56c.6.53 1.4.79 2.18.79.78 0 1.58-.26 2.18-.79z"/></symbol>
+        <symbol id="i-google" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12.48 10.92v3.28h7.84c-.24 1.84-.85 3.19-1.79 4.13-1.15 1.15-2.93 2.4-6.05 2.4-4.83 0-8.6-3.89-8.6-8.72s3.77-8.72 8.6-8.72c2.6 0 4.51 1.03 5.91 2.35l2.31-2.31C18.75 1.44 16.13 0 12.48 0 5.87 0 .31 5.39.31 12s5.56 12 12.17 12c3.57 0 6.27-1.17 8.37-3.36 2.16-2.16 2.84-5.21 2.84-7.67 0-.76-.05-1.47-.17-2.05H12.48z"/></symbol>
+    </svg>
+    <header class="topbar">
+        <div class="topbar__inner">
+            <a class="brand" href="index.html" aria-label="Texas Divine Plumbing, home">
+                <span class="brand__mark"><img src="images/web/logo-256.png" alt="" width="40" height="40"></span>
+                <span class="brand__text">
+                    <span class="brand__name">Texas Divine Plumbing</span>
+                    <span class="brand__meta" data-i18n="meta">Trino, Hector, Alexis + 7 uncles</span>
+                </span>
             </a>
-            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleMenu()">
-                <span></span><span></span><span></span>
-            </button>
-            <nav id="nav-menu" role="navigation" aria-label="Main navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#commercial">Commercial</a></li>
-                    <li><a href="index.html#residential">Residential</a></li>
-                    <li><a href="index.html#portfolio">Portfolio</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li class="nav-dropdown">
-                        <a href="houston-plumbing.html" class="nav-dropdown-toggle">Service Areas <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-left:3px"><polyline points="6 9 12 15 18 9"/></svg></a>
-                        <ul class="nav-dropdown-menu">
+            <nav class="nav" id="site-nav" aria-label="Main">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="index.html#work" data-i18n="nav.work">Our work</a></li>
+                    <li><a class="nav__link" href="index.html#reviews" data-i18n="nav.reviews">Reviews</a></li>
+                    <li><a class="nav__link" href="faq.html">FAQ</a></li>
+                    <li class="nav__item--has-sub">
+                        <button class="nav__link" type="button" aria-expanded="false" data-sub-toggle><span data-i18n="nav.areas">Service areas</span> <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></button>
+                        <ul class="nav__sub">
                             <li><a href="houston-plumbing.html">Houston</a></li>
                             <li><a href="dallas-plumbing.html">Dallas</a></li>
                             <li><a href="san-antonio-plumbing.html">San Antonio</a></li>
-                            <li><a href="austin-plumbing.html">Austin</a></li>
+                            <li><a href="austin-plumbing.html" aria-current="page">Austin</a></li>
                         </ul>
                     </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a class="nav__link" href="blog.html">Blog</a></li>
+                    <li><a class="nav__link" href="index.html#message" data-i18n="nav.message">Message us</a></li>
+                    <li class="nav__lang">
+                        <div class="lang" role="group" aria-label="Language">
+                            <button type="button" data-lang="en" class="active" aria-pressed="true">English</button>
+                            <button type="button" data-lang="es" aria-pressed="false">Español</button>
+                        </div>
+                        <a class="chip chip--alexis chip--xl nav__call" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="cta.call">Call Alexis</span> <span class="chip__num">281-840-8062</span></a>
+                    </li>
                 </ul>
             </nav>
+            <div class="lang" role="group" aria-label="Language">
+                <button type="button" data-lang="en" class="active" aria-pressed="true">EN</button>
+                <button type="button" data-lang="es" aria-pressed="false">ES</button>
+            </div>
+            <a class="topbar__call" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="call">Call Alexis</span><span class="topbar__call-num">&nbsp;· 281-840-8062</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
         </div>
     </header>
 
-    <main id="main-content">
-
-    <section class="city-hero">
-        <div class="container">
-            <p class="section-subtitle">Austin, TX</p>
-            <h1>Austin Commercial & Residential Plumbing Services</h1>
-            <p>From tech corridor office builds in The Domain to restaurant plumbing on South Congress, Texas Divine Plumbing delivers expert commercial and residential plumbing across the Austin metro. We understand Austin's rapid growth and the unique demands of new construction in one of Texas's fastest-expanding cities.</p>
-            <div class="hero-buttons">
-                <a href="tel:832-691-6675" class="btn btn-primary">
-                    <span class="btn-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span> Call Hector: 832-691-6675
-                </a>
-                <a href="tel:713-875-5353" class="btn btn-secondary">
-                    <span class="btn-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span> Call Trino: 713-875-5353
-                </a>
-                <a href="tel:281-840-8062" class="btn btn-secondary">
-                    <span class="btn-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span> Call Alexis: 281-840-8062
-                </a>
+    <main id="main-content" class="layout">
+        <section class="pin" aria-labelledby="pin-title">
+            <div class="pinned">
+                <h1 class="pin__title pin__title--long" id="pin-title">Austin Commercial &amp; Residential Plumbing Services</h1>
+                <p class="pinned__by"><span class="avatar avatar--alexis" aria-hidden="true">A</span><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="pin.byShort">Pinned by Alexis &middot; every new request starts with Alexis</span></p>
             </div>
+            <div class="pin__cta">
+                <a class="chip chip--alexis chip--xl" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span><span data-i18n="cta.call">Call Alexis</span> <span class="chip__num">281-840-8062</span></span></a>
+                <a class="chip chip--light chip--xl" href="sms:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg><span data-i18n="cta.text">Text Alexis</span></a>
+            </div>
+        </section>
+
+        <div class="thread">
+                        <div class="group group--alexis">
+                <span class="group__avatar avatar avatar--alexis" aria-hidden="true">A</span>
+                <div class="group__body">
+                    <p class="group__name">Alexis <span>takes every new request</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble bubble--big">From tech corridor office builds in The Domain to restaurant plumbing on South Congress, Texas Divine Plumbing delivers expert commercial and residential plumbing across the Austin metro. We understand Austin's rapid growth and the unique demands of new construction in one of Texas's fastest-expanding cities.</p>
+                </div>
+            </div>
+            <h2 class="day"><span class="day__label">Plumbing for Austin's Booming Market</span></h2>
+            <div class="group group--hector">
+                <span class="group__avatar avatar avatar--hector" aria-hidden="true">H</span>
+                <div class="group__body">
+                    <p class="group__name">Hector <span>Licensed Master Plumber</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble bubble--big">Austin's explosive growth in tech, hospitality, and residential development requires plumbing teams who can keep pace with the city's ambitions.</p>
+                    <div class="bubble"><p><strong>Tech Office &amp; Campus Builds</strong></p><p>Full plumbing systems for new tech offices and corporate campuses in The Domain, downtown, and along the I-35 tech corridor. We handle the complex multi-story plumbing that modern workspaces demand.</p></div>
+                    <div class="bubble"><p><strong>Restaurant &amp; Hospitality</strong></p><p>Austin's food scene is legendary. We build commercial kitchen plumbing for restaurants on South Congress, Rainey Street, East 6th, and across the metro. Grease traps, high-volume drainage, and code compliance handled.</p></div>
+                    <div class="bubble"><p><strong>Suburban New Construction</strong></p><p>Cedar Park, Round Rock, Georgetown, Pflugerville, and Lakeway are among the fastest-growing suburbs in the nation. We provide new construction plumbing for residential and commercial developments in these communities.</p></div>
+                    <div class="bubble"><p><strong>Sustainable Plumbing Solutions</strong></p><p>Austin leads Texas in green building practices. We install water-efficient fixtures, rainwater harvesting connections, and sustainable plumbing systems that align with Austin's environmental standards and LEED requirements.</p></div>
+                    <div class="bubble"><p><strong>East Austin Development</strong></p><p>East Austin's transformation from industrial to mixed-use commercial and residential is one of the city's biggest stories. We provide plumbing for new builds, adaptive reuse projects, and the modern developments reshaping this corridor.</p></div>
+                    <div class="bubble"><p><strong>Residential Services</strong></p><p>From historic homes in Hyde Park and Travis Heights to new builds in Mueller and East Riverside, we handle repairs, remodels, and water heater installations for Austin homeowners.</p></div>
+                </div>
+            </div>
+            <h2 class="day"><span class="day__label">Serving Greater Austin</span></h2>
+            <div class="group group--trino">
+                <span class="group__avatar avatar avatar--trino" aria-hidden="true">T</span>
+                <div class="group__body">
+                    <p class="group__name">Trino <span>40 years plumbing Houston</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble bubble--big">From downtown Austin to Cedar Park, Round Rock, Georgetown, Pflugerville, and Lakeway, our team covers the entire metro.</p>
+                    <div class="bubble bubble--photo bubble--map"><div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220610.0!2d-97.8!3d30.27!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000" title="Texas Divine Plumbing Austin service area" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe></div></div>
+                </div>
+            </div>
+            <h2 class="day" id="message"><span class="day__label">Message Alexis</span></h2>
+
+            <form class="composer" id="message-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?sent=1#message" novalidate>
+                    <input type="hidden" name="form-name" value="contact">
+                    <p hidden><label>Don&rsquo;t fill this out: <input name="bot-field"></label></p>
+                    <h3 class="composer__title" data-i18n="composer.title">Send Alexis the details.</h3>
+                    <p class="composer__intro" data-i18n="composer.intro">Tell Alexis what&rsquo;s going on. Alexis gets you a quote and drops it in the family group chat to find who can help.</p>
+
+                    <input type="hidden" name="to" value="alexis">
+                    <div class="composer__to"><span class="avatar avatar--alexis" aria-hidden="true">A</span><span><b data-i18n="composer.toAlexis">To: Alexis</b><small data-i18n="composer.toNote">Reads every message and drops it in the family chat</small></span></div>
+
+                    <fieldset>
+                        <legend class="field-label" data-i18n="composer.kind">What kind of job</legend>
+                        <div class="pick pick--plain">
+                            <label><input type="radio" name="service" value="residential" checked><span data-i18n="composer.home">At home</span></label>
+                            <label><input type="radio" name="service" value="commercial"><span data-i18n="composer.commercial">Commercial</span></label>
+                            <label><input type="radio" name="service" value="new-construction"><span data-i18n="composer.newBuild">New construction bid</span></label>
+                        </div>
+                    </fieldset>
+
+                    <div class="composer__grid">
+                        <div class="field">
+                            <label class="field-label" for="f-name" data-i18n="composer.name">Your name</label>
+                            <input id="f-name" name="name" type="text" autocomplete="name" required>
+                        </div>
+                        <div class="field">
+                            <label class="field-label" for="f-phone" data-i18n="composer.phone">Phone</label>
+                            <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+                        </div>
+                        <div class="field">
+                            <label class="field-label" for="f-email" data-i18n="composer.email">Email (optional)</label>
+                            <input id="f-email" name="email" type="email" autocomplete="email">
+                        </div>
+                    </div>
+
+                    <div class="field composer__message">
+                        <label class="sr-only" for="f-message">Message</label>
+                        <textarea id="f-message" name="message" rows="4" placeholder="Water heater is leaking in the garage. Can someone come by tomorrow?" data-i18n-ph="composer.ph"></textarea>
+                    </div>
+
+                    <div class="composer__actions">
+                        <button class="chip" type="submit" data-send><svg class="icon" aria-hidden="true"><use href="#i-send"/></svg><span data-i18n="composer.send">Send to Alexis</span></button>
+                        <a class="chip chip--ghost" href="sms:+12818408062" data-text-instead><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg><span data-text-label>Text Alexis instead</span></a>
+                        <p class="composer__note"><span data-i18n="composer.note">Hurry? Call Alexis:</span> <a href="tel:+12818408062">281-840-8062</a></p>
+                    </div>
+                    <p class="composer__status" role="status" aria-live="polite"></p>
+                </form>
         </div>
-    </section>
 
-    <section class="city-services">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">Austin Services</p>
-                <h2 class="section-title">Plumbing for Austin's Booming Market</h2>
-                <p class="section-description">Austin's explosive growth in tech, hospitality, and residential development requires plumbing teams who can keep pace with the city's ambitions.</p>
-            </div>
-
-            <div class="city-services-grid">
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg></div>
-                    <h3>Tech Office & Campus Builds</h3>
-                    <p>Full plumbing systems for new tech offices and corporate campuses in The Domain, downtown, and along the I-35 tech corridor. We handle the complex multi-story plumbing that modern workspaces demand.</p>
+        <aside class="panel" aria-labelledby="panel-title">
+            <div class="panel__card">
+                <div class="panel__head">
+                    <img src="images/web/logo-256.png" alt="Texas Divine Plumbing logo" width="64" height="64" loading="lazy">
+                    <div>
+                        <h2 class="panel__title" id="panel-title">Texas Divine Plumbing</h2>
+                        <p class="panel__sub" data-i18n="panel.sub">Family-owned · Houston, serving all of Texas</p>
+                    </div>
                 </div>
-
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
-                    <h3>Restaurant & Hospitality</h3>
-                    <p>Austin's food scene is legendary. We build commercial kitchen plumbing for restaurants on South Congress, Rainey Street, East 6th, and across the metro. Grease traps, high-volume drainage, and code compliance handled.</p>
+                <div class="panel__section">
+                    <p class="panel__h" data-i18n="panel.start">Every new request goes to Alexis</p>
+                    <div class="member member--alexis">
+                            <span class="avatar avatar--alexis" aria-hidden="true">A</span>
+                            <div>
+                                <div class="member__name">Alexis</div>
+                                <div class="member__role">Takes every new request · Rice MBA</div>
+                                <a class="member__num" href="tel:+12818408062">281-840-8062</a>
+                            </div>
+                            <div class="member__actions">
+                                <a class="icon-btn" href="tel:+12818408062" aria-label="Call Alexis"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></a>
+                                <a class="icon-btn" href="sms:+12818408062" aria-label="Text Alexis"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg></a>
+                            </div>
+                        </div>
+                    <div class="panel__chips">
+                        <a class="chip chip--alexis" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="cta.call">Call Alexis</span></a>
+                        <a class="chip chip--ghost" href="sms:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg><span data-i18n="cta.text">Text Alexis</span></a>
+                    </div>
                 </div>
-
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-                    <h3>Suburban New Construction</h3>
-                    <p>Cedar Park, Round Rock, Georgetown, Pflugerville, and Lakeway are among the fastest-growing suburbs in the nation. We provide new construction plumbing for residential and commercial developments in these communities.</p>
+                <div class="panel__section">
+                    <p class="panel__h" data-i18n="panel.members">The plumbers</p>
+                    <div class="member member--hector">
+                            <span class="avatar avatar--hector" aria-hidden="true">H</span>
+                            <div>
+                                <div class="member__name">Hector</div>
+                                <div class="member__role">Licensed Master Plumber</div>
+                                <a class="member__num" href="tel:+18326916675">832-691-6675</a>
+                            </div>
+                            <div class="member__actions">
+                                <a class="icon-btn" href="tel:+18326916675" aria-label="Call Hector"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></a>
+                                <a class="icon-btn" href="sms:+18326916675" aria-label="Text Hector"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg></a>
+                            </div>
+                        </div>
+                    <div class="member member--trino">
+                            <span class="avatar avatar--trino" aria-hidden="true">T</span>
+                            <div>
+                                <div class="member__name">Trino</div>
+                                <div class="member__role">40 years plumbing Houston</div>
+                                <a class="member__num" href="tel:+17138755353">713-875-5353</a>
+                            </div>
+                            <div class="member__actions">
+                                <a class="icon-btn" href="tel:+17138755353" aria-label="Call Trino"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></a>
+                                <a class="icon-btn" href="sms:+17138755353" aria-label="Text Trino"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg></a>
+                            </div>
+                        </div>
                 </div>
-
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 1 0-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg></div>
-                    <h3>Sustainable Plumbing Solutions</h3>
-                    <p>Austin leads Texas in green building practices. We install water-efficient fixtures, rainwater harvesting connections, and sustainable plumbing systems that align with Austin's environmental standards and LEED requirements.</p>
-                </div>
-
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 6V2"/><path d="M2 10h20"/><path d="M2 14h20"/></svg></div>
-                    <h3>East Austin Development</h3>
-                    <p>East Austin's transformation from industrial to mixed-use commercial and residential is one of the city's biggest stories. We provide plumbing for new builds, adaptive reuse projects, and the modern developments reshaping this corridor.</p>
-                </div>
-
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div>
-                    <h3>Residential Services</h3>
-                    <p>From historic homes in Hyde Park and Travis Heights to new builds in Mueller and East Riverside, we handle repairs, remodels, and water heater installations for Austin homeowners.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="city-map">
-        <div class="container reveal">
-            <div class="section-header">
-                <p class="section-subtitle">Service Area</p>
-                <h2 class="section-title">Serving Greater Austin</h2>
-                <p class="section-description">From downtown Austin to Cedar Park, Round Rock, Georgetown, Pflugerville, and Lakeway, our team covers the entire metro.</p>
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220610.0!2d-97.8!3d30.27!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000" width="100%" height="400" style="border:0;" allowfullscreen loading="lazy" title="Texas Divine Plumbing Austin service area"></iframe>
-        </div>
-    </section>
-
-    <section class="contact-cta">
-        <div class="container">
-            <div class="contact-cta-content reveal">
-                <h2>Need a Plumber in Austin?</h2>
-                <p>Our team brings Houston reliability to Austin's fast-moving market. Call now for commercial bids or residential service.</p>
-                <div class="contact-buttons">
-                    <a href="tel:832-691-6675" class="contact-card">
-                        <div class="contact-card-label">Call Hector</div>
-                        <div class="contact-card-number">832-691-6675</div>
-                    </a>
-                    <a href="tel:713-875-5353" class="contact-card">
-                        <div class="contact-card-label">Call Trino</div>
-                        <div class="contact-card-number">713-875-5353</div>
-                    </a>
-                    <a href="tel:281-840-8062" class="contact-card">
-                        <div class="contact-card-label">Call Alexis</div>
-                        <div class="contact-card-number">281-840-8062</div>
-                    </a>
+                <div class="panel__section">
+                    <p class="panel__h" data-i18n="panel.check">Check us out</p>
+                    <div class="facts">
+                        <a class="fact" href="index.html#reviews"><span class="fact__k">Google reviews</span><span class="fact__v">5.0 <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> · 47</span></a>
+                        <a class="fact" href="https://www.reddit.com/r/houston/comments/1hpouwl/plumbers_for_houston/m4j86ie/" target="_blank" rel="noopener"><span class="fact__k">r/houston</span><span class="fact__v">#1 recommended <svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></span></a>
+                        <div class="fact"><span class="fact__k">Texas license</span><span class="fact__v">Master Plumber</span></div>
+                        <div class="fact"><span class="fact__k">Hours</span><span class="fact__v">Mon–Fri 7am–6pm · Sat 8am–2pm</span></div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </aside>
     </main>
 
-    <footer role="contentinfo">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <img src="images/logo.png" alt="Texas Divine Plumbing" class="footer-logo" width="200" height="100" loading="lazy">
-                    <p>Texas's trusted family plumbing team. 65 years of combined experience serving Houston, Dallas, San Antonio, Austin, and surrounding areas.</p>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <span class="brand__mark"><img src="images/web/logo-256.png" alt="" width="72" height="72" loading="lazy"></span>
+                    <div>
+                        <p class="footer__line" data-i18n="footer.line">Same number for 40 years.</p>
+                        <p data-i18n="footer.sub">A family of plumbers in Houston, serving all of Texas. Licensed &amp; insured.</p>
+                    </div>
                 </div>
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
+                <div>
+                    <h3>Call</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#commercial">Commercial</a></li>
-                        <li><a href="index.html#residential">Residential</a></li>
-                        <li><a href="index.html#about">About Us</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="tel:+12818408062">Alexis · 281-840-8062</a></li>
+                        <li><a href="tel:+18326916675">Hector · 832-691-6675</a></li>
+                        <li><a href="tel:+17138755353">Trino · 713-875-5353</a></li>
+                        <li><a href="mailto:texasdivineplumbing@gmail.com">texasdivineplumbing@gmail.com</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Service Areas</h4>
+                <div>
+                    <h3 data-i18n="nav.areas">Service areas</h3>
                     <ul>
                         <li><a href="houston-plumbing.html">Houston</a></li>
                         <li><a href="dallas-plumbing.html">Dallas</a></li>
@@ -236,30 +324,32 @@
                         <li><a href="austin-plumbing.html">Austin</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Contact Us</h4>
+                <div>
+                    <h3>More</h3>
                     <ul>
-                        <li class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:832-691-6675">Hector: 832-691-6675</a></li>
-                        <li class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:713-875-5353">Trino: 713-875-5353</a></li>
-                        <li class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:281-840-8062">Alexis: 281-840-8062</a></li>
-                        <li class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> <a href="mailto:texasdivineplumbing@gmail.com">texasdivineplumbing@gmail.com</a></li>
+                        <li><a href="index.html#work" data-i18n="nav.work">Our work</a></li>
+                        <li><a href="index.html#reviews" data-i18n="nav.reviews">Reviews</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Texas Divine Plumbing. All rights reserved. Licensed & Insured.</p>
-                <div class="footer-bottom-links">
-                    <a href="blog.html">Blog</a>
-                    <a href="#">Privacy Policy</a>
-                </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Texas Divine Plumbing</span>
+                <span>Mon–Fri 7am–6pm · Sat 8am–2pm</span>
+                <!-- TODO: add the Texas Master Plumber license number (M-XXXXX) here once confirmed -->
+                <nav aria-label="Footer">
+                    <a href="https://www.reddit.com/r/houston/comments/1hpouwl/plumbers_for_houston/m4j86ie/" target="_blank" rel="noopener">r/houston thread</a>
+                    <a href="index.html#message" data-i18n="nav.message">Message us</a>
+                </nav>
             </div>
         </div>
     </footer>
 
-    <a href="tel:832-691-6675" class="sticky-call" aria-label="Call us now">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-        <span class="sticky-call-tooltip">Call Hector: 832-691-6675</span>
-    </a>
+    <nav class="dock" aria-label="Call or text Alexis">
+        <a class="dock__alexis" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="cta.call">Call Alexis</span></a>
+        <a class="dock__textalexis" href="sms:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg><span data-i18n="cta.text">Text Alexis</span></a>
+    </nav>
 
     <script src="js/main.js"></script>
 </body>

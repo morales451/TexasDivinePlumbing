@@ -25,8 +25,8 @@
     <meta name="twitter:image" content="https://texasdivineplumbing.com/images/og-image.jpg">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo.png">
-    <link rel="apple-touch-icon" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/web/logo-256.png">
+    <link rel="apple-touch-icon" href="images/web/logo-256.png">
 
     <!-- Google Analytics 4 (Replace G-XXXXXXXXXX with your measurement ID) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -40,7 +40,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#072a68">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
@@ -126,365 +127,370 @@
     </script>
 </head>
 <body>
-    <!-- Skip to main content (Accessibility) -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <!-- ========================================
-         HEADER
-    ======================================== -->
-    <header>
-        <div class="header-container">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Texas Divine Plumbing" width="120" height="60">
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+        <symbol id="i-text" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 17v5"/><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"/></symbol>
+        <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+        <symbol id="i-out" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></symbol>
+        <symbol id="i-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+        <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></symbol>
+        <symbol id="i-forward" viewBox="0 0 24 24"><path d="M15 17l5-5-5-5"/><path d="M4 18v-2a4 4 0 0 1 4-4h12"/></symbol>
+        <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+        <symbol id="i-reddit" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 0C5.373 0 0 5.373 0 12c0 3.313 1.344 6.312 3.516 8.484L1.5 24l3.797-1.969A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm5.6 12.29a1.4 1.4 0 0 1 .01.24c0 2.45-2.85 4.43-6.37 4.43s-6.37-1.98-6.37-4.43c0-.08.003-.16.01-.24a1.56 1.56 0 1 1 1.72-2.53 7.7 7.7 0 0 1 4.2-1.33l.8-3.76 2.61.56a1.12 1.12 0 1 1-.13.61l-2.33-.5-.71 3.35a7.7 7.7 0 0 1 4.14 1.33 1.56 1.56 0 1 1 1.72 2.54zM8.9 13.4a1.12 1.12 0 1 0 0-2.24 1.12 1.12 0 0 0 0 2.24zm6.2 0a1.12 1.12 0 1 0 0-2.24 1.12 1.12 0 0 0 0 2.24zm-.42 1.9a.4.4 0 0 1 .56.56 3.9 3.9 0 0 1-2.74 1 3.9 3.9 0 0 1-2.74-1 .4.4 0 0 1 .56-.56c.6.53 1.4.79 2.18.79.78 0 1.58-.26 2.18-.79z"/></symbol>
+        <symbol id="i-google" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12.48 10.92v3.28h7.84c-.24 1.84-.85 3.19-1.79 4.13-1.15 1.15-2.93 2.4-6.05 2.4-4.83 0-8.6-3.89-8.6-8.72s3.77-8.72 8.6-8.72c2.6 0 4.51 1.03 5.91 2.35l2.31-2.31C18.75 1.44 16.13 0 12.48 0 5.87 0 .31 5.39.31 12s5.56 12 12.17 12c3.57 0 6.27-1.17 8.37-3.36 2.16-2.16 2.84-5.21 2.84-7.67 0-.76-.05-1.47-.17-2.05H12.48z"/></symbol>
+    </svg>
+    <header class="topbar">
+        <div class="topbar__inner">
+            <a class="brand" href="index.html" aria-label="Texas Divine Plumbing, home">
+                <span class="brand__mark"><img src="images/web/logo-256.png" alt="" width="40" height="40"></span>
+                <span class="brand__text">
+                    <span class="brand__name">Texas Divine Plumbing</span>
+                    <span class="brand__meta" data-i18n="meta">Trino, Hector, Alexis + 7 uncles</span>
+                </span>
             </a>
-
-            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <nav id="nav-menu" role="navigation" aria-label="Main navigation">
-                <ul>
-                    <li><a href="index.html#home">Home</a></li>
-                    <li><a href="index.html#commercial">Commercial</a></li>
-                    <li><a href="index.html#residential">Residential</a></li>
-                    <li><a href="index.html#portfolio">Portfolio</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li class="nav-dropdown">
-                        <a href="houston-plumbing.html" class="nav-dropdown-toggle">Service Areas <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-left:3px"><polyline points="6 9 12 15 18 9"/></svg></a>
-                        <ul class="nav-dropdown-menu">
+            <nav class="nav" id="site-nav" aria-label="Main">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="index.html#work" data-i18n="nav.work">Our work</a></li>
+                    <li><a class="nav__link" href="index.html#reviews" data-i18n="nav.reviews">Reviews</a></li>
+                    <li><a class="nav__link" href="faq.html">FAQ</a></li>
+                    <li class="nav__item--has-sub">
+                        <button class="nav__link" type="button" aria-expanded="false" data-sub-toggle><span data-i18n="nav.areas">Service areas</span> <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></button>
+                        <ul class="nav__sub">
                             <li><a href="houston-plumbing.html">Houston</a></li>
-                            <li><a href="dallas-plumbing.html">Dallas</a></li>
+                            <li><a href="dallas-plumbing.html" aria-current="page">Dallas</a></li>
                             <li><a href="san-antonio-plumbing.html">San Antonio</a></li>
                             <li><a href="austin-plumbing.html">Austin</a></li>
                         </ul>
                     </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a class="nav__link" href="blog.html">Blog</a></li>
+                    <li><a class="nav__link" href="index.html#message" data-i18n="nav.message">Message us</a></li>
+                    <li class="nav__lang">
+                        <div class="lang" role="group" aria-label="Language">
+                            <button type="button" data-lang="en" class="active" aria-pressed="true">English</button>
+                            <button type="button" data-lang="es" aria-pressed="false">Español</button>
+                        </div>
+                        <a class="chip chip--alexis chip--xl nav__call" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="cta.call">Call Alexis</span> <span class="chip__num">281-840-8062</span></a>
+                    </li>
                 </ul>
             </nav>
+            <div class="lang" role="group" aria-label="Language">
+                <button type="button" data-lang="en" class="active" aria-pressed="true">EN</button>
+                <button type="button" data-lang="es" aria-pressed="false">ES</button>
+            </div>
+            <a class="topbar__call" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="call">Call Alexis</span><span class="topbar__call-num">&nbsp;· 281-840-8062</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
         </div>
     </header>
 
-    <!-- ========================================
-         MAIN CONTENT
-    ======================================== -->
-    <main id="main-content">
-
-    <!-- ========================================
-         CITY HERO SECTION
-    ======================================== -->
-    <section class="city-hero">
-        <div class="container">
-            <div class="hero-badge">Licensed &amp; Insured</div>
-            <h1>Dallas Commercial Plumbing <span>&amp;</span> Residential Services</h1>
-            <p>From the towering mixed-use developments reshaping downtown Dallas to the restaurant buildouts revitalizing Deep Ellum, Texas Divine Plumbing delivers ground-up commercial plumbing across the DFW metroplex. Our family team brings 65 years of combined expertise to every Dallas project, backed by a Master Plumber license and MBA-managed operations that keep your build on schedule and on budget.</p>
-            <div class="hero-buttons">
-                <a href="tel:832-691-6675" class="btn btn-primary">
-                    <span class="btn-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-                    Call Hector: 832-691-6675
-                </a>
-                <a href="tel:713-875-5353" class="btn btn-secondary">
-                    <span class="btn-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-                    Call Trino: 713-875-5353
-                </a>
-                <a href="tel:281-840-8062" class="btn btn-secondary">
-                    <span class="btn-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-                    Call Alexis: 281-840-8062
-                </a>
+    <main id="main-content" class="layout">
+        <section class="pin" aria-labelledby="pin-title">
+            <div class="pinned">
+                <h1 class="pin__title pin__title--long" id="pin-title">Dallas Commercial Plumbing &amp; Residential Services</h1>
+                <p class="pinned__by"><span class="avatar avatar--alexis" aria-hidden="true">A</span><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="pin.byShort">Pinned by Alexis &middot; every new request starts with Alexis</span></p>
             </div>
+            <div class="pin__cta">
+                <a class="chip chip--alexis chip--xl" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span><span data-i18n="cta.call">Call Alexis</span> <span class="chip__num">281-840-8062</span></span></a>
+                <a class="chip chip--light chip--xl" href="sms:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg><span data-i18n="cta.text">Text Alexis</span></a>
+            </div>
+        </section>
+
+        <div class="thread">
+                        <div class="group group--alexis">
+                <span class="group__avatar avatar avatar--alexis" aria-hidden="true">A</span>
+                <div class="group__body">
+                    <p class="group__name">Alexis <span>takes every new request</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble bubble--big">From the towering mixed-use developments reshaping downtown Dallas to the restaurant buildouts revitalizing Deep Ellum, Texas Divine Plumbing delivers ground-up commercial plumbing across the DFW metroplex. Our family team brings 65 years of combined expertise to every Dallas project, backed by a Master Plumber license and MBA-managed operations that keep your build on schedule and on budget.</p>
+                </div>
+            </div>
+            <h2 class="day"><span class="day__label">Plumbing Built for the Speed of Dallas</span></h2>
+            <div class="group group--hector">
+                <span class="group__avatar avatar avatar--hector" aria-hidden="true">H</span>
+                <div class="group__body">
+                    <p class="group__name">Hector <span>Licensed Master Plumber</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble bubble--big">Dallas is not slowing down, and neither are we. The DFW metroplex has become one of the fastest-growing commercial construction markets in the country, with cranes dotting the skyline from Uptown to the North Dallas corridor. Texas Divine Plumbing is here to meet that demand with the same hands-on craftsmanship and operational discipline that has defined our work for four decades.</p>
+                    <div class="bubble"><p><strong>Commercial New Construction</strong></p><p>Ground-up plumbing systems for the developments transforming Dallas. We handle multi-story office towers in Uptown, boutique hotels along Main Street, and the mixed-use projects filling in Victory Park. Our team reads blueprints, designs pipe routes, and installs systems built to pass Dallas inspection standards the first time.</p></div>
+                    <div class="bubble"><p><strong>Restaurant &amp; Hospitality Buildouts</strong></p><p>Deep Ellum and the Design District have become dining destinations, and every new kitchen needs a plumber who understands commercial grease traps, multi-station hood systems, and high-volume water supply. We have built out restaurant plumbing from scratch for concepts ranging from fast-casual chains to fine dining openings.</p></div>
+                    <div class="bubble"><p><strong>Dealership &amp; Automotive Facilities</strong></p><p>The auto mile along Lemmon Avenue and new dealership campuses in North Dallas demand specialized plumbing: service bay drainage, detail shop water systems, and customer-facing restroom facilities. We have completed multiple dealership builds and understand the unique requirements of automotive plumbing down to every floor drain and lift pit.</p></div>
+                    <div class="bubble"><p><strong>Industrial &amp; Distribution Centers</strong></p><p>With Dallas sitting at the crossroads of major freight corridors, warehousing and distribution center construction has surged along I-35 and I-20. We install industrial plumbing systems for these large-footprint facilities, including fire suppression ties, break room plumbing, and multi-dock restroom buildouts that serve hundreds of workers daily.</p></div>
+                    <div class="bubble"><p><strong>Retail &amp; Mixed-Use Developments</strong></p><p>Legacy West in Plano, The Star in Frisco, and Craig Ranch in McKinney represent the wave of mixed-use projects pushing north along the 75 corridor. These developments combine retail, residential, and office space into a single plumbing scope, and our team coordinates multi-phase installations that keep pace with aggressive construction timelines.</p></div>
+                    <div class="bubble"><p><strong>Residential Plumbing Services</strong></p><p>Dallas homeowners trust us for the same reason general contractors do: we show up, do honest work, and charge a fair price. Whether you have a slab leak in an Oak Lawn bungalow, need a full re-pipe in a Lake Highlands ranch house, or want a bathroom remodel in your Preston Hollow home, we bring commercial-grade expertise to every residential call.</p></div>
+                    <div class="bubble"><p><strong>Same-Day Service</strong></p><p>When a water main breaks at your Uptown restaurant before Friday night service, or a burst pipe floods a tenant space in the Cedars, you need a plumber who answers the phone. Trino has kept the same number for 40 years because we believe in being there when it matters. Call us any time for urgent plumbing situations across Dallas.</p></div>
+                    <div class="bubble"><p><strong>Blueprint Reading &amp; Project Bidding</strong></p><p>Our Rice MBA, Alexis, manages every bid with the rigor you would expect from a Fortune 500 procurement team. For Dallas general contractors and developers, that means detailed, transparent estimates with optimized material sourcing. Hector reviews every set of plans personally, so your bid reflects real-world installation knowledge, not just numbers on a spreadsheet.</p></div>
+                </div>
+            </div>
+            <h2 class="day"><span class="day__label">Serving Every Corner of the DFW Metroplex</span></h2>
+            <div class="group group--trino">
+                <span class="group__avatar avatar avatar--trino" aria-hidden="true">T</span>
+                <div class="group__body">
+                    <p class="group__name">Trino <span>40 years plumbing Houston</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble bubble--big">Our Dallas coverage extends from the downtown core to the rapidly expanding northern suburbs and beyond.</p>
+                    <div class="bubble"><p><strong>Downtown Dallas &amp; Surrounding Districts</strong></p><p>The heart of the metroplex is undergoing a generational transformation. New high-rise residential towers, boutique hotel conversions, and adaptive reuse projects are filling blocks that sat empty for decades. We work alongside the general contractors reshaping the downtown core, handling plumbing for both new vertical builds and historic renovations.</p><ul class="ticks">
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Deep Ellum entertainment and restaurant builds</span></li>
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Uptown mixed-use and luxury residential towers</span></li>
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Victory Park arena-district developments</span></li>
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Design District gallery, showroom, and loft conversions</span></li>
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Cedars and South Side adaptive reuse projects</span></li>
+                        </ul></div>
+                    <div class="bubble"><p><strong>North Dallas Corridor &amp; Suburban Growth</strong></p><p>The construction boom along the Dallas North Tollway and US-75 corridor shows no sign of stopping. From Addison and Richardson down through Plano, Frisco, and McKinney, new corporate relocations and master-planned developments are creating enormous demand for skilled commercial plumbers who can execute at scale.</p><ul class="ticks">
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Plano corporate campus and office park plumbing</span></li>
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Frisco retail and sports complex buildouts</span></li>
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>McKinney town center and mixed-use projects</span></li>
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Allen and Prosper residential subdivision plumbing</span></li>
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Richardson Telecom Corridor commercial upgrades</span></li>
+                        </ul></div>
+                </div>
+            </div>
+            <h2 class="day"><span class="day__label">Why Dallas Developers Trust Texas Divine</span></h2>
+            <div class="group group--hector">
+                <span class="group__avatar avatar avatar--hector" aria-hidden="true">H</span>
+                <div class="group__body">
+                    <p class="group__name">Hector <span>Licensed Master Plumber</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <div class="bubble"><p><strong>Master Plumber On Every Job</strong></p><p>Hector holds a Master Plumber license and personally oversees every Dallas project. That means your commercial installation meets code the first time, and your residential repair is done right, with no callback needed.</p></div>
+                    <div class="bubble"><p><strong>MBA-Managed Operations</strong></p><p>Alexis brings Rice University MBA discipline to our bidding, procurement, and project management. For Dallas GCs juggling tight timelines on Uptown high-rises or Frisco retail centers, our operational precision translates to fewer delays and lower material costs.</p></div>
+                    <div class="bubble"><p><strong>40 Years of Field Knowledge</strong></p><p>Trino has been solving plumbing problems since before Deep Ellum was cool. His four decades of experience mean there is no pipe layout, building code challenge, or jobsite curveball he has not seen and solved before.</p></div>
+                    <div class="bubble"><p><strong>Same Phone Number for 40 Years</strong></p><p>We have never changed our number because we never give anyone a reason to stop calling. That kind of consistency is rare in the trades, and Dallas contractors and homeowners notice the difference when they work with a team that stands behind every joint and fitting.</p></div>
+                </div>
+            </div>
+            <h2 class="day"><span class="day__label">Serving the DFW Metroplex</span></h2>
+            <div class="group group--trino">
+                <span class="group__avatar avatar avatar--trino" aria-hidden="true">T</span>
+                <div class="group__body">
+                    <p class="group__name">Trino <span>40 years plumbing Houston</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble bubble--big">Based in Houston, operating across all of Texas. We are on the ground in Dallas for commercial builds and residential service throughout the metroplex.</p>
+                    <div class="bubble bubble--photo bubble--map"><div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214587.67551043024!2d-97.01136849453942!3d32.82058709498286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c19f77b45974b%3A0xb9ec9ba4f647678f!2sDallas%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000" title="Texas Divine Plumbing service area - Dallas, TX" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe></div></div>
+                </div>
+            </div>
+            <h2 class="day" id="questions"><span class="day__label">Frequently Asked Questions - Dallas</span></h2>
+            <div class="qa">
+            <div class="group group--me">
+                <div class="group__body">
+                    <p class="sr-only">You asked:</p>
+                    <p class="bubble">Do you work on Dallas commercial projects even though you are based in Houston?</p>
+                </div>
+            </div>
+            <div class="group group--trino">
+                <span class="group__avatar avatar avatar--trino" aria-hidden="true">T</span>
+                <div class="group__body">
+                    <p class="group__name">Trino <span>40 years plumbing Houston</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble">Absolutely. We serve all of Texas, and Dallas is a core part of our commercial territory. Our team regularly travels to DFW for new construction projects, and we maintain strong relationships with Dallas-area general contractors and suppliers. The I-45 corridor between Houston and Dallas is well-worn ground for us.</p>
+                </div>
+            </div>
+            </div>
+            <div class="qa">
+            <div class="group group--me">
+                <div class="group__body">
+                    <p class="sr-only">You asked:</p>
+                    <p class="bubble">What types of Dallas commercial projects have you completed?</p>
+                </div>
+            </div>
+            <div class="group group--trino">
+                <span class="group__avatar avatar avatar--trino" aria-hidden="true">T</span>
+                <div class="group__body">
+                    <p class="group__name">Trino <span>40 years plumbing Houston</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble">Our Dallas portfolio includes car dealership builds, restaurant kitchen plumbing, retail space buildouts, warehouse and distribution centers, office renovations, and multi-unit residential plumbing. We have worked in neighborhoods ranging from Deep Ellum and the Design District to Plano and Frisco.</p>
+                </div>
+            </div>
+            </div>
+            <div class="qa">
+            <div class="group group--me">
+                <div class="group__body">
+                    <p class="sr-only">You asked:</p>
+                    <p class="bubble">Can you handle both the plumbing bid and the installation in Dallas?</p>
+                </div>
+            </div>
+            <div class="group group--alexis">
+                <span class="group__avatar avatar avatar--alexis" aria-hidden="true">A</span>
+                <div class="group__body">
+                    <p class="group__name">Alexis <span>takes every new request · Rice MBA</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble">Yes. Alexis manages our bids with full cost breakdowns and material schedules, while Hector oversees every installation. You get a single team from estimate to final inspection, which eliminates the coordination gaps that happen when one company bids and another installs.</p>
+                </div>
+            </div>
+            </div>
+            <div class="qa">
+            <div class="group group--me">
+                <div class="group__body">
+                    <p class="sr-only">You asked:</p>
+                    <p class="bubble">Do you serve the northern suburbs like Plano, Frisco, and McKinney?</p>
+                </div>
+            </div>
+            <div class="group group--trino">
+                <span class="group__avatar avatar avatar--trino" aria-hidden="true">T</span>
+                <div class="group__body">
+                    <p class="group__name">Trino <span>40 years plumbing Houston</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble">We do. The North Dallas corridor is one of the most active commercial construction zones in the state. We have worked on projects from Richardson and Addison all the way up through Plano, Frisco, McKinney, Allen, and Prosper. If it is in the DFW metroplex, we will be there.</p>
+                </div>
+            </div>
+            </div>
+            <div class="qa">
+            <div class="group group--me">
+                <div class="group__body">
+                    <p class="sr-only">You asked:</p>
+                    <p class="bubble">Do you offer residential plumbing services in Dallas?</p>
+                </div>
+            </div>
+            <div class="group group--trino">
+                <span class="group__avatar avatar avatar--trino" aria-hidden="true">T</span>
+                <div class="group__body">
+                    <p class="group__name">Trino <span>40 years plumbing Houston</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble">Yes. While commercial new construction is our primary focus, we provide full residential services in Dallas, including re-pipes, slab leak repair, bathroom and kitchen remodels, water heater installation, and emergency repairs. We bring commercial-grade precision to every home we enter.</p>
+                </div>
+            </div>
+            </div>
+            <h2 class="day" id="message"><span class="day__label">Message Alexis</span></h2>
+
+            <form class="composer" id="message-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?sent=1#message" novalidate>
+                    <input type="hidden" name="form-name" value="contact">
+                    <p hidden><label>Don&rsquo;t fill this out: <input name="bot-field"></label></p>
+                    <h3 class="composer__title" data-i18n="composer.title">Send Alexis the details.</h3>
+                    <p class="composer__intro" data-i18n="composer.intro">Tell Alexis what&rsquo;s going on. Alexis gets you a quote and drops it in the family group chat to find who can help.</p>
+
+                    <input type="hidden" name="to" value="alexis">
+                    <div class="composer__to"><span class="avatar avatar--alexis" aria-hidden="true">A</span><span><b data-i18n="composer.toAlexis">To: Alexis</b><small data-i18n="composer.toNote">Reads every message and drops it in the family chat</small></span></div>
+
+                    <fieldset>
+                        <legend class="field-label" data-i18n="composer.kind">What kind of job</legend>
+                        <div class="pick pick--plain">
+                            <label><input type="radio" name="service" value="residential" checked><span data-i18n="composer.home">At home</span></label>
+                            <label><input type="radio" name="service" value="commercial"><span data-i18n="composer.commercial">Commercial</span></label>
+                            <label><input type="radio" name="service" value="new-construction"><span data-i18n="composer.newBuild">New construction bid</span></label>
+                        </div>
+                    </fieldset>
+
+                    <div class="composer__grid">
+                        <div class="field">
+                            <label class="field-label" for="f-name" data-i18n="composer.name">Your name</label>
+                            <input id="f-name" name="name" type="text" autocomplete="name" required>
+                        </div>
+                        <div class="field">
+                            <label class="field-label" for="f-phone" data-i18n="composer.phone">Phone</label>
+                            <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+                        </div>
+                        <div class="field">
+                            <label class="field-label" for="f-email" data-i18n="composer.email">Email (optional)</label>
+                            <input id="f-email" name="email" type="email" autocomplete="email">
+                        </div>
+                    </div>
+
+                    <div class="field composer__message">
+                        <label class="sr-only" for="f-message">Message</label>
+                        <textarea id="f-message" name="message" rows="4" placeholder="Water heater is leaking in the garage. Can someone come by tomorrow?" data-i18n-ph="composer.ph"></textarea>
+                    </div>
+
+                    <div class="composer__actions">
+                        <button class="chip" type="submit" data-send><svg class="icon" aria-hidden="true"><use href="#i-send"/></svg><span data-i18n="composer.send">Send to Alexis</span></button>
+                        <a class="chip chip--ghost" href="sms:+12818408062" data-text-instead><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg><span data-text-label>Text Alexis instead</span></a>
+                        <p class="composer__note"><span data-i18n="composer.note">Hurry? Call Alexis:</span> <a href="tel:+12818408062">281-840-8062</a></p>
+                    </div>
+                    <p class="composer__status" role="status" aria-live="polite"></p>
+                </form>
         </div>
-    </section>
 
-    <!-- ========================================
-         DALLAS OVERVIEW SECTION
-    ======================================== -->
-    <section class="city-services">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">Dallas Service Area</p>
-                <h2 class="section-title">Plumbing Built for the Speed of Dallas</h2>
-                <p class="section-description">Dallas is not slowing down, and neither are we. The DFW metroplex has become one of the fastest-growing commercial construction markets in the country, with cranes dotting the skyline from Uptown to the North Dallas corridor. Texas Divine Plumbing is here to meet that demand with the same hands-on craftsmanship and operational discipline that has defined our work for four decades.</p>
-            </div>
-
-            <div class="city-services-grid">
-                <!-- Commercial New Construction -->
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="22" height="16" rx="2"/><path d="M1 10h22"/><path d="M6 6V2"/><path d="M18 6V2"/><path d="M12 6V2"/></svg></div>
-                    <h3>Commercial New Construction</h3>
-                    <p>Ground-up plumbing systems for the developments transforming Dallas. We handle multi-story office towers in Uptown, boutique hotels along Main Street, and the mixed-use projects filling in Victory Park. Our team reads blueprints, designs pipe routes, and installs systems built to pass Dallas inspection standards the first time.</p>
-                </div>
-
-                <!-- Restaurant & Hospitality -->
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18M5 11V6a7 7 0 0 1 14 0v5M3 11l1 9h16l1-9"/></svg></div>
-                    <h3>Restaurant &amp; Hospitality Buildouts</h3>
-                    <p>Deep Ellum and the Design District have become dining destinations, and every new kitchen needs a plumber who understands commercial grease traps, multi-station hood systems, and high-volume water supply. We have built out restaurant plumbing from scratch for concepts ranging from fast-casual chains to fine dining openings.</p>
-                </div>
-
-                <!-- Automotive & Dealership -->
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M5 17a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h8l4 4v6a2 2 0 0 1-2 2M7 17a2 2 0 1 0 4 0M13 17a2 2 0 1 0 4 0"/></svg></div>
-                    <h3>Dealership &amp; Automotive Facilities</h3>
-                    <p>The auto mile along Lemmon Avenue and new dealership campuses in North Dallas demand specialized plumbing: service bay drainage, detail shop water systems, and customer-facing restroom facilities. We have completed multiple dealership builds and understand the unique requirements of automotive plumbing down to every floor drain and lift pit.</p>
-                </div>
-
-                <!-- Industrial & Warehouse -->
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
-                    <h3>Industrial &amp; Distribution Centers</h3>
-                    <p>With Dallas sitting at the crossroads of major freight corridors, warehousing and distribution center construction has surged along I-35 and I-20. We install industrial plumbing systems for these large-footprint facilities, including fire suppression ties, break room plumbing, and multi-dock restroom buildouts that serve hundreds of workers daily.</p>
-                </div>
-
-                <!-- Retail & Mixed-Use -->
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-                    <h3>Retail &amp; Mixed-Use Developments</h3>
-                    <p>Legacy West in Plano, The Star in Frisco, and Craig Ranch in McKinney represent the wave of mixed-use projects pushing north along the 75 corridor. These developments combine retail, residential, and office space into a single plumbing scope, and our team coordinates multi-phase installations that keep pace with aggressive construction timelines.</p>
-                </div>
-
-                <!-- Residential Services -->
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
-                    <h3>Residential Plumbing Services</h3>
-                    <p>Dallas homeowners trust us for the same reason general contractors do: we show up, do honest work, and charge a fair price. Whether you have a slab leak in an Oak Lawn bungalow, need a full re-pipe in a Lake Highlands ranch house, or want a bathroom remodel in your Preston Hollow home, we bring commercial-grade expertise to every residential call.</p>
-                </div>
-
-                <!-- Same-Day Plumbing -->
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-                    <h3>Same-Day Service</h3>
-                    <p>When a water main breaks at your Uptown restaurant before Friday night service, or a burst pipe floods a tenant space in the Cedars, you need a plumber who answers the phone. Trino has kept the same number for 40 years because we believe in being there when it matters. Call us any time for urgent plumbing situations across Dallas.</p>
-                </div>
-
-                <!-- Blueprint & Bidding -->
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
-                    <h3>Blueprint Reading &amp; Project Bidding</h3>
-                    <p>Our Rice MBA, Alexis, manages every bid with the rigor you would expect from a Fortune 500 procurement team. For Dallas general contractors and developers, that means detailed, transparent estimates with optimized material sourcing. Hector reviews every set of plans personally, so your bid reflects real-world installation knowledge, not just numbers on a spreadsheet.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         DALLAS NEIGHBORHOODS & AREAS
-    ======================================== -->
-    <section style="padding: 80px 0; background-color: #fff;">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">Where We Work</p>
-                <h2 class="section-title">Serving Every Corner of the DFW Metroplex</h2>
-                <p class="section-description">Our Dallas coverage extends from the downtown core to the rapidly expanding northern suburbs and beyond.</p>
-            </div>
-
-            <div class="services-grid reveal">
-                <div class="service-card">
-                    <div class="service-content">
-                        <h3>Downtown Dallas &amp; Surrounding Districts</h3>
-                        <p>The heart of the metroplex is undergoing a generational transformation. New high-rise residential towers, boutique hotel conversions, and adaptive reuse projects are filling blocks that sat empty for decades. We work alongside the general contractors reshaping the downtown core, handling plumbing for both new vertical builds and historic renovations.</p>
-                        <ul class="service-features">
-                            <li>Deep Ellum entertainment and restaurant builds</li>
-                            <li>Uptown mixed-use and luxury residential towers</li>
-                            <li>Victory Park arena-district developments</li>
-                            <li>Design District gallery, showroom, and loft conversions</li>
-                            <li>Cedars and South Side adaptive reuse projects</li>
-                        </ul>
+        <aside class="panel" aria-labelledby="panel-title">
+            <div class="panel__card">
+                <div class="panel__head">
+                    <img src="images/web/logo-256.png" alt="Texas Divine Plumbing logo" width="64" height="64" loading="lazy">
+                    <div>
+                        <h2 class="panel__title" id="panel-title">Texas Divine Plumbing</h2>
+                        <p class="panel__sub" data-i18n="panel.sub">Family-owned · Houston, serving all of Texas</p>
                     </div>
                 </div>
-
-                <div class="service-card">
-                    <div class="service-content">
-                        <h3>North Dallas Corridor &amp; Suburban Growth</h3>
-                        <p>The construction boom along the Dallas North Tollway and US-75 corridor shows no sign of stopping. From Addison and Richardson down through Plano, Frisco, and McKinney, new corporate relocations and master-planned developments are creating enormous demand for skilled commercial plumbers who can execute at scale.</p>
-                        <ul class="service-features">
-                            <li>Plano corporate campus and office park plumbing</li>
-                            <li>Frisco retail and sports complex buildouts</li>
-                            <li>McKinney town center and mixed-use projects</li>
-                            <li>Allen and Prosper residential subdivision plumbing</li>
-                            <li>Richardson Telecom Corridor commercial upgrades</li>
-                        </ul>
+                <div class="panel__section">
+                    <p class="panel__h" data-i18n="panel.start">Every new request goes to Alexis</p>
+                    <div class="member member--alexis">
+                            <span class="avatar avatar--alexis" aria-hidden="true">A</span>
+                            <div>
+                                <div class="member__name">Alexis</div>
+                                <div class="member__role">Takes every new request · Rice MBA</div>
+                                <a class="member__num" href="tel:+12818408062">281-840-8062</a>
+                            </div>
+                            <div class="member__actions">
+                                <a class="icon-btn" href="tel:+12818408062" aria-label="Call Alexis"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></a>
+                                <a class="icon-btn" href="sms:+12818408062" aria-label="Text Alexis"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg></a>
+                            </div>
+                        </div>
+                    <div class="panel__chips">
+                        <a class="chip chip--alexis" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="cta.call">Call Alexis</span></a>
+                        <a class="chip chip--ghost" href="sms:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg><span data-i18n="cta.text">Text Alexis</span></a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         WHY DALLAS CHOOSES TEXAS DIVINE
-    ======================================== -->
-    <section style="padding: 80px 0; background-color: var(--grey-light);">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">Our Dallas Advantage</p>
-                <h2 class="section-title">Why Dallas Developers Trust Texas Divine</h2>
-            </div>
-
-            <div class="city-services-grid">
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-                    <h3>Master Plumber On Every Job</h3>
-                    <p>Hector holds a Master Plumber license and personally oversees every Dallas project. That means your commercial installation meets code the first time, and your residential repair is done right, with no callback needed.</p>
+                <div class="panel__section">
+                    <p class="panel__h" data-i18n="panel.members">The plumbers</p>
+                    <div class="member member--hector">
+                            <span class="avatar avatar--hector" aria-hidden="true">H</span>
+                            <div>
+                                <div class="member__name">Hector</div>
+                                <div class="member__role">Licensed Master Plumber</div>
+                                <a class="member__num" href="tel:+18326916675">832-691-6675</a>
+                            </div>
+                            <div class="member__actions">
+                                <a class="icon-btn" href="tel:+18326916675" aria-label="Call Hector"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></a>
+                                <a class="icon-btn" href="sms:+18326916675" aria-label="Text Hector"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg></a>
+                            </div>
+                        </div>
+                    <div class="member member--trino">
+                            <span class="avatar avatar--trino" aria-hidden="true">T</span>
+                            <div>
+                                <div class="member__name">Trino</div>
+                                <div class="member__role">40 years plumbing Houston</div>
+                                <a class="member__num" href="tel:+17138755353">713-875-5353</a>
+                            </div>
+                            <div class="member__actions">
+                                <a class="icon-btn" href="tel:+17138755353" aria-label="Call Trino"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></a>
+                                <a class="icon-btn" href="sms:+17138755353" aria-label="Text Trino"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg></a>
+                            </div>
+                        </div>
                 </div>
-
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg></div>
-                    <h3>MBA-Managed Operations</h3>
-                    <p>Alexis brings Rice University MBA discipline to our bidding, procurement, and project management. For Dallas GCs juggling tight timelines on Uptown high-rises or Frisco retail centers, our operational precision translates to fewer delays and lower material costs.</p>
-                </div>
-
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg></div>
-                    <h3>40 Years of Field Knowledge</h3>
-                    <p>Trino has been solving plumbing problems since before Deep Ellum was cool. His four decades of experience mean there is no pipe layout, building code challenge, or jobsite curveball he has not seen and solved before.</p>
-                </div>
-
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-                    <h3>Same Phone Number for 40 Years</h3>
-                    <p>We have never changed our number because we never give anyone a reason to stop calling. That kind of consistency is rare in the trades, and Dallas contractors and homeowners notice the difference when they work with a team that stands behind every joint and fitting.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         CONTACT CTA SECTION
-    ======================================== -->
-    <section class="contact-cta">
-        <div class="container">
-            <div class="contact-cta-content reveal">
-                <h2>Ready to Build in Dallas?</h2>
-                <p>Whether you are breaking ground on a new commercial project in Victory Park or need a residential plumber in Lake Highlands, our family team is ready to deliver.</p>
-                <div class="contact-buttons">
-                    <a href="tel:832-691-6675" class="contact-card">
-                        <div class="contact-card-label">Call Hector</div>
-                        <div class="contact-card-number">832-691-6675</div>
-                    </a>
-                    <a href="tel:713-875-5353" class="contact-card">
-                        <div class="contact-card-label">Call Trino</div>
-                        <div class="contact-card-number">713-875-5353</div>
-                    </a>
-                    <a href="tel:281-840-8062" class="contact-card">
-                        <div class="contact-card-label">Call Alexis</div>
-                        <div class="contact-card-number">281-840-8062</div>
-                    </a>
-                </div>
-                <p style="margin-top: 30px; font-size: 1rem; opacity: 0.8;">
-                    Or email us at <a href="mailto:texasdivineplumbing@gmail.com" style="color: #fff; text-decoration: underline;">texasdivineplumbing@gmail.com</a>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         GOOGLE MAPS SECTION
-    ======================================== -->
-    <section class="city-map">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">Our Dallas Coverage</p>
-                <h2 class="section-title">Serving the DFW Metroplex</h2>
-                <p class="section-description">Based in Houston, operating across all of Texas. We are on the ground in Dallas for commercial builds and residential service throughout the metroplex.</p>
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214587.67551043024!2d-97.01136849453942!3d32.82058709498286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c19f77b45974b%3A0xb9ec9ba4f647678f!2sDallas%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000" width="100%" height="450" loading="lazy" allowfullscreen title="Texas Divine Plumbing service area - Dallas, TX"></iframe>
-        </div>
-    </section>
-
-    <!-- ========================================
-         DALLAS-SPECIFIC FAQ
-    ======================================== -->
-    <section class="faq">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">Dallas Questions</p>
-                <h2 class="section-title">Frequently Asked Questions - Dallas</h2>
-                <p class="section-description">Common questions from our Dallas-area clients.</p>
-            </div>
-
-            <div class="faq-grid reveal">
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <h3>Do you work on Dallas commercial projects even though you are based in Houston?</h3>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer" role="region">
-                        <p>Absolutely. We serve all of Texas, and Dallas is a core part of our commercial territory. Our team regularly travels to DFW for new construction projects, and we maintain strong relationships with Dallas-area general contractors and suppliers. The I-45 corridor between Houston and Dallas is well-worn ground for us.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <h3>What types of Dallas commercial projects have you completed?</h3>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer" role="region">
-                        <p>Our Dallas portfolio includes car dealership builds, restaurant kitchen plumbing, retail space buildouts, warehouse and distribution centers, office renovations, and multi-unit residential plumbing. We have worked in neighborhoods ranging from Deep Ellum and the Design District to Plano and Frisco.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <h3>Can you handle both the plumbing bid and the installation in Dallas?</h3>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer" role="region">
-                        <p>Yes. Alexis manages our bids with full cost breakdowns and material schedules, while Hector oversees every installation. You get a single team from estimate to final inspection, which eliminates the coordination gaps that happen when one company bids and another installs.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <h3>Do you serve the northern suburbs like Plano, Frisco, and McKinney?</h3>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer" role="region">
-                        <p>We do. The North Dallas corridor is one of the most active commercial construction zones in the state. We have worked on projects from Richardson and Addison all the way up through Plano, Frisco, McKinney, Allen, and Prosper. If it is in the DFW metroplex, we will be there.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <h3>Do you offer residential plumbing services in Dallas?</h3>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer" role="region">
-                        <p>Yes. While commercial new construction is our primary focus, we provide full residential services in Dallas, including re-pipes, slab leak repair, bathroom and kitchen remodels, water heater installation, and emergency repairs. We bring commercial-grade precision to every home we enter.</p>
+                <div class="panel__section">
+                    <p class="panel__h" data-i18n="panel.check">Check us out</p>
+                    <div class="facts">
+                        <a class="fact" href="index.html#reviews"><span class="fact__k">Google reviews</span><span class="fact__v">5.0 <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> · 47</span></a>
+                        <a class="fact" href="https://www.reddit.com/r/houston/comments/1hpouwl/plumbers_for_houston/m4j86ie/" target="_blank" rel="noopener"><span class="fact__k">r/houston</span><span class="fact__v">#1 recommended <svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></span></a>
+                        <div class="fact"><span class="fact__k">Texas license</span><span class="fact__v">Master Plumber</span></div>
+                        <div class="fact"><span class="fact__k">Hours</span><span class="fact__v">Mon–Fri 7am–6pm · Sat 8am–2pm</span></div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </aside>
     </main>
 
-    <!-- ========================================
-         FOOTER
-    ======================================== -->
-    <footer role="contentinfo">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <img src="images/logo.png" alt="Texas Divine Plumbing" class="footer-logo" width="200" height="100" loading="lazy">
-                    <p>Texas' trusted family plumbing team. 65 years of combined experience serving Dallas and the DFW metroplex with integrity, craftsmanship, and MBA-managed efficiency.</p>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <span class="brand__mark"><img src="images/web/logo-256.png" alt="" width="72" height="72" loading="lazy"></span>
+                    <div>
+                        <p class="footer__line" data-i18n="footer.line">Same number for 40 years.</p>
+                        <p data-i18n="footer.sub">A family of plumbers in Houston, serving all of Texas. Licensed &amp; insured.</p>
+                    </div>
                 </div>
-
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
+                <div>
+                    <h3>Call</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#commercial">Commercial Services</a></li>
-                        <li><a href="index.html#residential">Residential Services</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="index.html#about">About Us</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="tel:+12818408062">Alexis · 281-840-8062</a></li>
+                        <li><a href="tel:+18326916675">Hector · 832-691-6675</a></li>
+                        <li><a href="tel:+17138755353">Trino · 713-875-5353</a></li>
+                        <li><a href="mailto:texasdivineplumbing@gmail.com">texasdivineplumbing@gmail.com</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-column">
-                    <h4>Service Areas</h4>
+                <div>
+                    <h3 data-i18n="nav.areas">Service areas</h3>
                     <ul>
                         <li><a href="houston-plumbing.html">Houston</a></li>
                         <li><a href="dallas-plumbing.html">Dallas</a></li>
@@ -492,52 +498,33 @@
                         <li><a href="austin-plumbing.html">Austin</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-column">
-                    <h4>Contact Us</h4>
+                <div>
+                    <h3>More</h3>
                     <ul>
-                        <li class="footer-contact-item">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            <a href="tel:832-691-6675">Hector: 832-691-6675</a>
-                        </li>
-                        <li class="footer-contact-item">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            <a href="tel:713-875-5353">Trino: 713-875-5353</a>
-                        </li>
-                        <li class="footer-contact-item">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            <a href="tel:281-840-8062">Alexis: 281-840-8062</a>
-                        </li>
-                        <li class="footer-contact-item">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                            <a href="mailto:texasdivineplumbing@gmail.com">texasdivineplumbing@gmail.com</a>
-                        </li>
+                        <li><a href="index.html#work" data-i18n="nav.work">Our work</a></li>
+                        <li><a href="index.html#reviews" data-i18n="nav.reviews">Reviews</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                     </ul>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 Texas Divine Plumbing. All rights reserved. Licensed &amp; Insured.</p>
-                <div class="footer-bottom-links">
-                    <a href="blog.html">Blog</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Texas Divine Plumbing</span>
+                <span>Mon–Fri 7am–6pm · Sat 8am–2pm</span>
+                <!-- TODO: add the Texas Master Plumber license number (M-XXXXX) here once confirmed -->
+                <nav aria-label="Footer">
+                    <a href="https://www.reddit.com/r/houston/comments/1hpouwl/plumbers_for_houston/m4j86ie/" target="_blank" rel="noopener">r/houston thread</a>
+                    <a href="index.html#message" data-i18n="nav.message">Message us</a>
+                </nav>
             </div>
         </div>
     </footer>
 
-    <!-- ========================================
-         STICKY MOBILE CALL BUTTON
-    ======================================== -->
-    <a href="tel:832-691-6675" class="sticky-call" aria-label="Call us now">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-        </svg>
-        <span class="sticky-call-tooltip">Call Hector: 832-691-6675</span>
-    </a>
+    <nav class="dock" aria-label="Call or text Alexis">
+        <a class="dock__alexis" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="cta.call">Call Alexis</span></a>
+        <a class="dock__textalexis" href="sms:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg><span data-i18n="cta.text">Text Alexis</span></a>
+    </nav>
 
-    <!-- JavaScript -->
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,255 +1,299 @@
-/* ========================================
-   Texas Divine Plumbing - Main JavaScript
-======================================== */
+/* ==========================================================================
+   Texas Divine Plumbing — site behavior
+   ========================================================================== */
+(function () {
+    'use strict';
 
-// Mobile menu toggle
-function toggleMenu() {
-    var nav = document.getElementById('nav-menu');
-    var toggle = document.querySelector('.menu-toggle');
-    var isOpen = nav.classList.toggle('active');
-    toggle.setAttribute('aria-expanded', isOpen);
-}
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-// Close mobile menu when clicking a link
-document.querySelectorAll('nav a').forEach(function(link) {
-    link.addEventListener('click', function() {
-        var nav = document.getElementById('nav-menu');
-        var toggle = document.querySelector('.menu-toggle');
-        nav.classList.remove('active');
-        toggle.setAttribute('aria-expanded', 'false');
-    });
-});
+    /* ---------------------------------------------------------------
+       Menu (narrow screens) and the service-area submenu
+       --------------------------------------------------------------- */
+    var nav = document.getElementById('site-nav');
+    var menuBtn = document.querySelector('.menu-toggle');
 
-// Header shadow on scroll
-window.addEventListener('scroll', function() {
-    var header = document.querySelector('header');
-    if (window.scrollY > 50) {
-        header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
-    } else {
-        header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+    function setMenu(open) {
+        if (!nav || !menuBtn) return;
+        nav.classList.toggle('is-open', open);
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        var use = menuBtn.querySelector('use');
+        if (use) use.setAttribute('href', open ? '#i-close' : '#i-menu');
+        document.body.style.overflow = open ? 'hidden' : '';
     }
-});
 
-// Mobile dropdown toggle for Service Areas
-document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
-    toggle.addEventListener('click', function(e) {
-        if (window.innerWidth <= 768) {
-            e.preventDefault();
-            this.closest('.nav-dropdown').classList.toggle('active');
-        }
-    });
-});
-
-// FAQ Accordion
-document.querySelectorAll('.faq-question').forEach(function(question) {
-    question.addEventListener('click', function() {
-        var item = this.closest('.faq-item');
-        var isActive = item.classList.contains('active');
-
-        // Close all other items
-        document.querySelectorAll('.faq-item.active').forEach(function(openItem) {
-            openItem.classList.remove('active');
+    if (menuBtn) {
+        menuBtn.addEventListener('click', function () {
+            setMenu(!nav.classList.contains('is-open'));
         });
-
-        // Toggle current item
-        if (!isActive) {
-            item.classList.add('active');
-        }
-    });
-});
-
-// Scroll reveal animations
-var revealObserver = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-        }
-    });
-}, { threshold: 0.12 });
-
-document.querySelectorAll('.reveal').forEach(function(el) {
-    revealObserver.observe(el);
-});
-
-// Before/After slider
-document.querySelectorAll('.ba-slider').forEach(function(slider) {
-    var handle = slider.querySelector('.ba-handle');
-    var before = slider.querySelector('.ba-before');
-    var isDragging = false;
-
-    function updateSlider(x) {
-        var rect = slider.getBoundingClientRect();
-        var pos = Math.max(0, Math.min(x - rect.left, rect.width));
-        var pct = (pos / rect.width) * 100;
-        before.style.width = pct + '%';
-        handle.style.left = pct + '%';
     }
 
-    slider.addEventListener('mousedown', function(e) {
-        isDragging = true;
-        updateSlider(e.clientX);
+    document.querySelectorAll('.nav a').forEach(function (link) {
+        link.addEventListener('click', function () { setMenu(false); });
     });
 
-    window.addEventListener('mousemove', function(e) {
-        if (isDragging) {
-            e.preventDefault();
-            updateSlider(e.clientX);
-        }
-    });
-
-    window.addEventListener('mouseup', function() {
-        isDragging = false;
-    });
-
-    slider.addEventListener('touchstart', function(e) {
-        isDragging = true;
-        updateSlider(e.touches[0].clientX);
-    });
-
-    slider.addEventListener('touchmove', function(e) {
-        if (isDragging) {
-            e.preventDefault();
-            updateSlider(e.touches[0].clientX);
-        }
-    });
-
-    slider.addEventListener('touchend', function() {
-        isDragging = false;
-    });
-});
-
-// GA4 phone click tracking
-document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
-    link.addEventListener('click', function() {
-        if (typeof gtag === 'function') {
-            gtag('event', 'phone_call', {
-                event_category: 'contact',
-                event_label: this.href.replace('tel:', ''),
-                value: 1
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+            setMenu(false);
+            document.querySelectorAll('.nav__item--has-sub.is-open').forEach(function (li) {
+                li.classList.remove('is-open');
+                li.querySelector('[data-sub-toggle]').setAttribute('aria-expanded', 'false');
             });
         }
     });
-});
 
-// GA4 SMS click tracking
-document.querySelectorAll('a[href^="sms:"]').forEach(function(link) {
-    link.addEventListener('click', function() {
-        if (typeof gtag === 'function') {
-            gtag('event', 'sms_click', {
-                event_category: 'contact',
-                event_label: 'text_message',
-                value: 1
-            });
-        }
+    document.querySelectorAll('[data-sub-toggle]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var li = btn.closest('.nav__item--has-sub');
+            var open = !li.classList.contains('is-open');
+            li.classList.toggle('is-open', open);
+            btn.setAttribute('aria-expanded', String(open));
+        });
     });
-});
 
-// ========================================
-// Multi-Step Form
-// ========================================
-(function() {
-    var currentStep = 1;
-    var totalSteps = 3;
-
-    function showStep(step) {
-        document.querySelectorAll('.form-step').forEach(function(s) {
-            s.classList.remove('active');
+    document.addEventListener('click', function (e) {
+        document.querySelectorAll('.nav__item--has-sub.is-open').forEach(function (li) {
+            if (!li.contains(e.target) && window.innerWidth > 1040) {
+                li.classList.remove('is-open');
+                li.querySelector('[data-sub-toggle]').setAttribute('aria-expanded', 'false');
+            }
         });
-        var target = document.querySelector('.form-step[data-step="' + step + '"]');
-        if (target) target.classList.add('active');
+    });
 
-        document.querySelectorAll('.form-progress-step').forEach(function(ps, i) {
-            ps.classList.remove('active', 'completed');
-            if (i + 1 < step) ps.classList.add('completed');
-            if (i + 1 === step) ps.classList.add('active');
-        });
-
-        currentStep = step;
+    /* Mobile dock: show on pages that have one */
+    var dockEl = document.querySelector('.dock');
+    if (dockEl) {
+        document.body.classList.add('has-dock');
+        /* The dock waits until the page's own Call/Text Alexis buttons scroll away */
+        var heroCta = document.querySelector('.pin__cta');
+        if (heroCta && 'IntersectionObserver' in window) {
+            new IntersectionObserver(function (entries) {
+                dockEl.classList.toggle('is-tucked', entries[0].isIntersecting);
+            }).observe(heroCta);
+        }
     }
 
-    document.querySelectorAll('.service-type-option').forEach(function(option) {
-        option.addEventListener('click', function() {
-            document.querySelectorAll('.service-type-option').forEach(function(o) {
-                o.classList.remove('selected');
-            });
-            this.classList.add('selected');
-            this.querySelector('input').checked = true;
+    /* ---------------------------------------------------------------
+       Messages arrive as you read: a moment of "typing", then the bubbles.
+       Content is visible by default; this only runs for groups still below
+       the fold when the page loads.
+       --------------------------------------------------------------- */
+    if ('IntersectionObserver' in window && !reduceMotion) {
+        var groups = Array.prototype.slice.call(document.querySelectorAll('.thread .group:not(.group--me)'));
+        var fold = window.innerHeight;
+        var pending = groups.filter(function (g) {
+            return g.getBoundingClientRect().top > fold * 0.9;
         });
-    });
 
-    document.querySelectorAll('.btn-form-next').forEach(function(btn) {
-        btn.addEventListener('click', function() {
-            if (currentStep === 1) {
-                var selected = document.querySelector('.service-type-option.selected');
-                if (!selected) {
-                    alert('Please select a service type.');
-                    return;
+        pending.forEach(function (g) { g.classList.add('is-waiting'); });
+
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (!entry.isIntersecting) return;
+                var g = entry.target;
+                io.unobserve(g);
+                setTimeout(function () {
+                    g.classList.remove('is-waiting');
+                    g.classList.add('is-arriving');
+                }, 520);
+            });
+        }, { rootMargin: '0px 0px -12% 0px' });
+
+        pending.forEach(function (g) { io.observe(g); });
+
+        /* Jumping to an anchor shouldn't leave the target hidden */
+        window.addEventListener('hashchange', function () {
+            pending.forEach(function (g) {
+                if (g.classList.contains('is-waiting') && g.getBoundingClientRect().top < window.innerHeight) {
+                    g.classList.remove('is-waiting');
                 }
+            });
+        });
+    }
+
+    /* ---------------------------------------------------------------
+       Composer: send to the family (Netlify form) or text the chosen person
+       --------------------------------------------------------------- */
+    var form = document.getElementById('message-form');
+    if (form) {
+        var textLink = form.querySelector('[data-text-instead]');
+        var textLabel = form.querySelector('[data-text-label]');
+        var status = form.querySelector('.composer__status');
+        var sendBtn = form.querySelector('[data-send]');
+
+        function selectedPerson() {
+            var r = form.querySelector('input[name="to"]:checked');
+            return {
+                name: r ? r.getAttribute('data-name') : 'Alexis',
+                tel: r ? r.getAttribute('data-tel') : '+12818408062'
+            };
+        }
+
+        function smsHref() {
+            var p = selectedPerson();
+            var body = form.message.value.trim();
+            var name = form.name.value.trim();
+            if (name) body = (body ? body + '\n\n' : '') + '- ' + name;
+            if (!body) return 'sms:' + p.tel;
+            /* iOS uses &body=, everything else ?body= */
+            var sep = /iPhone|iPad|iPod/.test(navigator.userAgent) ? '&' : '?';
+            return 'sms:' + p.tel + sep + 'body=' + encodeURIComponent(body);
+        }
+
+        function refreshText() {
+            var p = selectedPerson();
+            textLink.setAttribute('href', smsHref());
+            textLabel.textContent = (currentLang === 'es' ? 'Mándale texto a ' : 'Text ') + p.name + (currentLang === 'es' ? '' : ' instead');
+        }
+
+        form.addEventListener('change', refreshText);
+        form.addEventListener('input', refreshText);
+        refreshText();
+
+        if (/[?&]sent=1/.test(location.search)) {
+            status.textContent = 'Got it. Alexis has your message and will get back to you soon.';
+            status.className = 'composer__status is-ok';
+        }
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            status.className = 'composer__status';
+
+            var missing = [];
+            if (!form.name.value.trim()) missing.push('your name');
+            if (!form.phone.value.trim()) missing.push('a phone number');
+            if (missing.length) {
+                status.textContent = 'Add ' + missing.join(' and ') + ' so we can get back to you.';
+                status.classList.add('is-error');
+                (form.name.value.trim() ? form.phone : form.name).focus();
+                return;
             }
-            if (currentStep === 2) {
-                var name = document.getElementById('ms-name');
-                var phone = document.getElementById('ms-phone');
-                if (!name.value.trim() || !phone.value.trim()) {
-                    alert('Please fill in your name and phone number.');
-                    return;
-                }
-            }
-            if (currentStep < totalSteps) {
-                showStep(currentStep + 1);
-            }
+
+            sendBtn.disabled = true;
+            status.textContent = 'Sending…';
+
+            var data = new URLSearchParams(new FormData(form)).toString();
+            fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: data
+            }).then(function (res) {
+                if (!res.ok) throw new Error(res.status);
+                form.reset();
+                refreshText();
+                status.textContent = 'Got it. Alexis has your message and will get back to you soon.';
+                status.classList.add('is-ok');
+                if (typeof gtag === 'function') gtag('event', 'form_submit', { event_category: 'contact' });
+            }).catch(function () {
+                status.textContent = 'That didn’t go through. Try "Text instead" or call Alexis at 281-840-8062.';
+                status.classList.add('is-error');
+            }).then(function () {
+                sendBtn.disabled = false;
+            });
+        });
+    }
+
+    /* ---------------------------------------------------------------
+       Analytics: calls and texts
+       --------------------------------------------------------------- */
+    document.addEventListener('click', function (e) {
+        var a = e.target.closest && e.target.closest('a[href^="tel:"], a[href^="sms:"]');
+        if (!a || typeof gtag !== 'function') return;
+        var isTel = a.getAttribute('href').indexOf('tel:') === 0;
+        gtag('event', isTel ? 'phone_call' : 'sms_click', {
+            event_category: 'contact',
+            event_label: a.getAttribute('href').replace(/^(tel|sms):/, '').split(/[?&]/)[0]
         });
     });
 
-    document.querySelectorAll('.btn-form-prev').forEach(function(btn) {
-        btn.addEventListener('click', function() {
-            if (currentStep > 1) {
-                showStep(currentStep - 1);
-            }
-        });
-    });
-
-    showStep(1);
-})();
-
-// ========================================
-// Spanish Language Toggle
-// ========================================
-(function() {
-    var translations = {
-        '.hero-badge': { en: 'Licensed & Insured', es: 'Licenciado y Asegurado' },
-        '.hero h1': { en: 'Plumbing You Can Actually Count On.', es: 'Plomer\u00eda en la Que Puede Confiar de Verdad.' },
-        '.hero-subheadline': { en: "A plumbing problem can stall your build or turn your day upside down. Our family team has been fixing that for 65 years \u2014 we show up on time, do the job right, and tell you the truth. Big commercial builds or a leak at home, we make it simple.", es: 'Un problema de plomer\u00eda puede detener su obra o arruinarle el d\u00eda. Nuestro equipo familiar lleva 65 a\u00f1os resolvi\u00e9ndolo: llegamos a tiempo, hacemos el trabajo bien y decimos la verdad. Grandes obras comerciales o una fuga en casa, lo hacemos simple.' },
-        '.services .section-subtitle': { en: 'What We Do', es: 'Lo Que Hacemos' },
-        '.services .section-title': { en: 'Our Services', es: 'Nuestros Servicios' },
-        '.services .section-description': { en: 'From ground-up commercial construction to reliable residential repairs, we deliver excellence at every scale.', es: 'Desde construcci\u00f3n comercial hasta reparaciones residenciales confiables, ofrecemos excelencia en cada escala.' },
-        '.faq .section-subtitle': { en: 'Common Questions', es: 'Preguntas Comunes' },
-        '.faq .section-title': { en: 'Frequently Asked Questions', es: 'Preguntas Frecuentes' },
-        '.about .section-subtitle': { en: 'Who We Are', es: 'Qui\u00e9nes Somos' },
-        '.contact-cta h2': { en: 'Ready to Start Your Project?', es: '\u00bfListo Para Comenzar Su Proyecto?' },
-        '.contact-form-wrapper h3': { en: 'Request a Quote', es: 'Solicitar Cotizaci\u00f3n' },
-        '.guarantees .section-title': { en: 'Our Promise to You', es: 'Nuestra Promesa' },
-        '.guarantees .section-description': { en: 'We stand behind every job with guarantees that protect you.', es: 'Respaldamos cada trabajo con garant\u00edas que lo protegen.' },
-        '.why-choose-us .section-title': { en: 'Why Choose Texas Divine Plumbing', es: '\u00bfPor Qu\u00e9 Elegirnos?' },
-        '.why-choose-us .section-description': { en: 'What sets us apart from every other plumbing company in Texas.', es: 'Lo que nos diferencia de cualquier otra empresa de plomer\u00eda en Texas.' },
-        '.testimonials .section-title': { en: 'Customer Reviews', es: 'Rese\u00f1as de Clientes' }
-    };
-
+    /* ---------------------------------------------------------------
+       English / Español
+       Only the shared chrome and the homepage's key lines are translated.
+       --------------------------------------------------------------- */
     var currentLang = 'en';
+    var es = {
+        'meta': 'Trino, Hector, Alexis + 7 tíos',
+        'nav.work': 'Nuestro trabajo',
+        'nav.builds': 'Obras',
+        'nav.reviews': 'Reseñas',
+        'nav.areas': 'Áreas de servicio',
+        'nav.message': 'Escríbanos',
+        'call': 'Llamar a Alexis',
+        'cta.call': 'Llamar a Alexis',
+        'cta.text': 'Texto a Alexis',
+        'pin.note': 'Alexis recibe cada solicitud nueva y asigna al plomero indicado de la familia.',
+        'panel.start': 'Toda solicitud nueva va con Alexis',
+        'panel.startNote': 'Alexis recibe cada solicitud nueva, le prepara la cotización y asigna al plomero indicado.',
+        'composer.toAlexis': 'Para: Alexis',
+        'composer.toNote': 'Lee cada mensaje y lo pasa al chat de la familia',
+        'pin.label': 'Fijado por la familia',
+        'pin.title': 'Plomería en la que de verdad puede confiar.',
+        'pin.lede': 'Un problema de plomería puede detener su obra o arruinarle el día. Nuestro equipo familiar lleva 65 años resolviéndolo: llegamos a tiempo, hacemos el trabajo bien y le decimos la verdad. Grandes obras comerciales o una fuga en casa, lo hacemos simple.',
+        'pin.licensed': 'Con licencia y seguro',
+        'pin.by': 'Fijado por Alexis &middot; Llegamos a tiempo, hacemos el trabajo bien y le decimos la verdad.',
+        'pin.byShort': 'Fijado por Alexis &middot; toda solicitud nueva empieza con Alexis',
+        'day.reddit': 'Del hilo de r/houston',
+        'day.services': 'Lo que hacemos',
+        'day.work': 'En la obra',
+        'day.builds': 'Obras que plomeamos',
+        'day.why': 'Por qué guardan nuestro número',
+        'day.reviews': 'Lo que dicen los clientes',
+        'day.faq': 'Preguntas frecuentes',
+        'day.message': 'Escríbale a Alexis',
+        'panel.sub': 'Negocio familiar · Houston, todo Texas',
+        'panel.members': 'Los plomeros',
+        'panel.uncles': '7 tíos',
+        'panel.unclesRole': 'Plomeros, más de 20 años cada uno, todos enseñados por Trino',
+        'panel.check': 'Compruébelo',
+        'footer.line': 'El mismo número por 40 años.',
+        'footer.sub': 'Una familia de plomeros en Houston, al servicio de todo Texas. Con licencia y seguro.',
+        'composer.title': 'Mándele los detalles a Alexis.',
+        'composer.intro': 'Cuéntele a Alexis qué pasa. Alexis le prepara la cotización y lo pasa al chat de la familia para ver quién puede ayudar.',
+        'composer.to': 'Enviar a',
+        'composer.alexisNote': 'le agenda la cita',
+        'composer.hectorNote': 'plomero maestro',
+        'composer.trinoNote': '40 años',
+        'composer.kind': 'Tipo de trabajo',
+        'composer.home': 'En casa',
+        'composer.commercial': 'Comercial',
+        'composer.newBuild': 'Cotización de obra nueva',
+        'composer.name': 'Su nombre',
+        'composer.phone': 'Teléfono',
+        'composer.email': 'Correo (opcional)',
+        'composer.send': 'Enviar a Alexis',
+        'composer.note': '¿Es urgente? Llame a Alexis:',
+        'composer.ph': 'El calentador de agua está goteando en el garaje. ¿Pueden venir mañana?'
+    };
+    var en = {};
 
-    window.switchLanguage = function(lang) {
+    function applyLang(lang) {
         currentLang = lang;
         document.documentElement.lang = lang;
-
-        document.querySelectorAll('.lang-toggle button').forEach(function(btn) {
-            btn.classList.toggle('active', btn.dataset.lang === lang);
+        document.querySelectorAll('[data-i18n]').forEach(function (el) {
+            var key = el.getAttribute('data-i18n');
+            if (!(key in en)) en[key] = el.innerHTML;
+            var next = lang === 'es' ? es[key] : en[key];
+            if (next) el.innerHTML = next;
         });
-
-        Object.keys(translations).forEach(function(selector) {
-            var el = document.querySelector(selector);
-            if (el) {
-                el.innerHTML = translations[selector][lang];
-            }
+        document.querySelectorAll('[data-i18n-ph]').forEach(function (el) {
+            var key = el.getAttribute('data-i18n-ph');
+            if (!(('ph:' + key) in en)) en['ph:' + key] = el.getAttribute('placeholder');
+            el.setAttribute('placeholder', lang === 'es' ? es[key] : en['ph:' + key]);
         });
-    };
+        document.querySelectorAll('.lang button').forEach(function (b) {
+            var on = b.getAttribute('data-lang') === lang;
+            b.classList.toggle('active', on);
+            b.setAttribute('aria-pressed', String(on));
+        });
+        if (form) form.dispatchEvent(new Event('change'));
+        try { localStorage.setItem('tdp-lang', lang); } catch (err) { /* private mode */ }
+    }
+
+    document.querySelectorAll('.lang button').forEach(function (b) {
+        b.addEventListener('click', function () { applyLang(b.getAttribute('data-lang')); });
+    });
+
+    try {
+        if (localStorage.getItem('tdp-lang') === 'es') applyLang('es');
+    } catch (err) { /* private mode */ }
 })();
-
