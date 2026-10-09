@@ -1,0 +1,576 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-09T19:18:47+00:00",
+  "title": "Design System: Texas Divine Plumbing",
+  "extensions": {
+    "colorMeta": {
+      "wall": {
+        "role": "primary",
+        "displayName": "Logo Wall Blue",
+        "canonical": "#0c3a8a",
+        "oklch": "oklch(37.3% 0.142 260.9)",
+        "tonalRamp": [
+          "#000430",
+          "#001968",
+          "#0e3c8c",
+          "#2f5db1",
+          "#4f80d7",
+          "#71a4fd",
+          "#a4caff",
+          "#e3efff"
+        ]
+      },
+      "wall-deep": {
+        "role": "primary",
+        "displayName": "Deep Wall",
+        "canonical": "#072a68",
+        "oklch": "oklch(30.5% 0.116 261.0)",
+        "tonalRamp": [
+          "#000430",
+          "#001e5c",
+          "#1b3f7e",
+          "#3a5fa2",
+          "#5a82c7",
+          "#7ba5ee",
+          "#a4caff",
+          "#e3efff"
+        ]
+      },
+      "wall-ink": {
+        "role": "primary",
+        "displayName": "Wall Ink",
+        "canonical": "#051d4a",
+        "oklch": "oklch(24.5% 0.089 261.1)",
+        "tonalRamp": [
+          "#00042f",
+          "#09224f",
+          "#264171",
+          "#446194",
+          "#6483b8",
+          "#85a6dd",
+          "#a9caff",
+          "#e4efff"
+        ]
+      },
+      "wall-line": {
+        "role": "neutral",
+        "displayName": "Wall Line",
+        "canonical": "rgba(255, 255, 255, 0.14)",
+        "tonalRamp": [
+          "rgba(255, 255, 255, 0.04)",
+          "rgba(255, 255, 255, 0.08)",
+          "rgba(255, 255, 255, 0.10)",
+          "rgba(255, 255, 255, 0.14)",
+          "rgba(255, 255, 255, 0.20)",
+          "rgba(255, 255, 255, 0.30)",
+          "rgba(255, 255, 255, 0.50)",
+          "rgba(255, 255, 255, 0.82)"
+        ]
+      },
+      "on-wall": {
+        "role": "neutral",
+        "displayName": "On-Wall",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "on-wall-2": {
+        "role": "neutral",
+        "displayName": "On-Wall 2",
+        "canonical": "#c9d9f6",
+        "oklch": "oklch(88.2% 0.044 262.4)",
+        "tonalRamp": [
+          "#030a1d",
+          "#19253a",
+          "#35425a",
+          "#54627b",
+          "#74839d",
+          "#96a6c1",
+          "#bacae6",
+          "#e4efff"
+        ]
+      },
+      "on-wall-3": {
+        "role": "neutral",
+        "displayName": "On-Wall 3",
+        "canonical": "#9fb8e6",
+        "oklch": "oklch(78.0% 0.072 262.5)",
+        "tonalRamp": [
+          "#000728",
+          "#112347",
+          "#2d4168",
+          "#4b618a",
+          "#6b83ae",
+          "#8da6d3",
+          "#b0caf9",
+          "#e5efff"
+        ]
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "Sheet White",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "sheet-2": {
+        "role": "neutral",
+        "displayName": "Sheet Tint",
+        "canonical": "#f1f5fc",
+        "oklch": "oklch(96.9% 0.010 261.8)",
+        "tonalRamp": [
+          "#090b10",
+          "#22252a",
+          "#3f4248",
+          "#5e6167",
+          "#7f8289",
+          "#a1a5ac",
+          "#c5c9d0",
+          "#ebeff6"
+        ]
+      },
+      "sheet-line": {
+        "role": "neutral",
+        "displayName": "Sheet Line",
+        "canonical": "#dce4f2",
+        "oklch": "oklch(91.7% 0.021 261.8)",
+        "tonalRamp": [
+          "#070b14",
+          "#1f252f",
+          "#3c424d",
+          "#5b626d",
+          "#7b838f",
+          "#9ea5b3",
+          "#c2cad7",
+          "#e7effd"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#0a1a33",
+        "oklch": "oklch(21.9% 0.054 259.0)",
+        "tonalRamp": [
+          "#010a21",
+          "#14253f",
+          "#30425f",
+          "#4f6280",
+          "#6f83a3",
+          "#91a6c7",
+          "#b5cbed",
+          "#e7effc"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "canonical": "#44546f",
+        "oklch": "oklch(44.4% 0.049 260.7)",
+        "tonalRamp": [
+          "#050b16",
+          "#18253c",
+          "#33425c",
+          "#51627e",
+          "#7283a0",
+          "#94a6c4",
+          "#bfcadd",
+          "#ebeff5"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink 3",
+        "canonical": "#66748c",
+        "oklch": "oklch(55.6% 0.041 261.2)",
+        "tonalRamp": [
+          "#060b15",
+          "#1a2538",
+          "#364258",
+          "#546279",
+          "#75839c",
+          "#97a6bf",
+          "#c0cad9",
+          "#eceff4"
+        ]
+      },
+      "sky": {
+        "role": "tertiary",
+        "displayName": "Visitor Sky",
+        "canonical": "#d3e7ff",
+        "oklch": "oklch(92.1% 0.039 253.0)",
+        "tonalRamp": [
+          "#010b1b",
+          "#172638",
+          "#334357",
+          "#526377",
+          "#72849a",
+          "#94a7be",
+          "#b8cbe3",
+          "#ddf1ff"
+        ]
+      },
+      "sky-ink": {
+        "role": "tertiary",
+        "displayName": "Visitor Sky Ink",
+        "canonical": "#072a68",
+        "oklch": "oklch(30.5% 0.116 261.0)",
+        "tonalRamp": [
+          "#000430",
+          "#001e5c",
+          "#1b3f7e",
+          "#3a5fa2",
+          "#5a82c7",
+          "#7ba5ee",
+          "#a4caff",
+          "#e3efff"
+        ]
+      },
+      "alexis": {
+        "role": "secondary",
+        "displayName": "Alexis Gold",
+        "canonical": "#f2b705",
+        "oklch": "oklch(81.1% 0.166 85.0)",
+        "tonalRamp": [
+          "#260000",
+          "#471100",
+          "#693300",
+          "#8b5400",
+          "#af7700",
+          "#d49a00",
+          "#fabf1f",
+          "#ffecb9"
+        ]
+      },
+      "hector": {
+        "role": "secondary",
+        "displayName": "Inspection Green",
+        "canonical": "#1d8a4b",
+        "oklch": "oklch(55.9% 0.135 152.4)",
+        "tonalRamp": [
+          "#001300",
+          "#003400",
+          "#005418",
+          "#007638",
+          "#329959",
+          "#5abd7b",
+          "#a2d9b0",
+          "#e3f4e7"
+        ]
+      },
+      "hector-ink": {
+        "role": "secondary",
+        "displayName": "Inspection Green Ink",
+        "canonical": "#15703c",
+        "oklch": "oklch(48.1% 0.116 152.5)",
+        "tonalRamp": [
+          "#001101",
+          "#003207",
+          "#005220",
+          "#1a733f",
+          "#43965f",
+          "#6eb984",
+          "#abd6b6",
+          "#e5f2e8"
+        ]
+      },
+      "trino": {
+        "role": "secondary",
+        "displayName": "Copper Line",
+        "canonical": "#c45f24",
+        "oklch": "oklch(59.9% 0.147 47.0)",
+        "tonalRamp": [
+          "#240000",
+          "#560000",
+          "#7b1900",
+          "#a03e00",
+          "#c76127",
+          "#ee854e",
+          "#feb693",
+          "#ffe9de"
+        ]
+      },
+      "trino-ink": {
+        "role": "secondary",
+        "displayName": "Copper Line Ink",
+        "canonical": "#9c4513",
+        "oklch": "oklch(49.7% 0.130 45.6)",
+        "tonalRamp": [
+          "#1e0100",
+          "#4c0500",
+          "#762100",
+          "#9b4411",
+          "#c06639",
+          "#e18d65",
+          "#f0bca4",
+          "#fbebe3"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Pinned Headline",
+        "purpose": "The pinned headline only; expanded black. Longer city/article variants scale down."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Composer title, article h2, blog card titles, footer sign-off."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Panel title, member names, caption leads."
+      },
+      "body-big": {
+        "displayName": "Body Big",
+        "purpose": "One-line declarations from a family member."
+      },
+      "body": {
+        "displayName": "Message",
+        "purpose": "Every message bubble; tabular figures."
+      },
+      "prose": {
+        "displayName": "Prose",
+        "purpose": "Blog article body, max 68ch."
+      },
+      "label": {
+        "displayName": "App Caps",
+        "purpose": "Day separators, field labels, footer heads, blog meta. Never as a kicker above a headline."
+      }
+    },
+    "shadows": [
+      {
+        "name": "sheet",
+        "value": "0 1px 1px rgba(5, 29, 74, 0.18), 0 6px 18px -6px rgba(5, 29, 74, 0.45)",
+        "purpose": "Message bubbles, typing indicator, blog cards at rest."
+      },
+      {
+        "name": "lift",
+        "value": "0 2px 4px rgba(5, 29, 74, 0.2), 0 18px 40px -12px rgba(5, 29, 74, 0.6)",
+        "purpose": "Group-info panel, composer, article sheet, dropdowns, blog card hover."
+      },
+      {
+        "name": "chip-hover",
+        "value": "0 8px 18px -8px rgba(5, 29, 74, 0.7)",
+        "purpose": "Action chips on hover, paired with translateY(-1px)."
+      },
+      {
+        "name": "dock",
+        "value": "0 10px 30px -8px rgba(2, 12, 32, 0.6)",
+        "purpose": "Mobile dock over the wall."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "All state transitions and arrivals."
+      },
+      {
+        "name": "state",
+        "value": "0.2s",
+        "purpose": "Hover/press on chips, links, icon buttons."
+      },
+      {
+        "name": "typing",
+        "value": "1s infinite ease-in-out, dots staggered 0.15s, 4px bounce",
+        "purpose": "Typing indicator shown before a group arrives."
+      },
+      {
+        "name": "arrive",
+        "value": "0.55s ease-out; from opacity 0, translateY(14px) scale(0.98) blur(3px); stagger 0.06s; starts ~520ms after entering view",
+        "purpose": "Messages arriving as they scroll in; disabled under prefers-reduced-motion."
+      },
+      {
+        "name": "dock-tuck",
+        "value": "transform 0.35s ease-out, opacity 0.25s",
+        "purpose": "Dock hides while the pinned CTA is visible."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "nav-number",
+        "value": "1400px"
+      },
+      {
+        "name": "nav-tight",
+        "value": "1180px"
+      },
+      {
+        "name": "single-column",
+        "value": "1040px"
+      },
+      {
+        "name": "mobile",
+        "value": "720px"
+      },
+      {
+        "name": "small",
+        "value": "420px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Call Alexis (primary chip, XL)",
+      "kind": "button",
+      "refersTo": "chip-alexis-xl",
+      "description": "The gold door: calling Alexis. First viewport of every page, panel and dock.",
+      "html": "<div class=\"ds-wall\"><a class=\"ds-chip ds-chip--alexis ds-chip--xl\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z\"/></svg>Call Alexis <span class=\"ds-num\">281-840-8062</span></a></div>",
+      "css": ":host{--wall:#0c3a8a;--wall-deep:#072a68;--wall-ink:#051d4a;--wall-line:rgba(255,255,255,0.14);--on-wall:#fff;--on-wall-2:#c9d9f6;--on-wall-3:#9fb8e6;--sheet:#fff;--sheet-2:#f1f5fc;--sheet-line:#dce4f2;--ink:#0a1a33;--ink-2:#44546f;--ink-3:#66748c;--sky:#d3e7ff;--sky-ink:#072a68;--alexis:#f2b705;--hector:#1d8a4b;--hector-ink:#15703c;--trino:#c45f24;--trino-ink:#9c4513;--r-bubble:14px;--r-tight:3px;--shadow-sheet:0 1px 1px rgba(5,29,74,.18),0 6px 18px -6px rgba(5,29,74,.45);--shadow-lift:0 2px 4px rgba(5,29,74,.2),0 18px 40px -12px rgba(5,29,74,.6);--ease-out:cubic-bezier(0.16,1,0.3,1);--font:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;}.ds-wall{background:var(--wall);padding:24px;font-family:var(--font);}.ds-chip{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 18px;border-radius:999px;font-family:var(--font);font-weight:700;font-size:15px;text-decoration:none;border:0;cursor:pointer;font-variant-numeric:tabular-nums;transition:transform .2s var(--ease-out),box-shadow .2s,background-color .2s;}.ds-chip:hover{transform:translateY(-1px);box-shadow:0 8px 18px -8px rgba(5,29,74,.7);}.ds-chip:active{transform:translateY(0);}.ds-chip:focus-visible{outline:3px solid var(--alexis);outline-offset:3px;}.ds-chip--alexis{background:var(--alexis);color:var(--wall-ink);}.ds-chip--alexis:hover{background:#ffc61a;}.ds-chip--xl{min-height:58px;padding:14px 26px 14px 22px;font-size:18px;}.ds-num{font-weight:600;opacity:.8;margin-left:4px;}"
+    },
+    {
+      "name": "Text Alexis (light chip, XL)",
+      "kind": "button",
+      "refersTo": "chip-light",
+      "description": "The white partner to the gold chip on the wall.",
+      "html": "<div class=\"ds-wall\"><a class=\"ds-chip ds-chip--light ds-chip--xl\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"/><path d=\"M8 9h8M8 13h5\"/></svg>Text Alexis</a></div>",
+      "css": ":host{--wall:#0c3a8a;--wall-deep:#072a68;--wall-ink:#051d4a;--wall-line:rgba(255,255,255,0.14);--on-wall:#fff;--on-wall-2:#c9d9f6;--on-wall-3:#9fb8e6;--sheet:#fff;--sheet-2:#f1f5fc;--sheet-line:#dce4f2;--ink:#0a1a33;--ink-2:#44546f;--ink-3:#66748c;--sky:#d3e7ff;--sky-ink:#072a68;--alexis:#f2b705;--hector:#1d8a4b;--hector-ink:#15703c;--trino:#c45f24;--trino-ink:#9c4513;--r-bubble:14px;--r-tight:3px;--shadow-sheet:0 1px 1px rgba(5,29,74,.18),0 6px 18px -6px rgba(5,29,74,.45);--shadow-lift:0 2px 4px rgba(5,29,74,.2),0 18px 40px -12px rgba(5,29,74,.6);--ease-out:cubic-bezier(0.16,1,0.3,1);--font:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;}.ds-wall{background:var(--wall);padding:24px;font-family:var(--font);}.ds-chip{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 18px;border-radius:999px;font-family:var(--font);font-weight:700;font-size:15px;text-decoration:none;border:0;cursor:pointer;font-variant-numeric:tabular-nums;transition:transform .2s var(--ease-out),box-shadow .2s,background-color .2s;}.ds-chip:hover{transform:translateY(-1px);box-shadow:0 8px 18px -8px rgba(5,29,74,.7);}.ds-chip:active{transform:translateY(0);}.ds-chip:focus-visible{outline:3px solid var(--alexis);outline-offset:3px;}.ds-chip--light{background:var(--on-wall);color:var(--wall-deep);}.ds-chip--xl{min-height:58px;padding:14px 26px 14px 22px;font-size:18px;}"
+    },
+    {
+      "name": "Default and ghost chips",
+      "kind": "button",
+      "refersTo": "chip-wall",
+      "description": "Wall-blue action chip and sheet-tint ghost chip, used inside white sheets.",
+      "html": "<div style=\"background:#fff;padding:20px;display:flex;gap:8px;font-family:Archivo,system-ui,sans-serif\"><button class=\"ds-chip ds-chip--wall\">Send to Alexis</button><button class=\"ds-chip ds-chip--ghost\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"/><path d=\"M8 9h8M8 13h5\"/></svg>Text instead</button></div>",
+      "css": ":host{--wall:#0c3a8a;--wall-deep:#072a68;--wall-ink:#051d4a;--wall-line:rgba(255,255,255,0.14);--on-wall:#fff;--on-wall-2:#c9d9f6;--on-wall-3:#9fb8e6;--sheet:#fff;--sheet-2:#f1f5fc;--sheet-line:#dce4f2;--ink:#0a1a33;--ink-2:#44546f;--ink-3:#66748c;--sky:#d3e7ff;--sky-ink:#072a68;--alexis:#f2b705;--hector:#1d8a4b;--hector-ink:#15703c;--trino:#c45f24;--trino-ink:#9c4513;--r-bubble:14px;--r-tight:3px;--shadow-sheet:0 1px 1px rgba(5,29,74,.18),0 6px 18px -6px rgba(5,29,74,.45);--shadow-lift:0 2px 4px rgba(5,29,74,.2),0 18px 40px -12px rgba(5,29,74,.6);--ease-out:cubic-bezier(0.16,1,0.3,1);--font:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;}.ds-chip{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 18px;border-radius:999px;font-family:var(--font);font-weight:700;font-size:15px;text-decoration:none;border:0;cursor:pointer;font-variant-numeric:tabular-nums;transition:transform .2s var(--ease-out),box-shadow .2s,background-color .2s;}.ds-chip:hover{transform:translateY(-1px);box-shadow:0 8px 18px -8px rgba(5,29,74,.7);}.ds-chip:active{transform:translateY(0);}.ds-chip:focus-visible{outline:3px solid var(--alexis);outline-offset:3px;}.ds-chip--wall{background:var(--wall);color:#fff;}.ds-chip--ghost{background:var(--sheet-2);color:var(--wall-deep);}.ds-chip--ghost:hover{background:#e2eaf8;}"
+    },
+    {
+      "name": "Message group with tail notch",
+      "kind": "custom",
+      "refersTo": "bubble",
+      "description": "A named sender: avatar, colored name line, first bubble notched with a tail, following bubbles 6px apart.",
+      "html": "<div class=\"ds-wall\"><div class=\"ds-group\"><span class=\"ds-avatar\">A</span><div class=\"ds-body\"><p class=\"ds-name\">Alexis <span>takes every new request</span></p><p class=\"ds-bubble ds-first\">Both my dad and brother are master plumbers in Houston.</p><p class=\"ds-bubble\">Call or text me and I will find who is free.</p></div></div></div>",
+      "css": ":host{--wall:#0c3a8a;--wall-deep:#072a68;--wall-ink:#051d4a;--wall-line:rgba(255,255,255,0.14);--on-wall:#fff;--on-wall-2:#c9d9f6;--on-wall-3:#9fb8e6;--sheet:#fff;--sheet-2:#f1f5fc;--sheet-line:#dce4f2;--ink:#0a1a33;--ink-2:#44546f;--ink-3:#66748c;--sky:#d3e7ff;--sky-ink:#072a68;--alexis:#f2b705;--hector:#1d8a4b;--hector-ink:#15703c;--trino:#c45f24;--trino-ink:#9c4513;--r-bubble:14px;--r-tight:3px;--shadow-sheet:0 1px 1px rgba(5,29,74,.18),0 6px 18px -6px rgba(5,29,74,.45);--shadow-lift:0 2px 4px rgba(5,29,74,.2),0 18px 40px -12px rgba(5,29,74,.6);--ease-out:cubic-bezier(0.16,1,0.3,1);--font:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;}.ds-wall{background:var(--wall);padding:24px;font-family:var(--font);}.ds-group{display:grid;grid-template-columns:40px minmax(0,1fr);column-gap:12px;color:#fff;font-size:17px;line-height:1.55;}.ds-avatar{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-stretch:112%;background:var(--alexis);color:var(--wall-ink);box-shadow:0 0 0 2px var(--wall);margin-top:24px;}.ds-body{display:flex;flex-direction:column;align-items:flex-start;gap:6px;}.ds-name{font-size:14px;font-weight:700;margin:0 0 2px 14px;color:var(--alexis);}.ds-name span{font-weight:500;font-size:13px;color:var(--on-wall-3);margin-left:8px;}.ds-bubble{position:relative;margin:0;max-width:600px;padding:12px 16px 13px;background:var(--sheet);color:var(--ink);border-radius:var(--r-bubble);box-shadow:var(--shadow-sheet);}.ds-first{border-top-left-radius:0;}.ds-first::before{content:'';position:absolute;top:0;left:-8px;width:9px;height:12px;background:inherit;clip-path:polygon(0 0,100% 0,100% 100%);}"
+    },
+    {
+      "name": "Visitor bubble",
+      "kind": "custom",
+      "refersTo": "bubble-me",
+      "description": "The visitor speaking: sky fill, right aligned, tail on the last bubble.",
+      "html": "<div class=\"ds-wall\" style=\"display:flex;justify-content:flex-end\"><p class=\"ds-me\">Do you only do commercial work?</p></div>",
+      "css": ":host{--wall:#0c3a8a;--wall-deep:#072a68;--wall-ink:#051d4a;--wall-line:rgba(255,255,255,0.14);--on-wall:#fff;--on-wall-2:#c9d9f6;--on-wall-3:#9fb8e6;--sheet:#fff;--sheet-2:#f1f5fc;--sheet-line:#dce4f2;--ink:#0a1a33;--ink-2:#44546f;--ink-3:#66748c;--sky:#d3e7ff;--sky-ink:#072a68;--alexis:#f2b705;--hector:#1d8a4b;--hector-ink:#15703c;--trino:#c45f24;--trino-ink:#9c4513;--r-bubble:14px;--r-tight:3px;--shadow-sheet:0 1px 1px rgba(5,29,74,.18),0 6px 18px -6px rgba(5,29,74,.45);--shadow-lift:0 2px 4px rgba(5,29,74,.2),0 18px 40px -12px rgba(5,29,74,.6);--ease-out:cubic-bezier(0.16,1,0.3,1);--font:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;}.ds-wall{background:var(--wall);padding:24px;font-family:var(--font);}.ds-me{position:relative;margin:0;padding:12px 16px 13px;background:var(--sky);color:var(--sky-ink);font-weight:500;font-size:17px;border-radius:14px 14px 0 14px;box-shadow:var(--shadow-sheet);}.ds-me::after{content:'';position:absolute;bottom:0;right:-8px;width:9px;height:12px;background:inherit;clip-path:polygon(0 100%,0 0,100% 100%);}"
+    },
+    {
+      "name": "Typing indicator",
+      "kind": "custom",
+      "refersTo": "bubble",
+      "description": "Shown before a group arrives; three dots bouncing on a 1s loop.",
+      "html": "<div class=\"ds-wall\"><div class=\"ds-typing\"><i></i><i></i><i></i></div></div>",
+      "css": ":host{--wall:#0c3a8a;--wall-deep:#072a68;--wall-ink:#051d4a;--wall-line:rgba(255,255,255,0.14);--on-wall:#fff;--on-wall-2:#c9d9f6;--on-wall-3:#9fb8e6;--sheet:#fff;--sheet-2:#f1f5fc;--sheet-line:#dce4f2;--ink:#0a1a33;--ink-2:#44546f;--ink-3:#66748c;--sky:#d3e7ff;--sky-ink:#072a68;--alexis:#f2b705;--hector:#1d8a4b;--hector-ink:#15703c;--trino:#c45f24;--trino-ink:#9c4513;--r-bubble:14px;--r-tight:3px;--shadow-sheet:0 1px 1px rgba(5,29,74,.18),0 6px 18px -6px rgba(5,29,74,.45);--shadow-lift:0 2px 4px rgba(5,29,74,.2),0 18px 40px -12px rgba(5,29,74,.6);--ease-out:cubic-bezier(0.16,1,0.3,1);--font:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;}.ds-wall{background:var(--wall);padding:24px;font-family:var(--font);}.ds-typing{display:inline-flex;gap:5px;padding:14px 16px;background:var(--sheet);border-radius:14px;border-top-left-radius:3px;box-shadow:var(--shadow-sheet);}.ds-typing i{width:7px;height:7px;border-radius:50%;background:var(--ink-3);animation:ds-typing 1s infinite ease-in-out;}.ds-typing i:nth-child(2){animation-delay:.15s}.ds-typing i:nth-child(3){animation-delay:.3s}@keyframes ds-typing{0%,60%,100%{transform:translateY(0);opacity:.45}30%{transform:translateY(-4px);opacity:1}}@media (prefers-reduced-motion:reduce){.ds-typing i{animation:none}}"
+    },
+    {
+      "name": "Day separator",
+      "kind": "custom",
+      "refersTo": "day-label",
+      "description": "Section heading of the thread: condensed caps pill between hairlines.",
+      "html": "<div class=\"ds-wall\"><h2 class=\"ds-day\"><span>From the r/houston thread</span></h2></div>",
+      "css": ":host{--wall:#0c3a8a;--wall-deep:#072a68;--wall-ink:#051d4a;--wall-line:rgba(255,255,255,0.14);--on-wall:#fff;--on-wall-2:#c9d9f6;--on-wall-3:#9fb8e6;--sheet:#fff;--sheet-2:#f1f5fc;--sheet-line:#dce4f2;--ink:#0a1a33;--ink-2:#44546f;--ink-3:#66748c;--sky:#d3e7ff;--sky-ink:#072a68;--alexis:#f2b705;--hector:#1d8a4b;--hector-ink:#15703c;--trino:#c45f24;--trino-ink:#9c4513;--r-bubble:14px;--r-tight:3px;--shadow-sheet:0 1px 1px rgba(5,29,74,.18),0 6px 18px -6px rgba(5,29,74,.45);--shadow-lift:0 2px 4px rgba(5,29,74,.2),0 18px 40px -12px rgba(5,29,74,.6);--ease-out:cubic-bezier(0.16,1,0.3,1);--font:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;}.ds-wall{background:var(--wall);padding:24px;font-family:var(--font);}.ds-day{display:flex;align-items:center;gap:16px;margin:0;}.ds-day::before,.ds-day::after{content:'';flex:1;height:1px;background:var(--wall-line);}.ds-day span{padding:6px 14px;border-radius:999px;background:var(--wall-deep);border:1px solid var(--wall-line);font-size:13px;font-weight:600;font-stretch:80%;letter-spacing:.08em;text-transform:uppercase;color:var(--on-wall-2);}"
+    },
+    {
+      "name": "Group-info member row",
+      "kind": "card",
+      "refersTo": "panel-card",
+      "description": "Panel member: avatar, name, role, tabular number, round call button filling with the member color on hover.",
+      "html": "<div class=\"ds-wall\"><div class=\"ds-panel\"><div class=\"ds-member\"><span class=\"ds-av\">H</span><div><div class=\"ds-mname\">Hector</div><div class=\"ds-role\">Licensed Master Plumber</div><a class=\"ds-mnum\" href=\"#\">832-691-6675</a></div><a class=\"ds-ib\" href=\"#\" aria-label=\"Call Hector\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z\"/></svg></a></div></div></div>",
+      "css": ":host{--wall:#0c3a8a;--wall-deep:#072a68;--wall-ink:#051d4a;--wall-line:rgba(255,255,255,0.14);--on-wall:#fff;--on-wall-2:#c9d9f6;--on-wall-3:#9fb8e6;--sheet:#fff;--sheet-2:#f1f5fc;--sheet-line:#dce4f2;--ink:#0a1a33;--ink-2:#44546f;--ink-3:#66748c;--sky:#d3e7ff;--sky-ink:#072a68;--alexis:#f2b705;--hector:#1d8a4b;--hector-ink:#15703c;--trino:#c45f24;--trino-ink:#9c4513;--r-bubble:14px;--r-tight:3px;--shadow-sheet:0 1px 1px rgba(5,29,74,.18),0 6px 18px -6px rgba(5,29,74,.45);--shadow-lift:0 2px 4px rgba(5,29,74,.2),0 18px 40px -12px rgba(5,29,74,.6);--ease-out:cubic-bezier(0.16,1,0.3,1);--font:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;}.ds-wall{background:var(--wall);padding:24px;font-family:var(--font);}.ds-panel{background:var(--sheet);color:var(--ink);border-radius:16px;box-shadow:var(--shadow-lift);padding:12px 10px;max-width:360px;font-variant-numeric:tabular-nums;}.ds-member{display:grid;grid-template-columns:40px 1fr auto;align-items:center;gap:12px;padding:8px 12px;border-radius:14px;transition:background-color .2s;}.ds-member:hover{background:var(--sheet-2);}.ds-av{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-stretch:112%;background:var(--hector-ink);color:#fff;}.ds-mname{font-weight:700;line-height:1.2;}.ds-role{font-size:13px;color:var(--ink-2);}.ds-mnum{font-size:14px;font-weight:600;color:var(--wall);text-decoration:none;}.ds-ib{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--sheet-2);color:var(--wall);transition:background-color .2s,color .2s,transform .2s var(--ease-out);}.ds-ib:hover{background:var(--hector);color:#fff;transform:translateY(-1px);}.ds-ib:focus-visible{outline:3px solid var(--alexis);outline-offset:3px;}"
+    },
+    {
+      "name": "Composer fields",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Contact form as a message: caps label, white field, and the sky message field shaped like an outgoing bubble.",
+      "html": "<div style=\"background:#fff;padding:24px;font-family:Archivo,system-ui,sans-serif;max-width:480px\"><label class=\"ds-label\" for=\"ds-n\">Your name</label><input class=\"ds-field\" id=\"ds-n\" placeholder=\"First and last\"><textarea class=\"ds-field ds-msg\" placeholder=\"Hi Alexis, I need help with...\"></textarea></div>",
+      "css": ":host{--wall:#0c3a8a;--wall-deep:#072a68;--wall-ink:#051d4a;--wall-line:rgba(255,255,255,0.14);--on-wall:#fff;--on-wall-2:#c9d9f6;--on-wall-3:#9fb8e6;--sheet:#fff;--sheet-2:#f1f5fc;--sheet-line:#dce4f2;--ink:#0a1a33;--ink-2:#44546f;--ink-3:#66748c;--sky:#d3e7ff;--sky-ink:#072a68;--alexis:#f2b705;--hector:#1d8a4b;--hector-ink:#15703c;--trino:#c45f24;--trino-ink:#9c4513;--r-bubble:14px;--r-tight:3px;--shadow-sheet:0 1px 1px rgba(5,29,74,.18),0 6px 18px -6px rgba(5,29,74,.45);--shadow-lift:0 2px 4px rgba(5,29,74,.2),0 18px 40px -12px rgba(5,29,74,.6);--ease-out:cubic-bezier(0.16,1,0.3,1);--font:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;}.ds-label{display:block;font-size:13px;font-weight:700;font-stretch:85%;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);margin-bottom:8px;}.ds-field{display:block;width:100%;box-sizing:border-box;padding:13px 14px;border:1.5px solid var(--sheet-line);border-radius:12px;background:var(--sheet);color:var(--ink);font:inherit;font-size:16px;caret-color:var(--wall);transition:border-color .2s,box-shadow .2s;}.ds-field:focus{outline:none;border-color:var(--wall);box-shadow:0 0 0 3px rgba(12,58,138,.18);}.ds-msg{margin-top:12px;min-height:120px;border-radius:18px;border-bottom-right-radius:3px;background:var(--sky);border-color:transparent;color:var(--sky-ink);font-weight:500;}.ds-msg::placeholder{color:#3d5f95;}"
+    },
+    {
+      "name": "Thread topbar",
+      "kind": "nav",
+      "refersTo": "chip-light",
+      "description": "Sticky frosted chat header: logo mark, name, live meta, pill links, call pill.",
+      "html": "<header class=\"ds-top\"><span class=\"ds-mark\"></span><span class=\"ds-txt\"><b>Texas Divine Plumbing</b><small><i></i>Trino, Hector, Alexis + 7 uncles</small></span><nav><a href=\"#\" aria-current=\"page\">Our work</a><a href=\"#\">Reviews</a><a href=\"#\">FAQ</a></nav><a class=\"ds-call\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z\"/></svg>Call Alexis</a></header>",
+      "css": ":host{--wall:#0c3a8a;--wall-deep:#072a68;--wall-ink:#051d4a;--wall-line:rgba(255,255,255,0.14);--on-wall:#fff;--on-wall-2:#c9d9f6;--on-wall-3:#9fb8e6;--sheet:#fff;--sheet-2:#f1f5fc;--sheet-line:#dce4f2;--ink:#0a1a33;--ink-2:#44546f;--ink-3:#66748c;--sky:#d3e7ff;--sky-ink:#072a68;--alexis:#f2b705;--hector:#1d8a4b;--hector-ink:#15703c;--trino:#c45f24;--trino-ink:#9c4513;--r-bubble:14px;--r-tight:3px;--shadow-sheet:0 1px 1px rgba(5,29,74,.18),0 6px 18px -6px rgba(5,29,74,.45);--shadow-lift:0 2px 4px rgba(5,29,74,.2),0 18px 40px -12px rgba(5,29,74,.6);--ease-out:cubic-bezier(0.16,1,0.3,1);--font:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;}.ds-top{display:flex;align-items:center;gap:20px;height:72px;padding:0 24px;background:rgba(7,42,104,.92);backdrop-filter:saturate(140%) blur(14px);border-bottom:1px solid var(--wall-line);font-family:var(--font);color:#fff;}.ds-mark{width:46px;height:46px;border-radius:50%;background:#fff;box-shadow:0 0 0 2px rgba(255,255,255,.25);flex:none;}.ds-txt{display:flex;flex-direction:column;line-height:1.15;}.ds-txt b{font-weight:800;font-stretch:112%;font-size:17px;}.ds-txt small{font-size:13px;color:var(--on-wall-2);}.ds-txt i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#43d17a;margin-right:6px;}.ds-top nav{margin-left:auto;display:flex;gap:2px;}.ds-top nav a{padding:9px 12px;border-radius:999px;font-size:15px;font-weight:500;color:var(--on-wall-2);text-decoration:none;transition:background-color .2s,color .2s;}.ds-top nav a:hover,.ds-top nav a[aria-current]{color:#fff;background:rgba(255,255,255,.1);}.ds-call{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:#fff;color:var(--wall-deep);font-weight:700;font-size:15px;text-decoration:none;transition:transform .2s var(--ease-out),box-shadow .2s;}.ds-call:hover{transform:translateY(-1px);box-shadow:0 6px 16px -6px rgba(0,0,0,.5);}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Family Thread",
+    "overview": "**Creative North Star: \"The Family Thread\"**\n\nThe site is the family's group text, opened up to the customer. Every page is a chat: a sticky thread header, a pinned headline, day separators instead of section titles, white message sheets from named people (Alexis, Hector, Trino) on a drenched logo-blue wallpaper, the visitor's own questions as pale-sky outgoing bubbles, and a composer at the end that sends a message to a chosen person. On desktop a sticky group-info panel sits beside the thread with the members, tap-to-call buttons and a one-fact-per-row proof list.\n\nDensity is conversational: short messages, 6px between bubbles in a run, 22px between senders, a wide 72px breath before each day separator. Hierarchy comes from Archivo's width axis rather than from extra families: the pinned headline is expanded black, messages are normal width, separators and form labels are condensed caps. Numbers are tabular everywhere, because phone numbers, licenses, ratings and hours are the proof.\n\nThe world refuses the contractor template: no hero with a badge row, no grid of icon cards, no avatar testimonial carousel. Proof arrives as messages: job photos as photo albums, reviews as forwarded messages, the Reddit post as a link preview. It must never read rough or cheap; the white sheets, soft wall-tinted shadows and precise tails carry the polish.",
+    "keyCharacteristics": [
+      "Logo-blue wallpaper (with a 4% white fittings line pattern) as the page ground on every page.",
+      "White message sheets with a tail notch on the first bubble of each run.",
+      "One color per person, taken from the trade: Alexis gold, Hector PVC green, Trino copper.",
+      "Archivo only; width axis (80% to 125%) carries the hierarchy; tabular numerals throughout.",
+      "Messages arrive with a brief typing indicator as they scroll into view.",
+      "Calling or texting Alexis is always one tap away (pinned CTA, panel, mobile dock)."
+    ],
+    "rules": [
+      {
+        "name": "The Owner's Color Rule",
+        "body": "A person's color marks only what that person touches: their avatar, their name line, their checkmarks, their call buttons. Never use gold, green or copper as general decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Gold Door Rule",
+        "body": "A solid gold fill means \"reach Alexis\". It is reserved for the Call Alexis action (and Alexis's avatar); every page shows it in the first viewport and on mobile in the dock.",
+        "section": "colors"
+      },
+      {
+        "name": "The Paper and Wall Rule",
+        "body": "Content that is read lives on white sheets; only the headline, sender names, separators and chrome sit directly on the blue.",
+        "section": "colors"
+      },
+      {
+        "name": "The Width Axis Rule",
+        "body": "Hierarchy is built by font-stretch and weight within Archivo, never by adding a second family.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "body sets font-variant-numeric: tabular-nums; phone numbers, ratings, years and hours always align as figures.",
+        "section": "typography"
+      },
+      {
+        "name": "The Caps Belong to the App Rule",
+        "body": "Condensed uppercase is the chat app's own voice (separators, field labels, timestamps, metadata). It never appears as a decorative label stacked above a headline.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two Papers Rule",
+        "body": "Messages sit at Sheet; things you act in (panel, composer, article) sit at Lift. Do not invent a third resting level.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** keep the logo-blue wallpaper with its 4% fittings pattern behind every page, and put all reading content on white sheets.",
+      "**Do** attribute every message to a named person with their avatar and color; Alexis speaks first and takes every new request.",
+      "**Do** show Call Alexis as a gold pill in the first viewport of every page, and the dock on mobile.",
+      "**Do** carry hierarchy with Archivo's width axis: wdth 125 black for pinned headlines, normal for messages, wdth 80 to 85 caps for separators and labels.",
+      "**Do** present proof as chat objects: photo messages, albums, forwarded reviews, link previews, the panel's key/value cross-check.",
+      "**Do** start each run of bubbles with the tail notch, and keep the 6px / 22px / 72px thread rhythm.",
+      "**Do** keep depth to the two wall-tinted shadows (Sheet, Lift)."
+    ],
+    "donts": [
+      "**Don't** fall back to the contractor template: hero with a badge row, rows of icon cards, avatar testimonial carousels.",
+      "**Don't** use gold, green or copper outside the person who owns it, and never put white text on gold.",
+      "**Don't** stack an uppercase kicker or eyebrow label above a headline; condensed caps are reserved for separators, field labels and metadata.",
+      "**Don't** add a second typeface or use proportional figures for phone numbers, ratings, years or hours.",
+      "**Don't** use neutral grey or hard offset shadows; shadows are always tinted with wall ink."
+    ]
+  }
+}

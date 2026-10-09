@@ -478,25 +478,6 @@ html {
     margin-top: 36px;
 }
 
-.pin__label {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 13px;
-    font-weight: 600;
-    font-stretch: 80%;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--on-wall-2);
-    margin-bottom: 18px;
-}
-
-.pin__label .icon {
-    color: var(--alexis);
-    width: 15px;
-    height: 15px;
-}
-
 .pinned {
     max-width: 880px;
 }
@@ -539,15 +520,6 @@ html {
     color: var(--alexis);
 }
 
-.pin__lede {
-    margin-top: 24px;
-    max-width: 58ch;
-    font-size: clamp(17px, 1.6vw, 20px);
-    line-height: 1.55;
-    color: var(--on-wall-2);
-    text-wrap: pretty;
-}
-
 .pin__proof {
     margin-top: 28px;
     display: flex;
@@ -555,43 +527,9 @@ html {
     gap: 10px;
 }
 
-.proof-chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 14px 8px 10px;
-    border-radius: 999px;
-    border: 1px solid var(--wall-line);
-    background: rgba(255, 255, 255, 0.06);
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--on-wall);
-    text-decoration: none;
-    transition: background-color 0.2s, border-color 0.2s;
-}
-
-a.proof-chip:hover {
-    background: rgba(255, 255, 255, 0.12);
-    border-color: rgba(255, 255, 255, 0.3);
-}
-
-.proof-chip strong {
-    font-weight: 800;
-}
-
-.proof-chip .icon {
-    width: 18px;
-    height: 18px;
-}
-
-.proof-chip .stars {
-    color: var(--star);
-}
-
 .proof-chip--reddit .icon {
     color: #ff6a2b;
 }
-
 
 /* Alexis is the front door: every new request starts with Alexis */
 .pin__cta {
@@ -621,20 +559,6 @@ a.proof-chip:hover {
 
 .chip--alexis:hover {
     background: #ffc61a;
-}
-
-.pin__note {
-    margin-top: 12px;
-    font-size: 15px;
-    color: var(--on-wall-2);
-    max-width: 52ch;
-}
-
-.panel__note {
-    padding: 2px 12px 0 64px;
-    font-size: 14px;
-    line-height: 1.45;
-    color: var(--ink-2);
 }
 
 .panel__chips {
@@ -681,11 +605,6 @@ a.proof-chip:hover {
     box-shadow: none;
 }
 
-/* Quick-call row (unused) */
-.quickcall {
-    display: none;
-}
-
 /* --------------------------------------------------------------------------
    Day separators (section headings in the thread)
    -------------------------------------------------------------------------- */
@@ -716,27 +635,6 @@ a.proof-chip:hover {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--on-wall-2);
-}
-
-.section-head {
-    margin: 0 0 22px;
-    max-width: 640px;
-}
-
-.section-head h2 {
-    font-weight: 800;
-    font-stretch: 118%;
-    font-size: clamp(28px, 3.4vw, 42px);
-    line-height: 1.02;
-    letter-spacing: -0.025em;
-    text-wrap: balance;
-}
-
-.section-head p {
-    margin-top: 12px;
-    color: var(--on-wall-2);
-    max-width: 56ch;
-    text-wrap: pretty;
 }
 
 /* --------------------------------------------------------------------------
@@ -853,15 +751,6 @@ a.proof-chip:hover {
     font-weight: 600;
 }
 
-.bubble__time {
-    display: block;
-    margin-top: 4px;
-    text-align: right;
-    font-size: 12px;
-    color: var(--ink-3);
-    font-stretch: 85%;
-}
-
 .bubble--big {
     font-size: 19px;
     line-height: 1.45;
@@ -871,7 +760,6 @@ a.proof-chip:hover {
 .group--trino .group__name { color: #ffb48a; }
 .group--hector .group__name { color: #8fe3b0; }
 .group--alexis .group__name { color: var(--alexis); }
-
 
 /* Visitor (outgoing) */
 .group.group--me {
@@ -932,8 +820,6 @@ a.proof-chip:hover {
     width: 100%;
     object-fit: cover;
 }
-
-
 
 .bubble--photo figcaption,
 .bubble__caption {
@@ -1114,74 +1000,6 @@ a.proof-chip:hover {
     margin-top: 2px;
 }
 
-/* Builds: shared project cards inside one message */
-.builds {
-    width: 100%;
-    max-width: 680px;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-}
-
-.build {
-    background: var(--sheet);
-    color: var(--ink);
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: var(--shadow-sheet);
-    display: flex;
-    flex-direction: column;
-}
-
-.build:first-child {
-    border-top-left-radius: var(--r-tight);
-}
-
-.build__img {
-    aspect-ratio: 4 / 3;
-    overflow: hidden;
-    background: var(--sheet-2);
-}
-
-.build__img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.7s var(--ease-out);
-}
-
-.build:hover .build__img img {
-    transform: scale(1.04);
-}
-
-.build__body {
-    padding: 14px 16px 16px;
-}
-
-.build__type {
-    font-size: 12px;
-    font-weight: 700;
-    font-stretch: 80%;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--hector-ink);
-}
-
-.build h3 {
-    font-weight: 800;
-    font-stretch: 110%;
-    font-size: 19px;
-    line-height: 1.15;
-    letter-spacing: -0.01em;
-    margin: 4px 0 6px;
-}
-
-.build p {
-    font-size: 15px;
-    line-height: 1.5;
-    color: var(--ink-2);
-}
-
 .clients {
     display: flex;
     align-items: center;
@@ -1245,23 +1063,6 @@ a.proof-chip:hover {
 
 .fwd__who strong {
     color: var(--ink);
-}
-
-.reviews {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-    align-items: start;
-    width: 100%;
-    max-width: 760px;
-}
-
-.reviews .bubble {
-    max-width: none;
-}
-
-.reviews .bubble:first-child {
-    border-top-left-radius: var(--r-tight);
 }
 
 .rating {
@@ -1336,9 +1137,6 @@ a.proof-chip:hover {
 .chip--ghost:hover {
     background: #e2eaf8;
 }
-
-.chip--trino { background: var(--trino-ink); }
-.chip--hector { background: var(--hector-ink); }
 .chip--alexis { background: var(--alexis); color: var(--wall-ink); }
 
 .chip--light {
@@ -1848,7 +1646,6 @@ a.fact:hover {
     margin-top: 28px;
 }
 
-
 /* Longer page titles (city pages, guides) */
 .pin__title--long {
     font-size: clamp(36px, 4.6vw, 64px);
@@ -2276,46 +2073,6 @@ a.fact:hover {
         margin-bottom: 64px;
     }
 
-    .quickcall {
-        display: none;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 8px;
-        margin-top: 26px;
-    }
-
-    .quickcall a {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 10px 12px;
-        min-height: 56px;
-        border-radius: 16px;
-        background: var(--sheet);
-        color: var(--ink);
-        text-decoration: none;
-        box-shadow: var(--shadow-sheet);
-    }
-
-    .quickcall .avatar {
-        width: 34px;
-        height: 34px;
-        font-size: 14px;
-        box-shadow: none;
-    }
-
-    .quickcall b {
-        display: block;
-        font-size: 15px;
-        line-height: 1.15;
-    }
-
-    .quickcall small {
-        display: block;
-        font-size: 13px;
-        color: var(--ink-2);
-        line-height: 1.2;
-    }
-
     .nav {
         position: fixed;
         top: var(--topbar-h);
@@ -2530,14 +2287,6 @@ a.fact:hover {
         margin-left: auto;
     }
 
-    .quickcall {
-        grid-template-columns: minmax(0, 1fr);
-    }
-
-    .quickcall a {
-        justify-content: flex-start;
-    }
-
     .day {
         margin: 56px 0 22px;
     }
@@ -2598,11 +2347,6 @@ a.fact:hover {
 
     .album figure:nth-child(1) img {
         aspect-ratio: 4 / 3;
-    }
-
-    .builds,
-    .reviews {
-        grid-template-columns: minmax(0, 1fr);
     }
 
     .composer__grid {
