@@ -25,8 +25,8 @@
     <meta name="twitter:image" content="https://texasdivineplumbing.com/images/og-image.jpg">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo.png">
-    <link rel="apple-touch-icon" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/web/logo-256.png">
+    <link rel="apple-touch-icon" href="images/web/logo-256.png">
 
     <!-- Google Analytics 4 (Replace G-XXXXXXXXXX with your measurement ID) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -40,7 +40,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#072a68">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
@@ -176,7 +177,7 @@
                 "name": "How can I get in touch for more information?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Call Hector at 832-691-6675 or Trino at 713-875-5353 to discuss your project. For general inquiries or more information, reach out to Alexis Morales at 281-840-8062, or email us at texasdivineplumbing@gmail.com."
+                    "text": "Text or call Alexis Morales at 281-840-8062. Alexis takes every new request, gets you a quote and puts the right plumber on your job. You can also email texasdivineplumbing@gmail.com, or reach Hector at 832-691-6675 and Trino at 713-875-5353."
                 }
             },
             {
@@ -278,743 +279,543 @@
     </script>
 </head>
 <body>
-    <!-- Skip to main content (Accessibility) -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-
-    <!-- ========================================
-         HEADER
-    ======================================== -->
-    <header>
-        <div class="header-container">
-            <a href="#home" class="logo">
-                <img src="images/logo.png" alt="Texas Divine Plumbing" width="120" height="60">
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+        <symbol id="i-text" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 17v5"/><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"/></symbol>
+        <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+        <symbol id="i-out" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></symbol>
+        <symbol id="i-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+        <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></symbol>
+        <symbol id="i-forward" viewBox="0 0 24 24"><path d="M15 17l5-5-5-5"/><path d="M4 18v-2a4 4 0 0 1 4-4h12"/></symbol>
+        <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+        <symbol id="i-reddit" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 0C5.373 0 0 5.373 0 12c0 3.313 1.344 6.312 3.516 8.484L1.5 24l3.797-1.969A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm5.6 12.29a1.4 1.4 0 0 1 .01.24c0 2.45-2.85 4.43-6.37 4.43s-6.37-1.98-6.37-4.43c0-.08.003-.16.01-.24a1.56 1.56 0 1 1 1.72-2.53 7.7 7.7 0 0 1 4.2-1.33l.8-3.76 2.61.56a1.12 1.12 0 1 1-.13.61l-2.33-.5-.71 3.35a7.7 7.7 0 0 1 4.14 1.33 1.56 1.56 0 1 1 1.72 2.54zM8.9 13.4a1.12 1.12 0 1 0 0-2.24 1.12 1.12 0 0 0 0 2.24zm6.2 0a1.12 1.12 0 1 0 0-2.24 1.12 1.12 0 0 0 0 2.24zm-.42 1.9a.4.4 0 0 1 .56.56 3.9 3.9 0 0 1-2.74 1 3.9 3.9 0 0 1-2.74-1 .4.4 0 0 1 .56-.56c.6.53 1.4.79 2.18.79.78 0 1.58-.26 2.18-.79z"/></symbol>
+        <symbol id="i-google" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12.48 10.92v3.28h7.84c-.24 1.84-.85 3.19-1.79 4.13-1.15 1.15-2.93 2.4-6.05 2.4-4.83 0-8.6-3.89-8.6-8.72s3.77-8.72 8.6-8.72c2.6 0 4.51 1.03 5.91 2.35l2.31-2.31C18.75 1.44 16.13 0 12.48 0 5.87 0 .31 5.39.31 12s5.56 12 12.17 12c3.57 0 6.27-1.17 8.37-3.36 2.16-2.16 2.84-5.21 2.84-7.67 0-.76-.05-1.47-.17-2.05H12.48z"/></symbol>
+    </svg>
+    <header class="topbar">
+        <div class="topbar__inner">
+            <a class="brand" href="index.html" aria-label="Texas Divine Plumbing, home">
+                <span class="brand__mark"><img src="images/web/logo-256.png" alt="" width="40" height="40"></span>
+                <span class="brand__text">
+                    <span class="brand__name">Texas Divine Plumbing</span>
+                    <span class="brand__meta" data-i18n="meta">Trino, Hector, Alexis + 7 uncles</span>
+                </span>
             </a>
-
-            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <nav id="nav-menu" role="navigation" aria-label="Main navigation">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#commercial">Commercial</a></li>
-                    <li><a href="#residential">Residential</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li class="nav-dropdown">
-                        <a href="houston-plumbing.html" class="nav-dropdown-toggle">Service Areas <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-left:3px"><polyline points="6 9 12 15 18 9"/></svg></a>
-                        <ul class="nav-dropdown-menu">
+            <nav class="nav" id="site-nav" aria-label="Main">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="#work" data-i18n="nav.work">Our work</a></li>
+                    <li><a class="nav__link" href="#reviews" data-i18n="nav.reviews">Reviews</a></li>
+                    <li><a class="nav__link" href="faq.html">FAQ</a></li>
+                    <li class="nav__item--has-sub">
+                        <button class="nav__link" type="button" aria-expanded="false" data-sub-toggle><span data-i18n="nav.areas">Service areas</span> <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></button>
+                        <ul class="nav__sub">
                             <li><a href="houston-plumbing.html">Houston</a></li>
                             <li><a href="dallas-plumbing.html">Dallas</a></li>
                             <li><a href="san-antonio-plumbing.html">San Antonio</a></li>
                             <li><a href="austin-plumbing.html">Austin</a></li>
                         </ul>
                     </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="nav__link" href="blog.html">Blog</a></li>
+                    <li><a class="nav__link" href="#message" data-i18n="nav.message">Message us</a></li>
+                    <li class="nav__lang">
+                        <div class="lang" role="group" aria-label="Language">
+                            <button type="button" data-lang="en" class="active" aria-pressed="true">English</button>
+                            <button type="button" data-lang="es" aria-pressed="false">Español</button>
+                        </div>
+                        <a class="chip chip--alexis chip--xl nav__call" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="cta.call">Call Alexis</span> <span class="chip__num">281-840-8062</span></a>
+                    </li>
                 </ul>
             </nav>
-            <div class="lang-toggle" aria-label="Language selector">
-                <button data-lang="en" class="active" onclick="switchLanguage('en')">EN</button>
-                <button data-lang="es" onclick="switchLanguage('es')">ES</button>
+            <div class="lang" role="group" aria-label="Language">
+                <button type="button" data-lang="en" class="active" aria-pressed="true">EN</button>
+                <button type="button" data-lang="es" aria-pressed="false">ES</button>
             </div>
+            <a class="topbar__call" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="call">Call Alexis</span><span class="topbar__call-num">&nbsp;· 281-840-8062</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
         </div>
     </header>
 
-    <!-- ========================================
-         MAIN CONTENT
-    ======================================== -->
-    <main id="main-content">
+    <main id="main-content" class="layout">
+        <section class="pin" aria-labelledby="pin-title">
+            <h1 class="pin__title" id="pin-title" data-i18n="pin.title">Plumbing you can actually count&nbsp;on.</h1>
+            <p class="pin__lede" data-i18n="pin.lede">A plumbing problem can stall your build or turn your day upside down. Our family team has been fixing that for 65 years &mdash; we show up on time, do the job right, and tell you the truth. Big commercial builds or a leak at home, we make it simple.</p>
+            <div class="pin__proof">
+                <a class="proof-chip proof-chip--reddit" href="https://www.reddit.com/r/houston/comments/1hpouwl/plumbers_for_houston/m4j86ie/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-reddit"/></svg><span><strong>#1 recommended</strong> on r/houston</span></a>
+                <a class="proof-chip" href="#reviews"><span class="stars" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span><span><strong>5.0</strong> · 47 Google reviews</span></a>
+                <span class="proof-chip"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg><span data-i18n="pin.licensed">Licensed &amp; insured</span></span>
+            </div>
+            <div class="pin__cta">
+                <a class="chip chip--alexis chip--xl" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span><span data-i18n="cta.call">Call Alexis</span> <span class="chip__num">281-840-8062</span></span></a>
+                <a class="chip chip--light chip--xl" href="sms:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg><span data-i18n="cta.text">Text Alexis</span></a>
+            </div>
+            <p class="pin__note" data-i18n="pin.note">Alexis takes every new request and gets the right plumber in the family on your job.</p>
+        </section>
 
-    <!-- ========================================
-         HERO SECTION
-    ======================================== -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <a class="reddit-badge" href="https://www.reddit.com/r/houston/comments/1hpouwl/plumbers_for_houston/m4j86ie/" target="_blank" rel="noopener">
-                    <span class="reddit-badge-icon" aria-hidden="true">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 3.313 1.344 6.312 3.516 8.484L1.5 24l3.797-1.969A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm5.6 12.29a1.4 1.4 0 0 1 .01.24c0 2.45-2.85 4.43-6.37 4.43s-6.37-1.98-6.37-4.43c0-.08.003-.16.01-.24a1.56 1.56 0 1 1 1.72-2.53 7.7 7.7 0 0 1 4.2-1.33l.8-3.76 2.61.56a1.12 1.12 0 1 1-.13.61l-2.33-.5-.71 3.35a7.7 7.7 0 0 1 4.14 1.33 1.56 1.56 0 1 1 1.72 2.54zM8.9 13.4a1.12 1.12 0 1 0 0-2.24 1.12 1.12 0 0 0 0 2.24zm6.2 0a1.12 1.12 0 1 0 0-2.24 1.12 1.12 0 0 0 0 2.24zm-.42 1.9a.4.4 0 0 1 .56.56 3.9 3.9 0 0 1-2.74 1 3.9 3.9 0 0 1-2.74-1 .4.4 0 0 1 .56-.56c.6.53 1.4.79 2.18.79.78 0 1.58-.26 2.18-.79z"/></svg>
-                    </span>
-                    <span class="reddit-badge-text">
-                        <strong>#1 Recommended Plumber on r/houston</strong>
-                        <span>Voted the top plumber by Houston neighbors &mdash; read the thread</span>
-                    </span>
-                    <span class="reddit-badge-arrow" aria-hidden="true">&rarr;</span>
-                </a>
-                <div class="hero-badge">Licensed & Insured</div>
-                <h1>Plumbing You Can Actually Count On.</h1>
-                <p class="hero-subheadline">A plumbing problem can stall your build or turn your day upside down. Our family team has been fixing that for 65 years &mdash; we show up on time, do the job right, and tell you the truth. Big commercial builds or a leak at home, we make it simple.</p>
-                <div class="hero-buttons">
-                    <a href="tel:832-691-6675" class="btn btn-primary">
-                        <span class="btn-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-                        Call Hector: 832-691-6675
-                    </a>
-                    <a href="tel:713-875-5353" class="btn btn-secondary">
-                        <span class="btn-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-                        Call Trino: 713-875-5353
-                    </a>
-                    <a href="tel:281-840-8062" class="btn btn-secondary">
-                        <span class="btn-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-                        Call Alexis: 281-840-8062
-                    </a>
+        <div class="thread">
+            <h2 class="day"><span class="day__label" data-i18n="day.reddit">From the r/houston thread</span></h2>
+
+            <div class="group group--alexis">
+                <span class="group__avatar avatar avatar--alexis" aria-hidden="true">A</span>
+                <div class="group__body">
+                    <p class="group__name">Alexis <span>the post that went around r/houston · takes every new request</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble bubble--big">Both my dad and brother are master plumbers in Houston. My dad has been doing this for over 40 years. Since we work out of the house, our overhead is low &mdash; and we pass those savings straight to you.</p>
+                    <p class="bubble">Thank you to everyone here! We&rsquo;ve gotten so many opportunities from the Reddit community. Here&rsquo;s the thing: all <strong>7 of my uncles are plumbers too</strong>. Each has over 20 years of experience, and every one of them was taught by my dad.</p>
+                    <div class="bubble">
+                        <p>Send me the details of your situation and I&rsquo;ll drop it in the family group chat to see who can help.</p>
+                        <a class="preview" href="https://www.reddit.com/r/houston/comments/1hpouwl/plumbers_for_houston/m4j86ie/" target="_blank" rel="noopener">
+                            <span>
+                                <span class="preview__site">reddit.com · r/houston</span>
+                                <span class="preview__title">Plumbers for Houston?</span>
+                                <span class="preview__desc">Read the whole thread and what Houston said</span>
+                            </span>
+                        </a>
+                        <div class="chips">
+                            <a class="chip chip--alexis" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Call Alexis</a>
+                            <a class="chip chip--ghost" href="sms:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg>Text Alexis</a>
+                            <a class="chip chip--ghost" href="#message"><svg class="icon" aria-hidden="true"><use href="#i-send"/></svg>Send the details</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- ========================================
-         TRUSTED BY BANNER
-    ======================================== -->
-    <section class="trusted-banner" aria-label="Trusted by industry leaders">
-        <div class="container">
-            <div class="trusted-content">
-                <span class="trusted-label">Trusted By Industry Leaders</span>
-                <div class="trusted-logos">
-                    <img src="images/whataburger-logo.png" alt="Whataburger" class="trusted-logo-img" width="120" height="70" loading="lazy">
-                    <span class="trusted-divider">|</span>
-                    <img src="images/wier-logo.png" alt="Wier Commercial Construction" class="trusted-logo-img" width="120" height="70" loading="lazy">
-                    <span class="trusted-divider">|</span>
-                    <img src="images/ford-logo.jpg" alt="Ford Dealerships" class="trusted-logo-img" width="120" height="70" loading="lazy">
+            <h2 class="day"><span class="day__label" data-i18n="day.services">What we do</span></h2>
+
+            <div class="group group--hector">
+                <span class="group__avatar avatar avatar--hector" aria-hidden="true">H</span>
+                <div class="group__body">
+                    <p class="group__name">Hector <span>Licensed Master Plumber</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <figure class="bubble bubble--photo bubble--accent">
+                        <img src="images/web/copper-manifold.jpg" alt="Copper supply manifold roughed into a steel-framed commercial wall" width="1400" height="1050" loading="lazy">
+                        <figcaption>
+                            <strong>Commercial new construction &amp; industrial</strong>
+                            GCs choose us because we show up on time, read blueprints correctly, and don&rsquo;t hold up your schedule. From dealerships to restaurants to industrial facilities, we handle ground-up plumbing at any scale.
+                            <ul class="ticks">
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Ground-up builds, from blueprint to final inspection</span></li>
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Expert blueprint reading &amp; plumbing system design</span></li>
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>On-time delivery &mdash; we won&rsquo;t slow down your build</span></li>
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Procurement &amp; supply chain run by a Rice MBA</span></li>
+                        </ul>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- ========================================
-         REDDIT STORY / REACH OUT SECTION
-    ======================================== -->
-    <section class="reddit-story" id="reddit" aria-label="Our viral Reddit post">
-        <div class="container">
-            <div class="reddit-story-card">
-                <div class="reddit-story-header">
-                    <span class="reddit-story-logo" aria-hidden="true">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 3.313 1.344 6.312 3.516 8.484L1.5 24l3.797-1.969A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm5.6 12.29a1.4 1.4 0 0 1 .01.24c0 2.45-2.85 4.43-6.37 4.43s-6.37-1.98-6.37-4.43c0-.08.003-.16.01-.24a1.56 1.56 0 1 1 1.72-2.53 7.7 7.7 0 0 1 4.2-1.33l.8-3.76 2.61.56a1.12 1.12 0 1 1-.13.61l-2.33-.5-.71 3.35a7.7 7.7 0 0 1 4.14 1.33 1.56 1.56 0 1 1 1.72 2.54zM8.9 13.4a1.12 1.12 0 1 0 0-2.24 1.12 1.12 0 0 0 0 2.24zm6.2 0a1.12 1.12 0 1 0 0-2.24 1.12 1.12 0 0 0 0 2.24zm-.42 1.9a.4.4 0 0 1 .56.56 3.9 3.9 0 0 1-2.74 1 3.9 3.9 0 0 1-2.74-1 .4.4 0 0 1 .56-.56c.6.53 1.4.79 2.18.79.78 0 1.58-.26 2.18-.79z"/></svg>
-                    </span>
+            <div class="group group--trino">
+                <span class="group__avatar avatar avatar--trino" aria-hidden="true">T</span>
+                <div class="group__body">
+                    <p class="group__name">Trino <span>40 years plumbing Houston</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <div class="bubble bubble--accent">
+                        <p><strong>At your house, too.</strong> We bring the same professionalism and precision from our commercial projects into your home. Whether it&rsquo;s a full remodel, a re-pipe, or a simple repair &mdash; your family gets our full attention.</p>
+                        <ul class="ticks">
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Repairs, remodels &amp; full re-pipes</span></li>
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Honest, upfront pricing &mdash; no surprises</span></li>
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Clean, respectful work in your home</span></li>
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>The same crew that builds for Whataburger works for you</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="day" id="work"><span class="day__label" data-i18n="day.work">On the job</span></h2>
+
+            <div class="group group--hector">
+                <span class="group__avatar avatar avatar--hector" aria-hidden="true">H</span>
+                <div class="group__body">
+                    <p class="group__name">Hector <span>photos from our job sites</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble">Real jobs, real photos &mdash; commercial and residential work, finished or in progress. This is the quality you get when you call us.</p>
+                    <div class="bubble bubble--photo album">
+                        <figure>
+                            <img src="images/web/work-05-sewer-main.jpg" alt="Underground sanitary sewer rough-in: PVC drain lines laid to grade in a trench, laser level in the background" width="750" height="1000" loading="lazy">
+                            <figcaption>Underground sewer rough-in<span>New commercial slab, DWV lines set to grade with a laser level</span></figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/web/work-02-copper-gas-wall.jpg" alt="Copper water supply lines and black gas piping roughed into a steel-framed wall" width="1100" height="520" loading="lazy">
+                            <figcaption>Copper &amp; gas wall rough-in<span>Run clean and straight, ready for inspection</span></figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/web/work-03-underslab-dwv.jpg" alt="Under-slab PVC drain, waste and vent piping network beneath a building" width="1100" height="496" loading="lazy">
+                            <figcaption>Under-slab drainage<span>A custom-fit DWV network built to spec</span></figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/web/work-04-tankless-water-heater.jpg" alt="Navien tankless water heater with expansion tank and copper connections" width="473" height="1000" loading="lazy">
+                            <figcaption>Tankless water heater<span>Navien unit, expansion tank, code-ready</span></figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/web/work-01-sewer-trench-layout.jpg" alt="Large green sewer main set to grade in a trench on a commercial site, excavator behind" width="750" height="1000" loading="lazy">
+                            <figcaption>Commercial sewer main<span>Large-diameter site sewer set to grade</span></figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/web/work-06-approved-permit.jpg" alt="City of Houston plumbing inspection tag marked Approved, held over a finished trench" width="750" height="1000" loading="lazy">
+                            <span class="tag"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Inspection passed</span><figcaption>City-approved<span>Houston inspection tag, permit in hand</span></figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="day" id="builds"><span class="day__label" data-i18n="day.builds">Builds we plumbed</span></h2>
+
+            <div class="group group--hector">
+                <span class="group__avatar avatar avatar--hector" aria-hidden="true">H</span>
+                <div class="group__body">
+                    <p class="group__name">Hector <span>ground-up commercial</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble">Ground-up new construction plumbing for some of Texas&rsquo; most recognized commercial brands. Full references on request.</p>
+                    <div class="builds">
+                        <article class="build">
+                            <div class="build__img"><img src="images/web/project-whataburger.jpg" alt="Newly built Whataburger Digital Kitchen restaurant" width="926" height="812" loading="lazy"></div>
+                            <div class="build__body">
+                                <p class="build__type">Restaurant</p>
+                                <h3>Whataburger Digital Kitchen</h3>
+                                <p>Ground-up plumbing: underground rough-in, grease waste, gas piping, and the full kitchen &amp; restroom fixture set.</p>
+                            </div>
+                        </article>
+                        <article class="build">
+                            <div class="build__img"><img src="images/web/project-speedy-stop.jpg" alt="New Speedy Stop fuel station and convenience store at dusk" width="1000" height="603" loading="lazy"></div>
+                            <div class="build__body">
+                                <p class="build__type">Fuel &amp; c-store</p>
+                                <h3>Speedy Stop</h3>
+                                <p>Complete plumbing for a new travel center: commercial kitchen, restrooms, and full water &amp; drainage systems.</p>
+                            </div>
+                        </article>
+                        <article class="build">
+                            <div class="build__img"><img src="images/web/project-subaru.jpg" alt="Newly built Sterling Subaru dealership" width="1000" height="750" loading="lazy"></div>
+                            <div class="build__body">
+                                <p class="build__type">Auto dealership</p>
+                                <h3>Sterling Subaru</h3>
+                                <p>Full plumbing for a new dealership: showroom, service bays, compressed air, and customer areas.</p>
+                            </div>
+                        </article>
+                        <article class="build">
+                            <div class="build__img"><img src="images/web/project-honda.jpg" alt="Honda of Tomball dealership and service center" width="1000" height="642" loading="lazy"></div>
+                            <div class="build__body">
+                                <p class="build__type">Auto dealership</p>
+                                <h3>Honda of Tomball</h3>
+                                <p>Ground-up plumbing for the dealership and service center: showroom, multi-bay service department, and restrooms.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="bubble">
+                        <p>We&rsquo;ve worked with:</p>
+                        <div class="clients">
+                            <img src="images/web/whataburger-logo.png" alt="Whataburger" width="96" height="54" loading="lazy">
+                            <img src="images/web/wier-logo.png" alt="Wier Commercial Construction" width="54" height="54" loading="lazy">
+                            <img src="images/web/ford-logo.png" alt="Ford dealerships" width="54" height="54" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="day"><span class="day__label" data-i18n="day.why">Why people keep our number</span></h2>
+
+            <div class="group group--trino">
+                <span class="group__avatar avatar avatar--trino" aria-hidden="true">T</span>
+                <div class="group__body">
+                    <p class="group__name">Trino <span>40 years plumbing Houston</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble bubble--big">We&rsquo;ve had the same phone number for 40 years. Never needed to hide from our work.</p>
+                </div>
+            </div>
+            <div class="group group--hector">
+                <span class="group__avatar avatar avatar--hector" aria-hidden="true">H</span>
+                <div class="group__body">
+                    <p class="group__name">Hector <span>Licensed Master Plumber</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble">I hold a Texas Master Plumber license, so every job is led by someone with the highest credential in the trade.</p>
+                </div>
+            </div>
+            <div class="group group--alexis">
+                <span class="group__avatar avatar avatar--alexis" aria-hidden="true">A</span>
+                <div class="group__body">
+                    <p class="group__name">Alexis <span>takes every new request · Rice MBA</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble">I handle bids, procurement and scheduling. GCs get accurate bids fast, and projects stay on time and on budget.</p>
+                </div>
+            </div>
+            <div class="group group--trino">
+                <span class="group__avatar avatar avatar--trino" aria-hidden="true">T</span>
+                <div class="group__body">
+                    <p class="group__name">Trino <span>40 years plumbing Houston</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble">Between us it&rsquo;s 65+ years of plumbing. Commercial builds, residential repairs &mdash; we&rsquo;ve seen it and solved it.</p>
+                    <p class="bubble">And when you call, you get us. Not a dispatcher, not a franchise, not a call center.</p>
+                </div>
+            </div>
+
+            <h2 class="day" id="reviews"><span class="day__label" data-i18n="day.reviews">Forwarded from Google</span></h2>
+
+            <div class="group group--alexis">
+                <span class="group__avatar avatar avatar--alexis" aria-hidden="true">A</span>
+                <div class="group__body">
+                    <p class="group__name">Alexis <span>a few of our Google reviews</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <div class="bubble">
+                        <div class="rating">
+                            <span class="rating__score">5.0</span>
+                            <span class="rating__meta"><span class="stars" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span><br>47 reviews on Google</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <blockquote class="bubble fwd">
+                            <p class="fwd__from"><svg class="icon" aria-hidden="true"><use href="#i-forward"/></svg>Forwarded from Google</p>
+                            <div class="fwd__quote">
+                                <p><span class="sr-only">5 out of 5 stars. </span><span class="stars" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span></p>
+                                <p>Hector and his team handled our entire dealership plumbing from the ground up. Professional, on time, and the quality of work was outstanding. They understood commercial specs perfectly.</p>
+                            </div>
+                            <footer class="fwd__who"><strong>Marcus T.</strong> · Commercial · new construction</footer>
+                        </blockquote>
+                        <blockquote class="bubble fwd">
+                            <p class="fwd__from"><svg class="icon" aria-hidden="true"><use href="#i-forward"/></svg>Forwarded from Google</p>
+                            <div class="fwd__quote">
+                                <p><span class="sr-only">5 out of 5 stars. </span><span class="stars" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span></p>
+                                <p>Called for an emergency leak on a Sunday and Trino picked up immediately. 40 years of experience shows &mdash; he diagnosed the problem in minutes and had it fixed fast. Old school reliability.</p>
+                            </div>
+                            <footer class="fwd__who"><strong>Sarah M.</strong> · Residential · emergency</footer>
+                        </blockquote>
+                        <blockquote class="bubble fwd">
+                            <p class="fwd__from"><svg class="icon" aria-hidden="true"><use href="#i-forward"/></svg>Forwarded from Google</p>
+                            <div class="fwd__quote">
+                                <p><span class="sr-only">5 out of 5 stars. </span><span class="stars" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span></p>
+                                <p>We hired Texas Divine for our complete bathroom remodel and kitchen re-pipe. The MBA-managed operations really shows &mdash; clear quotes, organized scheduling, and no surprise costs. Best plumbing experience we&rsquo;ve ever had.</p>
+                            </div>
+                            <footer class="fwd__who"><strong>James &amp; Linda R.</strong> · Residential · remodel</footer>
+                        </blockquote>
+                        <blockquote class="bubble fwd">
+                            <p class="fwd__from"><svg class="icon" aria-hidden="true"><use href="#i-forward"/></svg>Forwarded from Google</p>
+                            <div class="fwd__quote">
+                                <p><span class="sr-only">5 out of 5 stars. </span><span class="stars" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span></p>
+                                <p>As a general contractor, I need plumbing subs who can read blueprints and deliver on schedule. Texas Divine has been my go-to for three projects now. Their supply chain management keeps material costs down too.</p>
+                            </div>
+                            <footer class="fwd__who"><strong>David K.</strong> · General contractor</footer>
+                        </blockquote>
+                        <blockquote class="bubble fwd">
+                            <p class="fwd__from"><svg class="icon" aria-hidden="true"><use href="#i-forward"/></svg>Forwarded from Google</p>
+                            <div class="fwd__quote">
+                                <p><span class="sr-only">5 out of 5 stars. </span><span class="stars" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span></p>
+                                <p>Honest pricing and honest work. They fixed our water heater issue for less than what two other companies quoted. You can tell this is a family that takes pride in what they do.</p>
+                            </div>
+                            <footer class="fwd__who"><strong>Patricia W.</strong> · Residential · water heater</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="day"><span class="day__label" data-i18n="day.faq">Questions people ask</span></h2>
+
+            <div class="group group--me">
+                <div class="group__body">
+                    <p class="sr-only">You asked:</p>
+                    <p class="bubble">Do you only do commercial work?</p>
+                </div>
+            </div>
+            <div class="group group--trino">
+                <span class="group__avatar avatar avatar--trino" aria-hidden="true">T</span>
+                <div class="group__body">
+                    <p class="group__name">Trino <span>40 years plumbing Houston</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble">No &mdash; we handle all kinds of residential plumbing too: repairs, remodels and new installations. Same standards as our commercial work, big job or small.</p>
+                </div>
+            </div>
+            <div class="group group--me">
+                <div class="group__body">
+                    <p class="sr-only">You asked:</p>
+                    <p class="bubble">Are you licensed and insured?</p>
+                </div>
+            </div>
+            <div class="group group--hector">
+                <span class="group__avatar avatar avatar--hector" aria-hidden="true">H</span>
+                <div class="group__body">
+                    <p class="group__name">Hector <span>Licensed Master Plumber</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble">Yes. Texas Divine Plumbing is fully licensed and insured, and I&rsquo;m a Licensed Master Plumber.</p>
+                </div>
+            </div>
+            <div class="group group--me">
+                <div class="group__body">
+                    <p class="sr-only">You asked:</p>
+                    <p class="bubble">Who do I contact?</p>
+                </div>
+            </div>
+            <div class="group group--alexis">
+                <span class="group__avatar avatar avatar--alexis" aria-hidden="true">A</span>
+                <div class="group__body">
+                    <p class="group__name">Alexis <span>takes every new request</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble">Me! Call or text me at <a href="tel:+12818408062">281-840-8062</a>, or send the form below. I&rsquo;ll get you a quote and drop it in the family group chat to find who can help.</p>
+                </div>
+            </div>
+            <div class="group group--me">
+                <div class="group__body">
+                    <p class="sr-only">You asked:</p>
+                    <p class="bubble">How do I get a bid for a commercial project?</p>
+                </div>
+            </div>
+            <div class="group group--alexis">
+                <span class="group__avatar avatar avatar--alexis" aria-hidden="true">A</span>
+                <div class="group__body">
+                    <p class="group__name">Alexis <span>takes every new request · Rice MBA</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble">Send me the blueprints: text or call me at <a href="tel:+12818408062">281-840-8062</a>, use the form below, or email <a href="mailto:texasdivineplumbing@gmail.com">texasdivineplumbing@gmail.com</a>. We&rsquo;ll review your blueprints and requirements and send a detailed estimate.</p>
+                    <a class="chip chip--light" href="faq.html">See all questions<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                </div>
+            </div>
+
+            <h2 class="day" id="message"><span class="day__label" data-i18n="day.message">Message Alexis</span></h2>
+
+            <form class="composer" id="message-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?sent=1#message" novalidate>
+                    <input type="hidden" name="form-name" value="contact">
+                    <p hidden><label>Don&rsquo;t fill this out: <input name="bot-field"></label></p>
+                    <h3 class="composer__title" data-i18n="composer.title">Send Alexis the details.</h3>
+                    <p class="composer__intro" data-i18n="composer.intro">Tell Alexis what&rsquo;s going on. Alexis gets you a quote and drops it in the family group chat to find who can help.</p>
+
+                    <input type="hidden" name="to" value="alexis">
+                    <div class="composer__to"><span class="avatar avatar--alexis" aria-hidden="true">A</span><span><b data-i18n="composer.toAlexis">To: Alexis</b><small data-i18n="composer.toNote">Reads every message and drops it in the family chat</small></span></div>
+
+                    <fieldset>
+                        <legend class="field-label" data-i18n="composer.kind">What kind of job</legend>
+                        <div class="pick pick--plain">
+                            <label><input type="radio" name="service" value="residential" checked><span data-i18n="composer.home">At home</span></label>
+                            <label><input type="radio" name="service" value="commercial"><span data-i18n="composer.commercial">Commercial</span></label>
+                            <label><input type="radio" name="service" value="new-construction"><span data-i18n="composer.newBuild">New construction bid</span></label>
+                        </div>
+                    </fieldset>
+
+                    <div class="composer__grid">
+                        <div class="field">
+                            <label class="field-label" for="f-name" data-i18n="composer.name">Your name</label>
+                            <input id="f-name" name="name" type="text" autocomplete="name" required>
+                        </div>
+                        <div class="field">
+                            <label class="field-label" for="f-phone" data-i18n="composer.phone">Phone</label>
+                            <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+                        </div>
+                        <div class="field">
+                            <label class="field-label" for="f-email" data-i18n="composer.email">Email (optional)</label>
+                            <input id="f-email" name="email" type="email" autocomplete="email">
+                        </div>
+                    </div>
+
+                    <div class="field composer__message">
+                        <label class="sr-only" for="f-message">Message</label>
+                        <textarea id="f-message" name="message" rows="4" placeholder="Water heater is leaking in the garage. Can someone come by tomorrow?" data-i18n-ph="composer.ph"></textarea>
+                    </div>
+
+                    <div class="composer__actions">
+                        <button class="chip" type="submit" data-send><svg class="icon" aria-hidden="true"><use href="#i-send"/></svg><span data-i18n="composer.send">Send to Alexis</span></button>
+                        <a class="chip chip--ghost" href="sms:+12818408062" data-text-instead><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg><span data-text-label>Text Alexis instead</span></a>
+                        <p class="composer__note"><span data-i18n="composer.note">Hurry? Call Alexis:</span> <a href="tel:+12818408062">281-840-8062</a></p>
+                    </div>
+                    <p class="composer__status" role="status" aria-live="polite"></p>
+                </form>
+        </div>
+
+        <aside class="panel" aria-labelledby="panel-title">
+            <div class="panel__card">
+                <div class="panel__head">
+                    <img src="images/web/logo-256.png" alt="Texas Divine Plumbing logo" width="64" height="64" loading="lazy">
                     <div>
-                        <p class="reddit-story-eyebrow">Our post that went viral on r/houston</p>
-                        <h2 class="reddit-story-title">The Family Behind Texas Divine Plumbing</h2>
+                        <h2 class="panel__title" id="panel-title">Texas Divine Plumbing</h2>
+                        <p class="panel__sub" data-i18n="panel.sub">Family-owned · Houston, serving all of Texas</p>
                     </div>
                 </div>
-
-                <div class="reddit-story-body">
-                    <p>Both my dad and brother are master plumbers in Houston. My dad has been doing this for over 40 years. Since we work out of the house, our overhead is low &mdash; and we pass those savings straight to you.</p>
-                    <p>Thank you to everyone here! We&rsquo;ve gotten so many opportunities from the Reddit community. My brother and dad are doing commercial plumbing in Corpus Christi for the rest of the year &mdash; but here&rsquo;s the thing: all <strong>7 of my uncles are plumbers too</strong>. Each has over 20 years of experience, and every one of them was taught by my dad.</p>
-                    <p>Send me the details of your situation and I&rsquo;ll drop it in the family group chat to see who can help.</p>
-                </div>
-
-                <div class="reddit-reachout">
-                    <p class="reddit-reachout-lead">Coming from Reddit? Reach out to me directly and I&rsquo;ll get you on the schedule.</p>
-                    <div class="reddit-reachout-contact">
-                        <span class="reddit-reachout-name">Alexis</span>
-                        <a href="tel:281-840-8062" class="reddit-reachout-phone">281-840-8062</a>
-                    </div>
-                    <div class="reddit-reachout-buttons">
-                        <a href="tel:281-840-8062" class="btn btn-reddit">
-                            <span class="btn-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-                            Call Alexis
-                        </a>
-                        <a href="sms:281-840-8062" class="btn btn-reddit-outline">
-                            <span class="btn-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
-                            Text Alexis
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         SERVICES SECTION
-    ======================================== -->
-    <section class="services" id="commercial">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">What We Do</p>
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-description">We're the plumbing partner general contractors trust to deliver on schedule and on budget — and the family team homeowners call when quality matters.</p>
-            </div>
-
-            <div class="services-grid">
-                <!-- Commercial Card (80% Focus) -->
-                <div class="service-card featured reveal">
-                    <div class="service-image">
-                        <img src="images/commercial-banner.jpg" alt="Commercial new construction plumbing installation in Houston TX" width="800" height="220" loading="lazy">
-                        <span class="service-badge">Primary Focus</span>
-                    </div>
-                    <div class="service-content">
-                        <h3>Commercial New Construction & Industrial</h3>
-                        <p>GCs choose us because we show up on time, read blueprints correctly, and don't hold up your schedule. From dealerships to restaurants to industrial facilities, we handle ground-up plumbing at any scale.</p>
-                        <ul class="service-features">
-                            <li>Ground-up builds from blueprint to final inspection</li>
-                            <li>Expert blueprint reading & plumbing system design</li>
-                            <li>On-time delivery — we won't slow down your build</li>
-                            <li>MBA-managed procurement & supply chain</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Residential Card (20% Focus) -->
-                <div class="service-card reveal" id="residential">
-                    <div class="service-image">
-                        <img src="images/residential-banner.jpg" alt="Residential plumbing repair and remodel services" width="800" height="220" loading="lazy">
-                    </div>
-                    <div class="service-content">
-                        <h3>Residential Services</h3>
-                        <p>We bring the same professionalism and precision from our commercial projects into your home. Whether it's a full remodel, a re-pipe, or a simple repair — your family gets our full attention.</p>
-                        <ul class="service-features">
-                            <li>Repairs, remodels & full re-pipes</li>
-                            <li>Honest, upfront pricing — no surprises</li>
-                            <li>Clean, respectful work in your home</li>
-                            <li>The same crew that builds for Whataburger works for you</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         WHY CHOOSE US SECTION
-    ======================================== -->
-    <section class="why-choose-us">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">The Difference</p>
-                <h2 class="section-title">Why Choose Texas Divine Plumbing</h2>
-                <p class="section-description">What general contractors and homeowners both need from a plumber: reliability, credentials, and people who stand behind their work.</p>
-            </div>
-
-            <div class="differentiators-grid">
-                <div class="differentiator-card reveal">
-                    <div class="differentiator-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-                    <h3>40 Years, Same Phone Number</h3>
-                    <p>We've never changed our number because we've never needed to hide from our work. That's 40 years of standing behind every job.</p>
-                </div>
-
-                <div class="differentiator-card reveal">
-                    <div class="differentiator-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
-                    <h3>Licensed Master Plumber</h3>
-                    <p>Hector holds a Texas Master Plumber license. Every project is led by someone with the highest credentials in the trade.</p>
-                </div>
-
-                <div class="differentiator-card reveal">
-                    <div class="differentiator-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg></div>
-                    <h3>Rice MBA Operations</h3>
-                    <p>Alexis brings MBA-level efficiency to bids, procurement, and scheduling. GCs get accurate bids fast, and projects stay on time and under budget.</p>
-                </div>
-
-                <div class="differentiator-card reveal">
-                    <div class="differentiator-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div>
-                    <h3>65+ Years Combined Experience</h3>
-                    <p>Three generations of plumbing knowledge. From complex commercial builds to residential repairs, we've seen and solved it all.</p>
-                </div>
-
-                <div class="differentiator-card reveal">
-                    <div class="differentiator-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
-                    <h3>Reliable & Responsive</h3>
-                    <p>When you call, we answer. GCs get direct access to the crew, not a dispatcher. Homeowners get the same attentive service — no runaround.</p>
-                </div>
-
-                <div class="differentiator-card reveal">
-                    <div class="differentiator-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-                    <h3>Family-Owned & Operated</h3>
-                    <p>We're not a franchise or a call center. You talk directly to the people who do the work. Your satisfaction is our family's reputation.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         ABOUT SECTION
-    ======================================== -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content reveal">
-                    <p class="section-subtitle">Who We Are</p>
-                    <h2>The <span>Power Trio</span></h2>
-                    <p class="about-intro">Texas Divine Plumbing is built on three generations of expertise, combining decades of hands-on experience with modern business efficiency.</p>
-
-                    <div class="team-member">
-                        <div class="member-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-                        <div class="member-info">
-                            <h4>Meet Trino - 40-Year Industry Veteran</h4>
-                            <p>Deep 713 roots and four decades of Houston plumbing experience. He knows every pipe, every building code, and every shortcut that actually works.</p>
-                        </div>
-                    </div>
-
-                    <div class="team-member">
-                        <div class="member-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
-                        <div class="member-info">
-                            <h4>Meet Hector - Master Plumber</h4>
-                            <p>Licensed Master Plumber with expertise in complex commercial systems. Leads our field operations with precision and craftsmanship.</p>
-                        </div>
-                    </div>
-
-                    <div class="team-member">
-                        <div class="member-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-                        <div class="member-info">
-                            <h4>Meet Alexis - Rice MBA & Materials Expert</h4>
-                            <p>Brings business acumen and supply chain optimization. Manages bids, procurement, and ensures projects stay on budget and on time.</p>
-                        </div>
-                    </div>
-
-                    <div class="trust-signal">
-                        <div class="trust-signal-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-                        <p><strong>We have never changed our phone number.</strong> That's 40 years of the same number because we stand behind our work.</p>
-                    </div>
-                </div>
-
-                <div class="about-image reveal">
-                    <img src="images/work-01-sewer-trench-layout.jpg" alt="Texas Divine Plumbing team on a commercial job site in Houston" width="800" height="400" loading="lazy">
-                    <div class="experience-badge">
-                        <div class="number">65+</div>
-                        <div class="text">Years Combined<br>Experience</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         GALLERY SECTION
-    ======================================== -->
-    <section class="gallery">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">Our Work</p>
-                <h2 class="section-title">Real Jobs, Real Photos</h2>
-                <p class="section-description">Straight from our job sites — commercial and residential work our team has completed or has in progress. This is the quality you get when you call us.</p>
-            </div>
-
-            <!-- ========================================
-                 REAL-WORK GALLERY
-                 To publish a photo: drop the matching file into /images/
-                 using the exact filename in each <img src="..."> below.
-            ======================================== -->
-            <div class="work-gallery reveal">
-                <figure class="work-item">
-                    <div class="work-media">
-                        <img src="images/work-05-sewer-main.jpg" alt="Underground sanitary sewer rough-in with PVC drain lines laid to grade in a trench, laser level in background" loading="lazy" width="800" height="600" onerror="this.classList.add('img-missing')">
-                    </div>
-                    <figcaption class="work-caption">
-                        <h4>Underground Sewer Rough-In</h4>
-                        <p>New commercial slab — DWV drain lines set to grade with a laser level.</p>
-                    </figcaption>
-                </figure>
-
-                <figure class="work-item">
-                    <div class="work-media">
-                        <img src="images/work-02-copper-gas-wall.jpg" alt="Copper water supply lines and black gas piping roughed into a steel-framed wall with washer and hose-bib boxes" loading="lazy" width="800" height="600" onerror="this.classList.add('img-missing')">
-                    </div>
-                    <figcaption class="work-caption">
-                        <h4>Copper &amp; Gas Wall Rough-In</h4>
-                        <p>Water supply and gas piping run clean and straight, ready for inspection.</p>
-                    </figcaption>
-                </figure>
-
-                <figure class="work-item">
-                    <div class="work-media">
-                        <img src="images/work-03-underslab-dwv.jpg" alt="Under-slab PVC drain, waste and vent piping network fit together beneath a building" loading="lazy" width="800" height="600" onerror="this.classList.add('img-missing')">
-                    </div>
-                    <figcaption class="work-caption">
-                        <h4>Under-Slab Drainage System</h4>
-                        <p>A custom-fit drain, waste &amp; vent network built to spec under the slab.</p>
-                    </figcaption>
-                </figure>
-
-                <figure class="work-item">
-                    <div class="work-media">
-                        <img src="images/work-04-tankless-water-heater.jpg" alt="Navien high-efficiency tankless water heater installed with expansion tank and copper connections" loading="lazy" width="800" height="600" onerror="this.classList.add('img-missing')">
-                    </div>
-                    <figcaption class="work-caption">
-                        <h4>Tankless Water Heater Install</h4>
-                        <p>High-efficiency Navien unit with expansion tank and clean, code-ready connections.</p>
-                    </figcaption>
-                </figure>
-
-                <figure class="work-item">
-                    <div class="work-media">
-                        <img src="images/work-01-sewer-trench-layout.jpg" alt="Large green sewer main pipe set to grade in a trench on a commercial construction site with excavator" loading="lazy" width="800" height="600" onerror="this.classList.add('img-missing')">
-                    </div>
-                    <figcaption class="work-caption">
-                        <h4>Commercial Sewer Main</h4>
-                        <p>Large-diameter site sewer main set to grade on a ground-up commercial build.</p>
-                    </figcaption>
-                </figure>
-
-                <figure class="work-item work-item-permit">
-                    <div class="work-media">
-                        <img src="images/work-06-approved-permit.jpg" alt="City of Houston plumbing inspection tag marked Approved, held over a completed trench on a commercial job site" loading="lazy" width="800" height="600" onerror="this.classList.add('img-missing')">
-                        <span class="work-badge">Inspection Passed</span>
-                    </div>
-                    <figcaption class="work-caption">
-                        <h4>City-Approved &amp; Inspected</h4>
-                        <p>City of Houston &ldquo;Approved&rdquo; plumbing tag — our work passes inspection, permit in hand.</p>
-                    </figcaption>
-                </figure>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         PROJECT PORTFOLIO (GC CASE STUDIES)
-         TODO: Replace placeholder cards with real project data as it's gathered.
-    ======================================== -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">Project Portfolio</p>
-                <h2 class="section-title">Featured Commercial Projects</h2>
-                <p class="section-description">Ground-up new construction plumbing for some of Texas' most recognized commercial brands. Full references available on request.</p>
-            </div>
-
-            <div class="portfolio-grid reveal">
-                <!-- Whataburger -->
-                <article class="portfolio-card">
-                    <div class="portfolio-card-image">
-                        <img src="images/project-whataburger.jpg" alt="Newly built Whataburger Digital Kitchen restaurant exterior" width="600" height="400" loading="lazy" onerror="this.classList.add('img-missing')">
-                        <span class="portfolio-card-sector">Restaurant</span>
-                    </div>
-                    <div class="portfolio-card-body">
-                        <h3>Whataburger Digital Kitchen</h3>
-                        <p class="portfolio-card-scope">Ground-up commercial plumbing for a new Whataburger Digital Kitchen — underground rough-in, grease-waste, gas piping, and full kitchen &amp; restroom fixture set.</p>
-                    </div>
-                </article>
-
-                <!-- Speedy Stop -->
-                <article class="portfolio-card">
-                    <div class="portfolio-card-image">
-                        <img src="images/project-speedy-stop.jpg" alt="New Speedy Stop fuel station and convenience store at dusk" width="600" height="400" loading="lazy" onerror="this.classList.add('img-missing')">
-                        <span class="portfolio-card-sector">Retail / C-Store</span>
-                    </div>
-                    <div class="portfolio-card-body">
-                        <h3>Speedy Stop Fuel &amp; C-Store</h3>
-                        <p class="portfolio-card-scope">Complete plumbing for a new Speedy Stop travel center — commercial kitchen, restrooms, and full water &amp; drainage systems.</p>
-                    </div>
-                </article>
-
-                <!-- Subaru -->
-                <article class="portfolio-card">
-                    <div class="portfolio-card-image">
-                        <img src="images/project-subaru.jpg" alt="Newly constructed Sterling Subaru automotive dealership" width="600" height="400" loading="lazy" onerror="this.classList.add('img-missing')">
-                        <span class="portfolio-card-sector">Auto Dealership</span>
-                    </div>
-                    <div class="portfolio-card-body">
-                        <h3>Sterling Subaru Dealership</h3>
-                        <p class="portfolio-card-scope">Full plumbing systems for a new Subaru dealership — showroom, service bays, compressed air, and customer areas.</p>
-                    </div>
-                </article>
-
-                <!-- Honda -->
-                <article class="portfolio-card">
-                    <div class="portfolio-card-image">
-                        <img src="images/project-honda.jpg" alt="Honda of Tomball dealership and service center exterior" width="600" height="400" loading="lazy" onerror="this.classList.add('img-missing')">
-                        <span class="portfolio-card-sector">Auto Dealership</span>
-                    </div>
-                    <div class="portfolio-card-body">
-                        <h3>Honda of Tomball</h3>
-                        <p class="portfolio-card-scope">Ground-up plumbing for a Honda dealership and service center — showroom, multi-bay service department, and restrooms.</p>
-                    </div>
-                </article>
-            </div>
-
-            <div class="portfolio-cta reveal">
-                <p>Want a deeper look or specific references? <a href="#contact">Get in touch and we'll share our full project list &amp; references</a>.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         TESTIMONIALS SECTION
-    ======================================== -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">What Our Clients Say</p>
-                <h2 class="section-title">Customer Reviews</h2>
-                <p class="section-description">Hear from the general contractors who keep calling us back and the homeowners who recommend us to their neighbors.</p>
-                <div class="google-reviews-badge">
-                    <span class="google-reviews-icon">G</span>
-                    <div class="google-reviews-info">
-                        <span class="google-reviews-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                        <span class="google-reviews-text">5.0 &bull; 47 Reviews on Google</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonials-grid">
-                <div class="testimonial-card reveal">
-                    <span class="testimonial-quote-icon">"</span>
-                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="testimonial-text">Hector and his team handled our entire dealership plumbing from the ground up. Professional, on time, and the quality of work was outstanding. They understood commercial specs perfectly.</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">MT</div>
-                        <div class="testimonial-author-info">
-                            <h4>Marcus T.</h4>
-                            <p>Commercial - New Construction</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card reveal">
-                    <span class="testimonial-quote-icon">"</span>
-                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="testimonial-text">Called for an emergency leak on a Sunday and Trino picked up immediately. 40 years of experience shows - he diagnosed the problem in minutes and had it fixed fast. Old school reliability.</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">SM</div>
-                        <div class="testimonial-author-info">
-                            <h4>Sarah M.</h4>
-                            <p>Residential - Emergency Service</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card reveal">
-                    <span class="testimonial-quote-icon">"</span>
-                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="testimonial-text">We hired Texas Divine for our complete bathroom remodel and kitchen re-pipe. The MBA-managed operations really shows - clear quotes, organized scheduling, and no surprise costs. Best plumbing experience we've ever had.</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">JR</div>
-                        <div class="testimonial-author-info">
-                            <h4>James & Linda R.</h4>
-                            <p>Residential - Remodel</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card reveal">
-                    <span class="testimonial-quote-icon">"</span>
-                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="testimonial-text">As a general contractor, I need plumbing subs who can read blueprints and deliver on schedule. Texas Divine has been my go-to for three projects now. Their supply chain management keeps material costs down too.</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">DK</div>
-                        <div class="testimonial-author-info">
-                            <h4>David K.</h4>
-                            <p>General Contractor</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card reveal">
-                    <span class="testimonial-quote-icon">"</span>
-                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="testimonial-text">Honest pricing and honest work. They fixed our water heater issue for less than what two other companies quoted. You can tell this is a family that takes pride in what they do.</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">PW</div>
-                        <div class="testimonial-author-info">
-                            <h4>Patricia W.</h4>
-                            <p>Residential - Water Heater</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         CONTACT CTA SECTION
-    ======================================== -->
-    <section class="contact-cta" id="contact">
-        <div class="container">
-            <div class="contact-cta-content reveal">
-                <h2>Ready to Start Your Project?</h2>
-                <p>Need a plumbing sub for your next build? Or reliable service for your home? Call us directly — no call centers, no runaround.</p>
-                <div class="contact-buttons">
-                    <a href="tel:832-691-6675" class="contact-card">
-                        <div class="contact-card-label">Call Hector</div>
-                        <div class="contact-card-number">832-691-6675</div>
-                    </a>
-                    <a href="tel:713-875-5353" class="contact-card">
-                        <div class="contact-card-label">Call Trino</div>
-                        <div class="contact-card-number">713-875-5353</div>
-                    </a>
-                    <a href="tel:281-840-8062" class="contact-card">
-                        <div class="contact-card-label">Call Alexis</div>
-                        <div class="contact-card-number">281-840-8062</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         CONTACT FORM SECTION
-    ======================================== -->
-    <section class="contact-form-section" id="contact-form">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info reveal">
-                    <p class="section-subtitle">Get In Touch</p>
-                    <h2>Let's <span>Talk</span> About Your Project</h2>
-                    <p>Tell us what you need and we'll give you an honest quote. Coming from Reddit? Text or call Alexis directly at <a href="tel:281-840-8062">281-840-8062</a> and he'll get you on the schedule.</p>
-
-                    <div class="contact-detail">
-                        <div class="contact-detail-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-                        <div class="contact-detail-text">
-                            <h4>Call Hector</h4>
-                            <p><a href="tel:832-691-6675">832-691-6675</a></p>
-                        </div>
-                    </div>
-
-                    <div class="contact-detail">
-                        <div class="contact-detail-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-                        <div class="contact-detail-text">
-                            <h4>Call Trino</h4>
-                            <p><a href="tel:713-875-5353">713-875-5353</a></p>
-                        </div>
-                    </div>
-
-                    <div class="contact-detail">
-                        <div class="contact-detail-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-                        <div class="contact-detail-text">
-                            <h4>Call Alexis (More Info)</h4>
-                            <p><a href="tel:281-840-8062">281-840-8062</a></p>
-                        </div>
-                    </div>
-
-                    <div class="contact-detail">
-                        <div class="contact-detail-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-                        <div class="contact-detail-text">
-                            <h4>Email Us</h4>
-                            <p><a href="mailto:texasdivineplumbing@gmail.com">texasdivineplumbing@gmail.com</a></p>
-                        </div>
-                    </div>
-
-                    <!-- Google Maps Embed -->
-                    <div class="contact-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.2547!2d-95.3698028!3d29.7604267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDQ1JzM3LjUiTiA5NcKwMjInMTEuMyJX!5e0!3m2!1sen!2sus!4v1700000000000" width="100%" height="250" loading="lazy" allowfullscreen title="Texas Divine Plumbing service area - Houston, TX"></iframe>
-                    </div>
-                </div>
-
-                <div class="contact-form-wrapper reveal">
-                    <h3>Request a Quote</h3>
-
-
-                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                        <input type="hidden" name="form-name" value="contact">
-                        <p style="display:none;">
-                            <label>Don't fill this out: <input name="bot-field"></label>
-                        </p>
-
-                        <!-- Progress Bar -->
-                        <div class="form-progress">
-                            <div class="form-progress-step active">
-                                <span class="form-progress-number">1</span>
-                                <span class="form-progress-label">Service</span>
+                <div class="panel__section">
+                    <p class="panel__h" data-i18n="panel.start">Start here</p>
+                    <div class="member member--alexis">
+                            <span class="avatar avatar--alexis" aria-hidden="true">A</span>
+                            <div>
+                                <div class="member__name">Alexis</div>
+                                <div class="member__role">Takes every new request · Rice MBA</div>
+                                <a class="member__num" href="tel:+12818408062">281-840-8062</a>
                             </div>
-                            <div class="form-progress-step">
-                                <span class="form-progress-number">2</span>
-                                <span class="form-progress-label">Info</span>
-                            </div>
-                            <div class="form-progress-step">
-                                <span class="form-progress-number">3</span>
-                                <span class="form-progress-label">Details</span>
+                            <div class="member__actions">
+                                <a class="icon-btn" href="tel:+12818408062" aria-label="Call Alexis"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></a>
+                                <a class="icon-btn" href="sms:+12818408062" aria-label="Text Alexis"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg></a>
                             </div>
                         </div>
-
-                        <!-- Step 1: Service Type -->
-                        <div class="form-step active" data-step="1">
-                            <p style="font-weight:600; margin-bottom:15px; color:var(--black);">What type of service do you need?</p>
-                            <div class="service-type-grid">
-                                <label class="service-type-option">
-                                    <input type="radio" name="service" value="commercial" required>
-                                    <span class="service-type-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--deep-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="9" y1="6" x2="9" y2="6.01"/><line x1="15" y1="6" x2="15" y2="6.01"/><line x1="9" y1="10" x2="9" y2="10.01"/><line x1="15" y1="10" x2="15" y2="10.01"/><line x1="9" y1="14" x2="9" y2="14.01"/><line x1="15" y1="14" x2="15" y2="14.01"/><path d="M9 18h6"/></svg></span>
-                                    <span class="service-type-label">Commercial</span>
-                                </label>
-                                <label class="service-type-option">
-                                    <input type="radio" name="service" value="residential">
-                                    <span class="service-type-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--deep-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
-                                    <span class="service-type-label">Residential</span>
-                                </label>
-                                <label class="service-type-option">
-                                    <input type="radio" name="service" value="new-construction">
-                                    <span class="service-type-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--deep-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="22" height="16" rx="2"/><path d="M12 2v4M6 6V4M18 6V4"/></svg></span>
-                                    <span class="service-type-label">New Construction</span>
-                                </label>
+                    <p class="panel__note" data-i18n="panel.startNote">Alexis takes every new request, gets you a quote and puts the right plumber on your job.</p>
+                    <div class="panel__chips">
+                        <a class="chip chip--alexis" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="cta.call">Call Alexis</span></a>
+                        <a class="chip chip--ghost" href="sms:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg><span data-i18n="cta.text">Text Alexis</span></a>
+                    </div>
+                </div>
+                <div class="panel__section">
+                    <p class="panel__h" data-i18n="panel.members">The plumbers</p>
+                    <div class="member member--hector">
+                            <span class="avatar avatar--hector" aria-hidden="true">H</span>
+                            <div>
+                                <div class="member__name">Hector</div>
+                                <div class="member__role">Licensed Master Plumber</div>
+                                <a class="member__num" href="tel:+18326916675">832-691-6675</a>
                             </div>
-                            <div class="form-step-buttons">
-                                <button type="button" class="btn-form-next">Next &rarr;</button>
+                            <div class="member__actions">
+                                <a class="icon-btn" href="tel:+18326916675" aria-label="Call Hector"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></a>
+                                <a class="icon-btn" href="sms:+18326916675" aria-label="Text Hector"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg></a>
                             </div>
                         </div>
-
-                        <!-- Step 2: Contact Info -->
-                        <div class="form-step" data-step="2">
-                            <div class="form-group">
-                                <label for="ms-name">Your Name *</label>
-                                <input type="text" id="ms-name" name="name" required placeholder="John Smith">
+                    <div class="member member--trino">
+                            <span class="avatar avatar--trino" aria-hidden="true">T</span>
+                            <div>
+                                <div class="member__name">Trino</div>
+                                <div class="member__role">40 years plumbing Houston</div>
+                                <a class="member__num" href="tel:+17138755353">713-875-5353</a>
                             </div>
-                            <div class="form-group">
-                                <label for="ms-phone">Phone Number *</label>
-                                <input type="tel" id="ms-phone" name="phone" required placeholder="(832) 555-1234">
-                            </div>
-                            <div class="form-group">
-                                <label for="ms-email">Email Address</label>
-                                <input type="email" id="ms-email" name="email" placeholder="john@example.com">
-                            </div>
-                            <div class="form-step-buttons">
-                                <button type="button" class="btn-form-prev">&larr; Back</button>
-                                <button type="button" class="btn-form-next">Next &rarr;</button>
+                            <div class="member__actions">
+                                <a class="icon-btn" href="tel:+17138755353" aria-label="Call Trino"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></a>
+                                <a class="icon-btn" href="sms:+17138755353" aria-label="Text Trino"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg></a>
                             </div>
                         </div>
-
-                        <!-- Step 3: Project Details -->
-                        <div class="form-step" data-step="3">
-                            <div class="form-group">
-                                <label for="ms-message">Tell Us About Your Project</label>
-                                <textarea id="ms-message" name="message" placeholder="Describe your project, the issue, or what you need help with..."></textarea>
-                            </div>
-                            <div class="form-step-buttons">
-                                <button type="button" class="btn-form-prev">&larr; Back</button>
-                                <button type="submit" class="btn-submit">Send Request</button>
-                            </div>
+                    <div class="member member--uncles">
+                        <span class="avatar" aria-hidden="true">+7</span>
+                        <div>
+                            <div class="member__name" data-i18n="panel.uncles">7 uncles</div>
+                            <div class="member__role" data-i18n="panel.unclesRole">Plumbers, 20+ years each, all taught by Trino</div>
                         </div>
-                    </form>
+                    </div>
+                </div>
+                <div class="panel__section">
+                    <p class="panel__h" data-i18n="panel.check">Check us out</p>
+                    <div class="facts">
+                        <a class="fact" href="index.html#reviews"><span class="fact__k">Google reviews</span><span class="fact__v">5.0 <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> · 47</span></a>
+                        <a class="fact" href="https://www.reddit.com/r/houston/comments/1hpouwl/plumbers_for_houston/m4j86ie/" target="_blank" rel="noopener"><span class="fact__k">r/houston</span><span class="fact__v">#1 recommended <svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></span></a>
+                        <div class="fact"><span class="fact__k">Texas license</span><span class="fact__v">Master Plumber</span></div>
+                        <div class="fact"><span class="fact__k">Hours</span><span class="fact__v">Mon–Fri 7–6 · Sat 8–2</span></div>
+                        <a class="fact" href="mailto:texasdivineplumbing@gmail.com"><span class="fact__k">Email</span><span class="fact__v">texasdivineplumbing@gmail.com</span></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </aside>
     </main>
 
-    <!-- ========================================
-         FOOTER
-    ======================================== -->
-    <footer role="contentinfo">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <img src="images/logo.png" alt="Texas Divine Plumbing" class="footer-logo" width="200" height="100" loading="lazy">
-                    <p>Texas' trusted family plumbing team. 65 years of combined experience serving all of Texas with integrity and expertise.</p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-                        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-                        <a href="#" aria-label="Google Business Profile"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></a>
-                    </div>
-                    <div class="footer-review-cta">
-                        <a href="#"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:4px"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Leave Us a Review on Google</a>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <span class="brand__mark"><img src="images/web/logo-256.png" alt="" width="72" height="72" loading="lazy"></span>
+                    <div>
+                        <p class="footer__line" data-i18n="footer.line">Same number for 40 years.</p>
+                        <p data-i18n="footer.sub">A family of plumbers in Houston, serving all of Texas. Licensed &amp; insured.</p>
                     </div>
                 </div>
-
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
+                <div>
+                    <h3>Call</h3>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#commercial">Commercial Services</a></li>
-                        <li><a href="#residential">Residential Services</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="tel:+12818408062">Alexis · 281-840-8062</a></li>
+                        <li><a href="tel:+18326916675">Hector · 832-691-6675</a></li>
+                        <li><a href="tel:+17138755353">Trino · 713-875-5353</a></li>
+                        <li><a href="mailto:texasdivineplumbing@gmail.com">texasdivineplumbing@gmail.com</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-column">
-                    <h4>Service Areas</h4>
+                <div>
+                    <h3 data-i18n="nav.areas">Service areas</h3>
                     <ul>
                         <li><a href="houston-plumbing.html">Houston</a></li>
                         <li><a href="dallas-plumbing.html">Dallas</a></li>
@@ -1022,80 +823,33 @@
                         <li><a href="austin-plumbing.html">Austin</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-column">
-                    <h4>Contact Us</h4>
+                <div>
+                    <h3>More</h3>
                     <ul>
-                        <li class="footer-contact-item">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            <a href="tel:832-691-6675">Hector: 832-691-6675</a>
-                        </li>
-                        <li class="footer-contact-item">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            <a href="tel:713-875-5353">Trino: 713-875-5353</a>
-                        </li>
-                        <li class="footer-contact-item">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            <a href="tel:281-840-8062">Alexis: 281-840-8062</a>
-                        </li>
-                        <li class="footer-contact-item">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                            <a href="mailto:texasdivineplumbing@gmail.com">texasdivineplumbing@gmail.com</a>
-                        </li>
+                        <li><a href="index.html#work" data-i18n="nav.work">Our work</a></li>
+                        <li><a href="index.html#reviews" data-i18n="nav.reviews">Reviews</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                     </ul>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 Texas Divine Plumbing. All rights reserved. Licensed & Insured.</p>
-                <!-- TODO: Replace placeholder with real Texas Master Plumber license number (RMP-XXXXX or M-XXXXX) -->
-                <p class="license-text">TX Master Plumber License # <span class="license-placeholder">[Pending — Update Before Launch]</span></p>
-                <div class="footer-bottom-links">
-                    <a href="blog.html">Blog</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Texas Divine Plumbing</span>
+                <span>Mon–Fri 7:00–6:00 · Sat 8:00–2:00</span>
+                <!-- TODO: add the Texas Master Plumber license number (M-XXXXX) here once confirmed -->
+                <nav aria-label="Footer">
+                    <a href="https://www.reddit.com/r/houston/comments/1hpouwl/plumbers_for_houston/m4j86ie/" target="_blank" rel="noopener">r/houston thread</a>
+                    <a href="index.html#message" data-i18n="nav.message">Message us</a>
+                </nav>
             </div>
         </div>
     </footer>
 
-    <!-- ========================================
-         STICKY MOBILE CALL BUTTON
-    ======================================== -->
-    <a href="tel:832-691-6675" class="sticky-call" aria-label="Call us now">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-        </svg>
-        <span class="sticky-call-tooltip">Call Hector: 832-691-6675</span>
-    </a>
+    <nav class="dock" aria-label="Call or text Alexis">
+        <a class="dock__alexis" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="cta.call">Call Alexis</span></a>
+        <a class="dock__textalexis" href="sms:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg><span data-i18n="cta.text">Text Alexis</span></a>
+    </nav>
 
-    <!-- Sticky SMS Button (Mobile) -->
-    <a href="sms:832-691-6675?body=Hi,%20I%20need%20a%20plumbing%20quote%20for%20" class="sticky-text" aria-label="Text us now">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/>
-        </svg>
-        <span class="sticky-text-tooltip">Text Us: 832-691-6675</span>
-    </a>
-
-    <!-- ========================================
-         TAWK.TO LIVE CHAT (Replace with your Tawk.to property ID)
-         Sign up free at https://www.tawk.to/
-    ======================================== -->
-    <!--
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/YOUR_PROPERTY_ID/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    -->
-
-    <!-- JavaScript -->
     <script src="js/main.js"></script>
 </body>
 </html>

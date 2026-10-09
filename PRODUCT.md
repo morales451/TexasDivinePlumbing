@@ -22,8 +22,8 @@ A real family of plumbers, not a franchise or a call center. Trino has 40 years 
 
 ## Operating Context
 
-- Contact is by phone call or text to a named person (Hector 832-691-6675, Trino 713-875-5353, Alexis 281-840-8062), by email (texasdivineplumbing@gmail.com), or through a multi-step Netlify contact form.
-- Alexis triages Reddit-sourced requests and passes them to the family group chat to find who is available.
+- **Alexis Morales (281-840-8062) is the primary contact for all new leads.** Most traffic comes from Reddit, Alexis is the liaison for every lead (and is paid per lead), and passes each request to the family group chat to find who is available. Every page leads with calling or texting Alexis.
+- Hector (832-691-6675) and Trino (713-875-5353) stay listed as the plumbers, below Alexis. Email: texasdivineplumbing@gmail.com. The Netlify contact form is addressed to Alexis.
 - Hours: Mon–Fri 7:00–18:00, Sat 8:00–14:00.
 - Service area: all of Texas, with city pages for Houston, Dallas, San Antonio and Austin. Fort Worth, Sugar Land, Katy and The Woodlands are also listed.
 
@@ -56,7 +56,7 @@ Do not fabricate other testimonials, review quotes, prices or guarantees. Guaran
 
 ## Product Principles
 
-1. **A real person is one tap away.** Every page makes calling or texting a named family member effortless, especially on mobile.
+1. **Alexis is one tap away.** Every page makes calling or texting Alexis the primary action, especially on mobile; Hector and Trino are secondary.
 2. **Proof over promises.** Lead with real photos, real projects, real credentials and the real Reddit thread, never generic claims.
 3. **Commercial rigor shown to homeowners.** Use the commercial track record to earn homeowner trust without losing GCs.
 4. **Honest and plain.** Write the way the family talks. No inflated claims, no new guarantees.

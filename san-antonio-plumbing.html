@@ -25,8 +25,8 @@
     <meta name="twitter:image" content="https://texasdivineplumbing.com/images/og-image.jpg">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo.png">
-    <link rel="apple-touch-icon" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/web/logo-256.png">
+    <link rel="apple-touch-icon" href="images/web/logo-256.png">
 
     <!-- Google Analytics 4 (Replace G-XXXXXXXXXX with your measurement ID) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -40,7 +40,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#072a68">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
@@ -130,360 +131,336 @@
     </script>
 </head>
 <body>
-    <!-- Skip to main content (Accessibility) -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <!-- ========================================
-         HEADER
-    ======================================== -->
-    <header>
-        <div class="header-container">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Texas Divine Plumbing" width="120" height="60">
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+        <symbol id="i-text" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 17v5"/><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"/></symbol>
+        <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+        <symbol id="i-out" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></symbol>
+        <symbol id="i-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+        <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></symbol>
+        <symbol id="i-forward" viewBox="0 0 24 24"><path d="M15 17l5-5-5-5"/><path d="M4 18v-2a4 4 0 0 1 4-4h12"/></symbol>
+        <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+        <symbol id="i-reddit" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 0C5.373 0 0 5.373 0 12c0 3.313 1.344 6.312 3.516 8.484L1.5 24l3.797-1.969A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm5.6 12.29a1.4 1.4 0 0 1 .01.24c0 2.45-2.85 4.43-6.37 4.43s-6.37-1.98-6.37-4.43c0-.08.003-.16.01-.24a1.56 1.56 0 1 1 1.72-2.53 7.7 7.7 0 0 1 4.2-1.33l.8-3.76 2.61.56a1.12 1.12 0 1 1-.13.61l-2.33-.5-.71 3.35a7.7 7.7 0 0 1 4.14 1.33 1.56 1.56 0 1 1 1.72 2.54zM8.9 13.4a1.12 1.12 0 1 0 0-2.24 1.12 1.12 0 0 0 0 2.24zm6.2 0a1.12 1.12 0 1 0 0-2.24 1.12 1.12 0 0 0 0 2.24zm-.42 1.9a.4.4 0 0 1 .56.56 3.9 3.9 0 0 1-2.74 1 3.9 3.9 0 0 1-2.74-1 .4.4 0 0 1 .56-.56c.6.53 1.4.79 2.18.79.78 0 1.58-.26 2.18-.79z"/></symbol>
+        <symbol id="i-google" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12.48 10.92v3.28h7.84c-.24 1.84-.85 3.19-1.79 4.13-1.15 1.15-2.93 2.4-6.05 2.4-4.83 0-8.6-3.89-8.6-8.72s3.77-8.72 8.6-8.72c2.6 0 4.51 1.03 5.91 2.35l2.31-2.31C18.75 1.44 16.13 0 12.48 0 5.87 0 .31 5.39.31 12s5.56 12 12.17 12c3.57 0 6.27-1.17 8.37-3.36 2.16-2.16 2.84-5.21 2.84-7.67 0-.76-.05-1.47-.17-2.05H12.48z"/></symbol>
+    </svg>
+    <header class="topbar">
+        <div class="topbar__inner">
+            <a class="brand" href="index.html" aria-label="Texas Divine Plumbing, home">
+                <span class="brand__mark"><img src="images/web/logo-256.png" alt="" width="40" height="40"></span>
+                <span class="brand__text">
+                    <span class="brand__name">Texas Divine Plumbing</span>
+                    <span class="brand__meta" data-i18n="meta">Trino, Hector, Alexis + 7 uncles</span>
+                </span>
             </a>
-
-            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <nav id="nav-menu" role="navigation" aria-label="Main navigation">
-                <ul>
-                    <li><a href="index.html#home">Home</a></li>
-                    <li><a href="index.html#commercial">Commercial</a></li>
-                    <li><a href="index.html#residential">Residential</a></li>
-                    <li><a href="index.html#portfolio">Portfolio</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li class="nav-dropdown">
-                        <a href="houston-plumbing.html" class="nav-dropdown-toggle">Service Areas <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-left:3px"><polyline points="6 9 12 15 18 9"/></svg></a>
-                        <ul class="nav-dropdown-menu">
+            <nav class="nav" id="site-nav" aria-label="Main">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="index.html#work" data-i18n="nav.work">Our work</a></li>
+                    <li><a class="nav__link" href="index.html#reviews" data-i18n="nav.reviews">Reviews</a></li>
+                    <li><a class="nav__link" href="faq.html">FAQ</a></li>
+                    <li class="nav__item--has-sub">
+                        <button class="nav__link" type="button" aria-expanded="false" data-sub-toggle><span data-i18n="nav.areas">Service areas</span> <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></button>
+                        <ul class="nav__sub">
                             <li><a href="houston-plumbing.html">Houston</a></li>
                             <li><a href="dallas-plumbing.html">Dallas</a></li>
-                            <li><a href="san-antonio-plumbing.html">San Antonio</a></li>
+                            <li><a href="san-antonio-plumbing.html" aria-current="page">San Antonio</a></li>
                             <li><a href="austin-plumbing.html">Austin</a></li>
                         </ul>
                     </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a class="nav__link" href="blog.html">Blog</a></li>
+                    <li><a class="nav__link" href="index.html#message" data-i18n="nav.message">Message us</a></li>
+                    <li class="nav__lang">
+                        <div class="lang" role="group" aria-label="Language">
+                            <button type="button" data-lang="en" class="active" aria-pressed="true">English</button>
+                            <button type="button" data-lang="es" aria-pressed="false">Español</button>
+                        </div>
+                        <a class="chip chip--alexis chip--xl nav__call" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="cta.call">Call Alexis</span> <span class="chip__num">281-840-8062</span></a>
+                    </li>
                 </ul>
             </nav>
+            <div class="lang" role="group" aria-label="Language">
+                <button type="button" data-lang="en" class="active" aria-pressed="true">EN</button>
+                <button type="button" data-lang="es" aria-pressed="false">ES</button>
+            </div>
+            <a class="topbar__call" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="call">Call Alexis</span><span class="topbar__call-num">&nbsp;· 281-840-8062</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
         </div>
     </header>
 
-    <!-- ========================================
-         MAIN CONTENT
-    ======================================== -->
-    <main id="main-content">
-
-    <!-- ========================================
-         CITY HERO SECTION
-    ======================================== -->
-    <section class="city-hero">
-        <div class="container">
-            <div class="hero-badge">Serving San Antonio & Bexar County</div>
-            <h1>San Antonio Commercial New Construction <span>&</span> Residential Plumbing</h1>
-            <p>From the bustling River Walk commercial corridor to the rapid residential growth in Stone Oak, Texas Divine Plumbing brings 65 years of combined expertise to the Alamo City. We build plumbing systems for San Antonio's booming hospitality, healthcare, and military-adjacent construction sectors.</p>
-            <div class="hero-buttons">
-                <a href="tel:832-691-6675" class="btn btn-primary">
-                    <span class="btn-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-                    Call Hector: 832-691-6675
-                </a>
-                <a href="tel:713-875-5353" class="btn btn-secondary">
-                    <span class="btn-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-                    Call Trino: 713-875-5353
-                </a>
-                <a href="tel:281-840-8062" class="btn btn-secondary">
-                    <span class="btn-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-                    Call Alexis: 281-840-8062
-                </a>
+    <main id="main-content" class="layout">
+        <section class="pin" aria-labelledby="pin-title">
+            <h1 class="pin__title pin__title--long" id="pin-title">San Antonio Commercial New Construction &amp; Residential Plumbing</h1>
+            <p class="pin__lede">From the bustling River Walk commercial corridor to the rapid residential growth in Stone Oak, Texas Divine Plumbing brings 65 years of combined expertise to the Alamo City. We build plumbing systems for San Antonio's booming hospitality, healthcare, and military-adjacent construction sectors.</p>
+            <div class="pin__cta">
+                <a class="chip chip--alexis chip--xl" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span><span data-i18n="cta.call">Call Alexis</span> <span class="chip__num">281-840-8062</span></span></a>
+                <a class="chip chip--light chip--xl" href="sms:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg><span data-i18n="cta.text">Text Alexis</span></a>
             </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         SAN ANTONIO OVERVIEW
-    ======================================== -->
-    <section class="city-services" style="padding-bottom: 40px;">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">The Alamo City</p>
-                <h2 class="section-title">Why San Antonio Needs Expert Plumbing Partners</h2>
-                <p class="section-description">San Antonio is one of the fastest-growing major cities in the United States, and that growth demands plumbing contractors who understand the scale, complexity, and pace of development happening across Bexar County.</p>
+            <p class="pin__note" data-i18n="pin.note">Alexis takes every new request and gets the right plumber in the family on your job.</p>
+            <div class="pin__proof">
+                <a class="proof-chip proof-chip--reddit" href="https://www.reddit.com/r/houston/comments/1hpouwl/plumbers_for_houston/m4j86ie/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-reddit"/></svg><span><strong>#1 recommended</strong> on r/houston</span></a>
+                <a class="proof-chip" href="index.html#reviews"><span class="stars" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span><span><strong>5.0</strong> · 47 Google reviews</span></a>
+                <span class="proof-chip"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg><span data-i18n="pin.licensed">Licensed &amp; insured</span></span>
             </div>
+        </section>
 
-            <div style="max-width: 800px; margin: 0 auto; color: #666; line-height: 1.9; font-size: 1.05rem;" class="reveal">
-                <p>The San Antonio River Walk draws more than 11 million visitors annually, making it the most visited attraction in the state. Behind every restaurant, hotel, and entertainment venue along those winding pathways is a commercial plumbing system that has to perform under extraordinary demand. When a River Walk restaurant needs a ground-up build or a major refit, they need a plumbing team that has handled high-volume commercial kitchens and understands the unique challenges of building near the San Antonio River floodplain. That is where we come in.</p>
-                <br>
+        <div class="thread">
+                        <h2 class="day"><span class="day__label">Why San Antonio Needs Expert Plumbing Partners</span></h2>
+            <div class="sheet">
+                <p class="sheet__lede">San Antonio is one of the fastest-growing major cities in the United States, and that growth demands plumbing contractors who understand the scale, complexity, and pace of development happening across Bexar County.</p><p>The San Antonio River Walk draws more than 11 million visitors annually, making it the most visited attraction in the state. Behind every restaurant, hotel, and entertainment venue along those winding pathways is a commercial plumbing system that has to perform under extraordinary demand. When a River Walk restaurant needs a ground-up build or a major refit, they need a plumbing team that has handled high-volume commercial kitchens and understands the unique challenges of building near the San Antonio River floodplain. That is where we come in.</p>
                 <p>But the River Walk is only one piece of San Antonio's story. The Pearl District has transformed from a shuttered brewery into one of the most celebrated mixed-use developments in Texas, blending boutique restaurants, residential lofts, the Culinary Institute of America campus, and upscale retail. Southtown, just south of downtown, continues to attract creative businesses, galleries, and new restaurant concepts that all require thoughtful plumbing design from day one. These neighborhoods reward contractors who do it right the first time, because tearing open finished spaces to fix shortcuts is not an option in high-end buildouts.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         COMMERCIAL SERVICES - SAN ANTONIO SPECIFIC
-    ======================================== -->
-    <section class="city-services">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">What We Build in San Antonio</p>
-                <h2 class="section-title">Commercial New Construction Services</h2>
-                <p class="section-description">Ground-up plumbing for the industries driving San Antonio's economy, from military construction to medical facilities and the booming tourism sector.</p>
-            </div>
-
-            <div class="city-services-grid">
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg></div>
-                    <h3>River Walk & Hospitality Builds</h3>
-                    <p>San Antonio's tourism economy generates billions in annual revenue, and the hotels, restaurants, and entertainment venues along the River Walk require commercial plumbing systems built for relentless daily demand. We design and install systems for commercial kitchens, multi-story hotels, and high-traffic restroom facilities that serve thousands of visitors per day. Our work accounts for the unique drainage and water supply considerations that come with building near the river.</p>
-                </div>
-
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-                    <h3>Military Base & JBSA-Adjacent Construction</h3>
-                    <p>Joint Base San Antonio encompasses Fort Sam Houston, Lackland AFB, and Randolph AFB, making the San Antonio military community one of the largest in the country. The constant cycle of base modernization, housing construction, and support facility development along the I-35 corridor between these installations creates steady demand for commercial plumbing contractors who can meet military-grade specifications and federal building codes. We bring the precision and documentation standards that defense-adjacent projects require.</p>
-                </div>
-
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M9 8h1"/><path d="M9 12h1"/><path d="M9 16h1"/><path d="M14 8h1"/><path d="M14 12h1"/><path d="M14 16h1"/><path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/></svg></div>
-                    <h3>Medical Center & Healthcare Facilities</h3>
-                    <p>The South Texas Medical Center is one of the largest medical complexes in the world, spanning over 900 acres and housing more than 45 facilities. The ongoing expansion of hospitals, specialty clinics, and medical office buildings in this zone requires plumbing systems that comply with strict healthcare regulations, including medical gas piping, specialized drainage for labs, and redundant water supply systems. Hector's Master Plumber license and our team's experience with healthcare builds make us well suited for this work.</p>
-                </div>
-
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg></div>
-                    <h3>Pearl District & Mixed-Use Development</h3>
-                    <p>The Pearl has set the standard for adaptive reuse and mixed-use development in San Antonio, and the surrounding area continues to attract developers building projects that combine restaurant, retail, and residential spaces under one roof. Plumbing for mixed-use buildings is inherently more complex than single-use construction because each tenant type has different water, waste, and gas requirements. We coordinate these systems from the blueprint phase so that no tenant's needs are an afterthought.</p>
-                </div>
-
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h2"/><path d="M17 17h2"/><rect x="3" y="4" width="18" height="13" rx="2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M9 17h6"/></svg></div>
-                    <h3>I-35 Corridor Commercial Growth</h3>
-                    <p>The I-35 corridor between San Antonio and Austin has become one of the hottest commercial development zones in the state. New Braunfels, Schertz, and the northeast San Antonio suburbs are seeing rapid construction of retail centers, car dealerships, warehouse facilities, and restaurants. We already handle dealership plumbing builds across Texas, including Ford facilities, and bring that same expertise to the auto, retail, and logistics spaces sprouting along I-35.</p>
-                </div>
-
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
-                    <h3>Restaurant & Food Service Builds</h3>
-                    <p>San Antonio's culinary scene has earned national recognition, driven by its deep Tex-Mex heritage and a new wave of chef-driven concepts in Southtown, the Pearl, and along Broadway. Restaurant plumbing is among the most demanding in commercial construction: grease traps, high-capacity dishwashing systems, floor drains, gas lines for cooking equipment, and health department compliance all have to be designed together. Trino's 40 years of experience include hundreds of restaurant builds, and that knowledge keeps our kitchen plumbing installs right the first time.</p>
+            <h2 class="day"><span class="day__label">Commercial New Construction Services</span></h2>
+            <div class="sheet">
+                <p class="sheet__lede">Ground-up plumbing for the industries driving San Antonio's economy, from military construction to medical facilities and the booming tourism sector.</p><div class="entries">
+                    <div class="entry">
+                        <h3>River Walk &amp; Hospitality Builds</h3>
+                        <p>San Antonio's tourism economy generates billions in annual revenue, and the hotels, restaurants, and entertainment venues along the River Walk require commercial plumbing systems built for relentless daily demand. We design and install systems for commercial kitchens, multi-story hotels, and high-traffic restroom facilities that serve thousands of visitors per day. Our work accounts for the unique drainage and water supply considerations that come with building near the river.</p>
+                    </div>
+                    <div class="entry">
+                        <h3>Military Base &amp; JBSA-Adjacent Construction</h3>
+                        <p>Joint Base San Antonio encompasses Fort Sam Houston, Lackland AFB, and Randolph AFB, making the San Antonio military community one of the largest in the country. The constant cycle of base modernization, housing construction, and support facility development along the I-35 corridor between these installations creates steady demand for commercial plumbing contractors who can meet military-grade specifications and federal building codes. We bring the precision and documentation standards that defense-adjacent projects require.</p>
+                    </div>
+                    <div class="entry">
+                        <h3>Medical Center &amp; Healthcare Facilities</h3>
+                        <p>The South Texas Medical Center is one of the largest medical complexes in the world, spanning over 900 acres and housing more than 45 facilities. The ongoing expansion of hospitals, specialty clinics, and medical office buildings in this zone requires plumbing systems that comply with strict healthcare regulations, including medical gas piping, specialized drainage for labs, and redundant water supply systems. Hector's Master Plumber license and our team's experience with healthcare builds make us well suited for this work.</p>
+                    </div>
+                    <div class="entry">
+                        <h3>Pearl District &amp; Mixed-Use Development</h3>
+                        <p>The Pearl has set the standard for adaptive reuse and mixed-use development in San Antonio, and the surrounding area continues to attract developers building projects that combine restaurant, retail, and residential spaces under one roof. Plumbing for mixed-use buildings is inherently more complex than single-use construction because each tenant type has different water, waste, and gas requirements. We coordinate these systems from the blueprint phase so that no tenant's needs are an afterthought.</p>
+                    </div>
+                    <div class="entry">
+                        <h3>I-35 Corridor Commercial Growth</h3>
+                        <p>The I-35 corridor between San Antonio and Austin has become one of the hottest commercial development zones in the state. New Braunfels, Schertz, and the northeast San Antonio suburbs are seeing rapid construction of retail centers, car dealerships, warehouse facilities, and restaurants. We already handle dealership plumbing builds across Texas, including Ford facilities, and bring that same expertise to the auto, retail, and logistics spaces sprouting along I-35.</p>
+                    </div>
+                    <div class="entry">
+                        <h3>Restaurant &amp; Food Service Builds</h3>
+                        <p>San Antonio's culinary scene has earned national recognition, driven by its deep Tex-Mex heritage and a new wave of chef-driven concepts in Southtown, the Pearl, and along Broadway. Restaurant plumbing is among the most demanding in commercial construction: grease traps, high-capacity dishwashing systems, floor drains, gas lines for cooking equipment, and health department compliance all have to be designed together. Trino's 40 years of experience include hundreds of restaurant builds, and that knowledge keeps our kitchen plumbing installs right the first time.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         RESIDENTIAL SERVICES - SAN ANTONIO SPECIFIC
-    ======================================== -->
-    <section class="city-services" style="background-color: #fff;">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">Residential Plumbing</p>
-                <h2 class="section-title">Home Plumbing Services Across San Antonio</h2>
-                <p class="section-description">Whether you live in a historic Alamo Heights cottage or a new build in Stone Oak, our family team treats your home with the same care we bring to million-dollar commercial projects.</p>
-            </div>
-
-            <div class="city-services-grid">
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon">&#127968;</div>
-                    <h3>Stone Oak & North Side New Homes</h3>
-                    <p>Stone Oak and the far north side of San Antonio are among the fastest-growing residential areas in Texas. New subdivisions and custom home builds in this area need plumbing contractors who can keep pace with aggressive construction timelines while meeting the city's updated plumbing codes. We handle full new-construction residential plumbing from rough-in to final fixture installation.</p>
-                </div>
-
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
-                    <h3>Alamo Heights & Terrell Hills Remodels</h3>
-                    <p>The established neighborhoods of Alamo Heights, Terrell Hills, and Olmos Park feature older homes with character, but also with aging galvanized pipes, outdated water heaters, and plumbing systems that predate modern codes. Whole-house re-pipes, bathroom remodels, and kitchen upgrades in these homes require a plumber who can work within existing structures without damaging original finishes. We approach renovation plumbing with the careful precision of our commercial training.</p>
-                </div>
-
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div>
-                    <h3>Emergency Repairs & Water Heater Service</h3>
-                    <p>San Antonio's hot summers put extreme strain on water heaters and plumbing systems. When a pipe bursts at 2 AM or your water heater fails during a July heat wave, you need a plumber who answers the phone. Trino has kept the same phone number for 40 years because he believes that being reachable is part of the job. Call us for same-day emergency plumbing service anywhere in the San Antonio metro area.</p>
-                </div>
-
-                <div class="city-service-card reveal">
-                    <div class="city-service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-                    <h3>Honest Pricing, No Surprises</h3>
-                    <p>Alexis, our Rice MBA, manages every residential estimate with the same transparency and rigor she brings to our commercial bids. You will receive a clear, itemized quote before any work begins. We do not pad invoices with unnecessary parts or invented labor charges. Our family reputation depends on every homeowner feeling they got a fair deal, and that is how we have built our business for over four decades.</p>
+            <h2 class="day"><span class="day__label">Home Plumbing Services Across San Antonio</span></h2>
+            <div class="sheet">
+                <p class="sheet__lede">Whether you live in a historic Alamo Heights cottage or a new build in Stone Oak, our family team treats your home with the same care we bring to million-dollar commercial projects.</p><div class="entries">
+                    <div class="entry">
+                        <h3>Stone Oak &amp; North Side New Homes</h3>
+                        <p>Stone Oak and the far north side of San Antonio are among the fastest-growing residential areas in Texas. New subdivisions and custom home builds in this area need plumbing contractors who can keep pace with aggressive construction timelines while meeting the city's updated plumbing codes. We handle full new-construction residential plumbing from rough-in to final fixture installation.</p>
+                    </div>
+                    <div class="entry">
+                        <h3>Alamo Heights &amp; Terrell Hills Remodels</h3>
+                        <p>The established neighborhoods of Alamo Heights, Terrell Hills, and Olmos Park feature older homes with character, but also with aging galvanized pipes, outdated water heaters, and plumbing systems that predate modern codes. Whole-house re-pipes, bathroom remodels, and kitchen upgrades in these homes require a plumber who can work within existing structures without damaging original finishes. We approach renovation plumbing with the careful precision of our commercial training.</p>
+                    </div>
+                    <div class="entry">
+                        <h3>Emergency Repairs &amp; Water Heater Service</h3>
+                        <p>San Antonio's hot summers put extreme strain on water heaters and plumbing systems. When a pipe bursts at 2 AM or your water heater fails during a July heat wave, you need a plumber who answers the phone. Trino has kept the same phone number for 40 years because he believes that being reachable is part of the job. Call us for same-day emergency plumbing service anywhere in the San Antonio metro area.</p>
+                    </div>
+                    <div class="entry">
+                        <h3>Honest Pricing, No Surprises</h3>
+                        <p>Alexis, our Rice MBA, manages every residential estimate with the same transparency and rigor she brings to our commercial bids. You will receive a clear, itemized quote before any work begins. We do not pad invoices with unnecessary parts or invented labor charges. Our family reputation depends on every homeowner feeling they got a fair deal, and that is how we have built our business for over four decades.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         WHY CHOOSE US - SAN ANTONIO CONTEXT
-    ======================================== -->
-    <section class="city-services">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">Our Advantage</p>
-                <h2 class="section-title">Why San Antonio Builders Choose Texas Divine</h2>
-            </div>
-
-            <div style="max-width: 800px; margin: 0 auto; color: #666; line-height: 1.9; font-size: 1.05rem;" class="reveal">
+            <h2 class="day"><span class="day__label">Why San Antonio Builders Choose Texas Divine</span></h2>
+            <div class="sheet">
                 <p>San Antonio is a key part of our statewide service area, and our Houston-based team travels the I-10 corridor regularly to serve projects across the Alamo City and surrounding Bexar County communities. This is not a market we are dabbling in. We have invested in understanding San Antonio's particular development patterns, building codes, and the relationships between general contractors, developers, and the City's permitting offices.</p>
-                <br>
                 <p>What sets us apart is the combination of people on our team. Trino brings 40 years of field experience, including deep knowledge of commercial kitchen builds, industrial systems, and the kind of problem-solving that only comes from decades of hands-on work. Hector holds his Master Plumber license and leads our field operations, ensuring that every installation meets code and performs to specification. And Alexis, with her Rice MBA, manages our bids, procurement, and supply chain so that materials arrive on time and projects stay on budget. In a market like San Antonio, where construction timelines are compressed and developers demand accountability, that combination of trade skill and business discipline is a genuine competitive advantage.</p>
-                <br>
                 <p>We have never changed our phone number in 40 years. That is our way of saying we stand behind every job, and we will be here when you need us again.</p>
             </div>
-        </div>
-    </section>
+            <h2 class="day"><span class="day__label">Serving All of San Antonio & Bexar County</span></h2>
+            <div class="sheet">
+                <p class='sheet__lede'>From Stone Oak to Southtown, Alamo Heights to Lackland, and everywhere along the I-35 and I-10 corridors.</p>
+                <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d222388.3746686!2d-98.6152!3d29.4241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c58af04d00eaf%3A0x856e8b57a9f4d6fb!2sSan%20Antonio%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000" title="Texas Divine Plumbing service area - San Antonio, TX" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+            <h2 class="day"><span class="day__label">San Antonio Areas We Serve</span></h2>
+            <div class="sheet">
+                <ul class="arealist"><li>Downtown / River Walk</li><li>Pearl District</li><li>Southtown / King William</li><li>Alamo Heights</li><li>Terrell Hills</li><li>Olmos Park</li><li>Stone Oak</li><li>The Dominion</li><li>Helotes</li><li>Leon Springs</li><li>Shavano Park</li><li>Castle Hills</li><li>Medical Center Area</li><li>JBSA / Fort Sam Houston Area</li><li>Lackland AFB Area</li><li>Randolph AFB / Schertz</li><li>New Braunfels</li><li>Boerne</li><li>Converse / Live Oak</li><li>I-35 Corridor (SA to Austin)</li></ul>
+            </div>
+            <h2 class="day" id="message"><span class="day__label">Message Alexis</span></h2>
 
-    <!-- ========================================
-         CONTACT CTA SECTION
-    ======================================== -->
-    <section class="contact-cta">
-        <div class="container">
-            <div class="contact-cta-content reveal">
-                <h2>Start Your San Antonio Project Today</h2>
-                <p>Whether you are breaking ground on a new River Walk venue, building medical offices near the South Texas Medical Center, or remodeling a home in Alamo Heights, our team is ready to deliver.</p>
-                <div class="contact-buttons">
-                    <a href="tel:832-691-6675" class="contact-card">
-                        <div class="contact-card-label">Call Hector</div>
-                        <div class="contact-card-number">832-691-6675</div>
-                    </a>
-                    <a href="tel:713-875-5353" class="contact-card">
-                        <div class="contact-card-label">Call Trino</div>
-                        <div class="contact-card-number">713-875-5353</div>
-                    </a>
+            <form class="composer" id="message-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?sent=1#message" novalidate>
+                    <input type="hidden" name="form-name" value="contact">
+                    <p hidden><label>Don&rsquo;t fill this out: <input name="bot-field"></label></p>
+                    <h3 class="composer__title" data-i18n="composer.title">Send Alexis the details.</h3>
+                    <p class="composer__intro" data-i18n="composer.intro">Tell Alexis what&rsquo;s going on. Alexis gets you a quote and drops it in the family group chat to find who can help.</p>
+
+                    <input type="hidden" name="to" value="alexis">
+                    <div class="composer__to"><span class="avatar avatar--alexis" aria-hidden="true">A</span><span><b data-i18n="composer.toAlexis">To: Alexis</b><small data-i18n="composer.toNote">Reads every message and drops it in the family chat</small></span></div>
+
+                    <fieldset>
+                        <legend class="field-label" data-i18n="composer.kind">What kind of job</legend>
+                        <div class="pick pick--plain">
+                            <label><input type="radio" name="service" value="residential" checked><span data-i18n="composer.home">At home</span></label>
+                            <label><input type="radio" name="service" value="commercial"><span data-i18n="composer.commercial">Commercial</span></label>
+                            <label><input type="radio" name="service" value="new-construction"><span data-i18n="composer.newBuild">New construction bid</span></label>
+                        </div>
+                    </fieldset>
+
+                    <div class="composer__grid">
+                        <div class="field">
+                            <label class="field-label" for="f-name" data-i18n="composer.name">Your name</label>
+                            <input id="f-name" name="name" type="text" autocomplete="name" required>
+                        </div>
+                        <div class="field">
+                            <label class="field-label" for="f-phone" data-i18n="composer.phone">Phone</label>
+                            <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+                        </div>
+                        <div class="field">
+                            <label class="field-label" for="f-email" data-i18n="composer.email">Email (optional)</label>
+                            <input id="f-email" name="email" type="email" autocomplete="email">
+                        </div>
+                    </div>
+
+                    <div class="field composer__message">
+                        <label class="sr-only" for="f-message">Message</label>
+                        <textarea id="f-message" name="message" rows="4" placeholder="Water heater is leaking in the garage. Can someone come by tomorrow?" data-i18n-ph="composer.ph"></textarea>
+                    </div>
+
+                    <div class="composer__actions">
+                        <button class="chip" type="submit" data-send><svg class="icon" aria-hidden="true"><use href="#i-send"/></svg><span data-i18n="composer.send">Send to Alexis</span></button>
+                        <a class="chip chip--ghost" href="sms:+12818408062" data-text-instead><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg><span data-text-label>Text Alexis instead</span></a>
+                        <p class="composer__note"><span data-i18n="composer.note">Hurry? Call Alexis:</span> <a href="tel:+12818408062">281-840-8062</a></p>
+                    </div>
+                    <p class="composer__status" role="status" aria-live="polite"></p>
+                </form>
+        </div>
+
+        <aside class="panel" aria-labelledby="panel-title">
+            <div class="panel__card">
+                <div class="panel__head">
+                    <img src="images/web/logo-256.png" alt="Texas Divine Plumbing logo" width="64" height="64" loading="lazy">
+                    <div>
+                        <h2 class="panel__title" id="panel-title">Texas Divine Plumbing</h2>
+                        <p class="panel__sub" data-i18n="panel.sub">Family-owned · Houston, serving all of Texas</p>
+                    </div>
                 </div>
-                <p style="margin-top: 30px; font-size: 1rem; opacity: 0.8;">
-                    <a href="mailto:texasdivineplumbing@gmail.com" style="color: #fff; text-decoration: underline;">texasdivineplumbing@gmail.com</a> &nbsp;|&nbsp; Available for bids, estimates, and emergency calls
-                </p>
+                <div class="panel__section">
+                    <p class="panel__h" data-i18n="panel.start">Start here</p>
+                    <div class="member member--alexis">
+                            <span class="avatar avatar--alexis" aria-hidden="true">A</span>
+                            <div>
+                                <div class="member__name">Alexis</div>
+                                <div class="member__role">Takes every new request · Rice MBA</div>
+                                <a class="member__num" href="tel:+12818408062">281-840-8062</a>
+                            </div>
+                            <div class="member__actions">
+                                <a class="icon-btn" href="tel:+12818408062" aria-label="Call Alexis"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></a>
+                                <a class="icon-btn" href="sms:+12818408062" aria-label="Text Alexis"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg></a>
+                            </div>
+                        </div>
+                    <p class="panel__note" data-i18n="panel.startNote">Alexis takes every new request, gets you a quote and puts the right plumber on your job.</p>
+                    <div class="panel__chips">
+                        <a class="chip chip--alexis" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="cta.call">Call Alexis</span></a>
+                        <a class="chip chip--ghost" href="sms:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg><span data-i18n="cta.text">Text Alexis</span></a>
+                    </div>
+                </div>
+                <div class="panel__section">
+                    <p class="panel__h" data-i18n="panel.members">The plumbers</p>
+                    <div class="member member--hector">
+                            <span class="avatar avatar--hector" aria-hidden="true">H</span>
+                            <div>
+                                <div class="member__name">Hector</div>
+                                <div class="member__role">Licensed Master Plumber</div>
+                                <a class="member__num" href="tel:+18326916675">832-691-6675</a>
+                            </div>
+                            <div class="member__actions">
+                                <a class="icon-btn" href="tel:+18326916675" aria-label="Call Hector"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></a>
+                                <a class="icon-btn" href="sms:+18326916675" aria-label="Text Hector"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg></a>
+                            </div>
+                        </div>
+                    <div class="member member--trino">
+                            <span class="avatar avatar--trino" aria-hidden="true">T</span>
+                            <div>
+                                <div class="member__name">Trino</div>
+                                <div class="member__role">40 years plumbing Houston</div>
+                                <a class="member__num" href="tel:+17138755353">713-875-5353</a>
+                            </div>
+                            <div class="member__actions">
+                                <a class="icon-btn" href="tel:+17138755353" aria-label="Call Trino"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></a>
+                                <a class="icon-btn" href="sms:+17138755353" aria-label="Text Trino"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg></a>
+                            </div>
+                        </div>
+                    <div class="member member--uncles">
+                        <span class="avatar" aria-hidden="true">+7</span>
+                        <div>
+                            <div class="member__name" data-i18n="panel.uncles">7 uncles</div>
+                            <div class="member__role" data-i18n="panel.unclesRole">Plumbers, 20+ years each, all taught by Trino</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel__section">
+                    <p class="panel__h" data-i18n="panel.check">Check us out</p>
+                    <div class="facts">
+                        <a class="fact" href="index.html#reviews"><span class="fact__k">Google reviews</span><span class="fact__v">5.0 <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> · 47</span></a>
+                        <a class="fact" href="https://www.reddit.com/r/houston/comments/1hpouwl/plumbers_for_houston/m4j86ie/" target="_blank" rel="noopener"><span class="fact__k">r/houston</span><span class="fact__v">#1 recommended <svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></span></a>
+                        <div class="fact"><span class="fact__k">Texas license</span><span class="fact__v">Master Plumber</span></div>
+                        <div class="fact"><span class="fact__k">Hours</span><span class="fact__v">Mon–Fri 7–6 · Sat 8–2</span></div>
+                        <a class="fact" href="mailto:texasdivineplumbing@gmail.com"><span class="fact__k">Email</span><span class="fact__v">texasdivineplumbing@gmail.com</span></a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         GOOGLE MAPS - SAN ANTONIO
-    ======================================== -->
-    <section class="city-map">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">Our Service Area</p>
-                <h2 class="section-title">Serving All of San Antonio & Bexar County</h2>
-                <p class="section-description">From Stone Oak to Southtown, Alamo Heights to Lackland, and everywhere along the I-35 and I-10 corridors.</p>
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d222388.3746686!2d-98.6152!3d29.4241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c58af04d00eaf%3A0x856e8b57a9f4d6fb!2sSan%20Antonio%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000" width="100%" height="400" loading="lazy" allowfullscreen title="Texas Divine Plumbing service area - San Antonio, TX"></iframe>
-        </div>
-    </section>
-
-    <!-- ========================================
-         SAN ANTONIO NEIGHBORHOODS SERVED
-    ======================================== -->
-    <section class="city-services" style="padding-top: 60px; padding-bottom: 60px;">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-subtitle">Neighborhoods & Communities</p>
-                <h2 class="section-title">San Antonio Areas We Serve</h2>
-            </div>
-            <div style="max-width: 900px; margin: 0 auto; columns: 2; column-gap: 40px; color: #666; font-size: 1rem; line-height: 2.2;" class="reveal">
-                <span style="display: block;">Downtown / River Walk</span>
-                <span style="display: block;">Pearl District</span>
-                <span style="display: block;">Southtown / King William</span>
-                <span style="display: block;">Alamo Heights</span>
-                <span style="display: block;">Terrell Hills</span>
-                <span style="display: block;">Olmos Park</span>
-                <span style="display: block;">Stone Oak</span>
-                <span style="display: block;">The Dominion</span>
-                <span style="display: block;">Helotes</span>
-                <span style="display: block;">Leon Springs</span>
-                <span style="display: block;">Shavano Park</span>
-                <span style="display: block;">Castle Hills</span>
-                <span style="display: block;">Medical Center Area</span>
-                <span style="display: block;">JBSA / Fort Sam Houston Area</span>
-                <span style="display: block;">Lackland AFB Area</span>
-                <span style="display: block;">Randolph AFB / Schertz</span>
-                <span style="display: block;">New Braunfels</span>
-                <span style="display: block;">Boerne</span>
-                <span style="display: block;">Converse / Live Oak</span>
-                <span style="display: block;">I-35 Corridor (SA to Austin)</span>
-            </div>
-        </div>
-    </section>
-
+        </aside>
     </main>
 
-    <!-- ========================================
-         FOOTER
-    ======================================== -->
-    <footer role="contentinfo">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <img src="images/logo.png" alt="Texas Divine Plumbing" class="footer-logo" width="200" height="100" loading="lazy">
-                    <p>Texas's trusted family plumbing team. 65 years of combined experience serving San Antonio, Houston, Dallas, Austin, and surrounding areas with integrity and expertise.</p>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <span class="brand__mark"><img src="images/web/logo-256.png" alt="" width="72" height="72" loading="lazy"></span>
+                    <div>
+                        <p class="footer__line" data-i18n="footer.line">Same number for 40 years.</p>
+                        <p data-i18n="footer.sub">A family of plumbers in Houston, serving all of Texas. Licensed &amp; insured.</p>
+                    </div>
                 </div>
-
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
+                <div>
+                    <h3>Call</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#commercial">Commercial Services</a></li>
-                        <li><a href="index.html#residential">Residential Services</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="index.html#about">About Us</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="tel:+12818408062">Alexis · 281-840-8062</a></li>
+                        <li><a href="tel:+18326916675">Hector · 832-691-6675</a></li>
+                        <li><a href="tel:+17138755353">Trino · 713-875-5353</a></li>
+                        <li><a href="mailto:texasdivineplumbing@gmail.com">texasdivineplumbing@gmail.com</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-column">
-                    <h4>Service Areas</h4>
+                <div>
+                    <h3 data-i18n="nav.areas">Service areas</h3>
                     <ul>
                         <li><a href="houston-plumbing.html">Houston</a></li>
                         <li><a href="dallas-plumbing.html">Dallas</a></li>
-                        <li><a href="san-antonio-plumbing.html"><strong>San Antonio</strong></a></li>
+                        <li><a href="san-antonio-plumbing.html">San Antonio</a></li>
                         <li><a href="austin-plumbing.html">Austin</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-column">
-                    <h4>Contact Us</h4>
+                <div>
+                    <h3>More</h3>
                     <ul>
-                        <li class="footer-contact-item">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            <a href="tel:832-691-6675">Hector: 832-691-6675</a>
-                        </li>
-                        <li class="footer-contact-item">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            <a href="tel:713-875-5353">Trino: 713-875-5353</a>
-                        </li>
-                        <li class="footer-contact-item">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            <a href="tel:281-840-8062">Alexis: 281-840-8062</a>
-                        </li>
-                        <li class="footer-contact-item">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                            <a href="mailto:texasdivineplumbing@gmail.com">texasdivineplumbing@gmail.com</a>
-                        </li>
+                        <li><a href="index.html#work" data-i18n="nav.work">Our work</a></li>
+                        <li><a href="index.html#reviews" data-i18n="nav.reviews">Reviews</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                     </ul>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 Texas Divine Plumbing. All rights reserved. Licensed & Insured.</p>
-                <div class="footer-bottom-links">
-                    <a href="blog.html">Blog</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Texas Divine Plumbing</span>
+                <span>Mon–Fri 7:00–6:00 · Sat 8:00–2:00</span>
+                <!-- TODO: add the Texas Master Plumber license number (M-XXXXX) here once confirmed -->
+                <nav aria-label="Footer">
+                    <a href="https://www.reddit.com/r/houston/comments/1hpouwl/plumbers_for_houston/m4j86ie/" target="_blank" rel="noopener">r/houston thread</a>
+                    <a href="index.html#message" data-i18n="nav.message">Message us</a>
+                </nav>
             </div>
         </div>
     </footer>
 
-    <!-- ========================================
-         STICKY MOBILE CALL BUTTON
-    ======================================== -->
-    <a href="tel:832-691-6675" class="sticky-call" aria-label="Call us now">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-        </svg>
-        <span class="sticky-call-tooltip">Call Hector: 832-691-6675</span>
-    </a>
+    <nav class="dock" aria-label="Call or text Alexis">
+        <a class="dock__alexis" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="cta.call">Call Alexis</span></a>
+        <a class="dock__textalexis" href="sms:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg><span data-i18n="cta.text">Text Alexis</span></a>
+    </nav>
 
-    <!-- JavaScript -->
     <script src="js/main.js"></script>
 </body>
 </html>
