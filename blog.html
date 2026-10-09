@@ -97,16 +97,25 @@
 
     <main id="main-content" class="layout">
         <section class="pin" aria-labelledby="pin-title">
-            <h1 class="pin__title pin__title--long" id="pin-title">Plumbing Tips &amp; Insights</h1>
-            <p class="pin__lede">Expert advice from 65+ years of combined plumbing experience. Practical guides for commercial building managers, homeowners, and contractors.</p>
+            <div class="pinned">
+                <h1 class="pin__title pin__title--long" id="pin-title">Plumbing Tips &amp; Insights</h1>
+                <p class="pinned__by"><span class="avatar avatar--alexis" aria-hidden="true">A</span><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="pin.byShort">Pinned by Alexis &middot; every new request starts with Alexis</span></p>
+            </div>
             <div class="pin__cta">
                 <a class="chip chip--alexis chip--xl" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span><span data-i18n="cta.call">Call Alexis</span> <span class="chip__num">281-840-8062</span></span></a>
                 <a class="chip chip--light chip--xl" href="sms:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg><span data-i18n="cta.text">Text Alexis</span></a>
             </div>
-            <p class="pin__note" data-i18n="pin.note">Alexis takes every new request and gets the right plumber in the family on your job.</p>
         </section>
 
         <div class="thread">
+            <div class="group group--alexis">
+                <span class="group__avatar avatar avatar--alexis" aria-hidden="true">A</span>
+                <div class="group__body">
+                    <p class="group__name">Alexis <span>takes every new request</span></p>
+                    <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <p class="bubble bubble--big">Expert advice from 65+ years of combined plumbing experience. Practical guides for commercial building managers, homeowners, and contractors.</p>
+                </div>
+            </div>
             <h2 class="day"><span class="day__label">Guides from the family</span></h2>
             <div class="posts">
                 <a class="post-card" href="blog/signs-commercial-building-needs-plumbing-inspection.html">
@@ -188,7 +197,7 @@
                     </div>
                 </div>
                 <div class="panel__section">
-                    <p class="panel__h" data-i18n="panel.start">Start here</p>
+                    <p class="panel__h" data-i18n="panel.start">Every new request goes to Alexis</p>
                     <div class="member member--alexis">
                             <span class="avatar avatar--alexis" aria-hidden="true">A</span>
                             <div>
@@ -201,7 +210,6 @@
                                 <a class="icon-btn" href="sms:+12818408062" aria-label="Text Alexis"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg></a>
                             </div>
                         </div>
-                    <p class="panel__note" data-i18n="panel.startNote">Alexis takes every new request, gets you a quote and puts the right plumber on your job.</p>
                     <div class="panel__chips">
                         <a class="chip chip--alexis" href="tel:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="cta.call">Call Alexis</span></a>
                         <a class="chip chip--ghost" href="sms:+12818408062"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg><span data-i18n="cta.text">Text Alexis</span></a>
@@ -233,13 +241,6 @@
                                 <a class="icon-btn" href="sms:+17138755353" aria-label="Text Trino"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg></a>
                             </div>
                         </div>
-                    <div class="member member--uncles">
-                        <span class="avatar" aria-hidden="true">+7</span>
-                        <div>
-                            <div class="member__name" data-i18n="panel.uncles">7 uncles</div>
-                            <div class="member__role" data-i18n="panel.unclesRole">Plumbers, 20+ years each, all taught by Trino</div>
-                        </div>
-                    </div>
                 </div>
                 <div class="panel__section">
                     <p class="panel__h" data-i18n="panel.check">Check us out</p>
@@ -247,8 +248,7 @@
                         <a class="fact" href="index.html#reviews"><span class="fact__k">Google reviews</span><span class="fact__v">5.0 <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> · 47</span></a>
                         <a class="fact" href="https://www.reddit.com/r/houston/comments/1hpouwl/plumbers_for_houston/m4j86ie/" target="_blank" rel="noopener"><span class="fact__k">r/houston</span><span class="fact__v">#1 recommended <svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></span></a>
                         <div class="fact"><span class="fact__k">Texas license</span><span class="fact__v">Master Plumber</span></div>
-                        <div class="fact"><span class="fact__k">Hours</span><span class="fact__v">Mon–Fri 7–6 · Sat 8–2</span></div>
-                        <a class="fact" href="mailto:texasdivineplumbing@gmail.com"><span class="fact__k">Email</span><span class="fact__v">texasdivineplumbing@gmail.com</span></a>
+                        <div class="fact"><span class="fact__k">Hours</span><span class="fact__v">Mon–Fri 7am–6pm · Sat 8am–2pm</span></div>
                     </div>
                 </div>
             </div>
@@ -295,7 +295,7 @@
             </div>
             <div class="footer__bottom">
                 <span>&copy; 2026 Texas Divine Plumbing</span>
-                <span>Mon–Fri 7:00–6:00 · Sat 8:00–2:00</span>
+                <span>Mon–Fri 7am–6pm · Sat 8am–2pm</span>
                 <!-- TODO: add the Texas Master Plumber license number (M-XXXXX) here once confirmed -->
                 <nav aria-label="Footer">
                     <a href="https://www.reddit.com/r/houston/comments/1hpouwl/plumbers_for_houston/m4j86ie/" target="_blank" rel="noopener">r/houston thread</a>

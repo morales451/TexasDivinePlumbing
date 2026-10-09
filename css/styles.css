@@ -39,8 +39,8 @@
     --font: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
     /* Rhythm */
-    --r-bubble: 18px;
-    --r-tight: 5px;
+    --r-bubble: 14px;
+    --r-tight: 3px;
     --gap: 6px;
     --shadow-sheet: 0 1px 1px rgba(5, 29, 74, 0.18), 0 6px 18px -6px rgba(5, 29, 74, 0.45);
     --shadow-lift: 0 2px 4px rgba(5, 29, 74, 0.2), 0 18px 40px -12px rgba(5, 29, 74, 0.6);
@@ -462,11 +462,7 @@ html {
     grid-area: panel;
     position: sticky;
     top: calc(var(--topbar-h) + 24px);
-    max-height: calc(100vh - var(--topbar-h) - 48px);
-    overflow-y: auto;
-    overscroll-behavior: contain;
-    border-radius: 22px;
-    scrollbar-width: none;
+
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -475,7 +471,11 @@ html {
    Pinned headline
    -------------------------------------------------------------------------- */
 .pin {
-    padding: clamp(40px, 7vw, 88px) 0 clamp(24px, 4vw, 40px);
+    padding: clamp(28px, 5vw, 64px) 0 8px;
+}
+
+.thread > .day:first-child {
+    margin-top: 36px;
 }
 
 .pin__label {
@@ -497,10 +497,37 @@ html {
     height: 15px;
 }
 
+.pinned {
+    max-width: 880px;
+}
+
+.pinned__by {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 22px;
+    font-size: clamp(16px, 1.4vw, 18px);
+    color: var(--on-wall-2);
+}
+
+.pinned__by .avatar {
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+    flex: none;
+}
+
+.pinned__by .icon {
+    width: 16px;
+    height: 16px;
+    color: var(--alexis);
+    flex: none;
+}
+
 .pin__title {
     font-weight: 850;
     font-stretch: 125%;
-    font-size: clamp(42px, 6.4vw, 88px);
+    font-size: clamp(42px, 5.6vw, 80px);
     line-height: 0.96;
     letter-spacing: -0.035em;
     text-wrap: balance;
@@ -724,10 +751,9 @@ a.proof-chip:hover {
 
 .group__avatar {
     grid-column: 1;
-    grid-row: 1 / span 30;
-    align-self: end;
-    position: sticky;
-    bottom: 24px;
+    grid-row: 1;
+    align-self: start;
+    margin-top: 24px;
 }
 
 .group__body {
@@ -785,9 +811,33 @@ a.proof-chip:hover {
     text-wrap: pretty;
 }
 
-.group__body > .bubble:first-of-type,
-.group__body > .group__name + .bubble {
-    border-top-left-radius: var(--r-tight);
+.typing + .bubble,
+.typing + .album,
+.typing + .composer {
+    border-top-left-radius: 0;
+}
+
+.typing + .bubble::before,
+.typing + .album::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 9px;
+    height: 12px;
+    background: inherit;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.group--me .bubble:last-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -8px;
+    width: 9px;
+    height: 12px;
+    background: inherit;
+    clip-path: polygon(0 100%, 0 0, 100% 100%);
 }
 
 .bubble p + p {
@@ -841,7 +891,7 @@ a.proof-chip:hover {
 }
 
 .group--me .bubble:last-child {
-    border-bottom-right-radius: var(--r-tight);
+    border-bottom-right-radius: 0;
 }
 
 /* Lists inside bubbles: plain rows, check drawn */
@@ -871,7 +921,10 @@ a.proof-chip:hover {
 /* Photo bubbles */
 .bubble--photo {
     padding: 4px;
-    overflow: hidden;
+}
+
+.bubble--photo > img {
+    border-radius: calc(var(--r-bubble) - 4px) calc(var(--r-bubble) - 4px) 0 0;
 }
 
 .bubble--photo img {
@@ -880,10 +933,7 @@ a.proof-chip:hover {
     object-fit: cover;
 }
 
-.group__body > .bubble--photo:first-of-type img,
-.group__body > .group__name + .bubble--photo img {
-    border-top-left-radius: 2px;
-}
+
 
 .bubble--photo figcaption,
 .bubble__caption {
@@ -917,7 +967,7 @@ a.proof-chip:hover {
     margin: 0;
 }
 
-.album figure:nth-child(1) { grid-column: span 4; grid-row: span 2; border-top-left-radius: 2px; }
+.album figure:nth-child(1) { grid-column: span 4; grid-row: span 2; }
 .album figure:nth-child(2) { grid-column: span 2; }
 .album figure:nth-child(3) { grid-column: span 2; }
 .album figure:nth-child(4) { grid-column: span 2; grid-row: span 2; }
@@ -958,38 +1008,84 @@ a.proof-chip:hover {
 
 .album .tag {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 8px;
+    left: 8px;
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    padding: 5px 10px;
+    gap: 4px;
+    padding: 3px 8px 3px 6px;
     border-radius: 999px;
-    background: var(--hector);
+    background: var(--hector-ink);
     color: #fff;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
-    letter-spacing: 0.02em;
+}
+
+.album .tag .icon {
+    width: 12px;
+    height: 12px;
+    stroke-width: 3;
+}
+
+.album--builds {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 680px;
+}
+
+.album--builds figure:nth-child(n) {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.album--builds img {
+    aspect-ratio: 4 / 3;
+    min-height: 0;
+}
+
+.album--builds figcaption {
+    font-size: 15px;
+    padding-top: 64px;
+    background: linear-gradient(to top, rgba(5, 18, 40, 0.94) 0%, rgba(5, 18, 40, 0.8) 55%, rgba(5, 18, 40, 0));
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.album--builds figcaption span {
+    font-size: 13px;
+    line-height: 1.35;
+    margin-top: 4px;
 }
 
 /* Link preview: a shared post or a build */
 .preview {
     display: grid;
-    grid-template-columns: 6px 1fr;
+    grid-template-columns: 28px 1fr;
     gap: 12px;
+    align-items: center;
     margin-top: 12px;
-    padding: 12px 14px 12px 0;
-    border-radius: 12px;
+    padding: 12px 14px;
+    border-radius: 10px;
     background: var(--sheet-2);
     color: var(--ink);
     text-decoration: none;
     transition: background-color 0.2s;
 }
 
-.preview::before {
-    content: "";
-    border-radius: 12px 0 0 12px;
-    background: #ff6a2b;
+.preview > .icon {
+    width: 28px;
+    height: 28px;
+    color: #ff4500;
+}
+
+.preview__badge {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 1px 8px;
+    border-radius: 999px;
+    background: #ffe3d6;
+    color: #a3360b;
+    font-size: 12px;
+    font-weight: 700;
+    vertical-align: 2px;
 }
 
 .preview:hover {
@@ -1106,7 +1202,7 @@ a.proof-chip:hover {
 
 /* Forwarded reviews */
 .fwd {
-    max-width: min(100%, 560px);
+    max-width: min(100%, 580px);
 }
 
 .fwd__from {
@@ -1316,13 +1412,13 @@ a.proof-chip:hover {
 .panel__card {
     background: var(--sheet);
     color: var(--ink);
-    border-radius: 22px;
+    border-radius: 16px;
     box-shadow: var(--shadow-lift);
     overflow: hidden;
 }
 
 .panel__head {
-    padding: 22px 22px 18px;
+    padding: 18px 20px 14px;
     display: flex;
     align-items: center;
     gap: 14px;
@@ -1330,8 +1426,8 @@ a.proof-chip:hover {
 }
 
 .panel__head img {
-    width: 64px;
-    height: 64px;
+    width: 52px;
+    height: 52px;
     flex: none;
 }
 
@@ -1350,7 +1446,7 @@ a.proof-chip:hover {
 }
 
 .panel__section {
-    padding: 14px 10px;
+    padding: 12px 10px;
     border-bottom: 1px solid var(--sheet-line);
 }
 
@@ -1359,13 +1455,10 @@ a.proof-chip:hover {
 }
 
 .panel__h {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 700;
-    font-stretch: 80%;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--ink-3);
-    padding: 0 12px 6px;
+    color: var(--ink);
+    padding: 0 12px 4px;
 }
 
 .member {
@@ -1489,7 +1582,7 @@ a.fact:hover {
 .composer {
     background: var(--sheet);
     color: var(--ink);
-    border-radius: 22px;
+    border-radius: 16px;
     box-shadow: var(--shadow-lift);
     padding: clamp(20px, 3vw, 28px);
     max-width: 720px;
@@ -1695,7 +1788,7 @@ a.fact:hover {
 .sheet {
     background: var(--sheet);
     color: var(--ink);
-    border-radius: 22px;
+    border-radius: 16px;
     box-shadow: var(--shadow-sheet);
     padding: clamp(20px, 3vw, 32px);
 }
@@ -1816,6 +1909,21 @@ a.fact:hover {
     filter: saturate(0.85);
 }
 
+.bubble--wide {
+    max-width: min(100%, 680px);
+    width: 100%;
+}
+
+.bubble--map {
+    width: 100%;
+    max-width: 680px;
+}
+
+.bubble--map .map {
+    margin-top: 0;
+    border-radius: 10px;
+}
+
 .arealist {
     margin-top: 12px;
     columns: 3 180px;
@@ -1859,7 +1967,7 @@ a.fact:hover {
     grid-template-columns: 240px minmax(0, 1fr);
     background: var(--sheet);
     color: var(--ink);
-    border-radius: 22px;
+    border-radius: 16px;
     overflow: hidden;
     box-shadow: var(--shadow-sheet);
     text-decoration: none;
@@ -2163,8 +2271,7 @@ a.fact:hover {
 
     .panel {
         position: static;
-        max-height: none;
-        overflow: visible;
+
         margin-top: 0;
         margin-bottom: 64px;
     }
@@ -2322,7 +2429,7 @@ a.fact:hover {
         bottom: calc(10px + env(safe-area-inset-bottom, 0px));
         z-index: 60;
         padding: 6px;
-        border-radius: 22px;
+        border-radius: 16px;
         background: rgba(255, 255, 255, 0.96);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
@@ -2459,8 +2566,29 @@ a.fact:hover {
         grid-row: span 1;
     }
 
-    .album figure:nth-child(1) {
+    .album figure:nth-child(1),
+    .album figure:nth-child(6) {
         grid-column: span 2;
+    }
+
+    .album figure:nth-child(6) img {
+        aspect-ratio: 16 / 10;
+    }
+
+    .album:not(.album--builds) figcaption span {
+        display: none;
+    }
+
+    .album--builds {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .album--builds figure:nth-child(n) {
+        grid-column: span 1;
+    }
+
+    .album--builds img {
+        aspect-ratio: 4 / 3 !important;
     }
 
     .album img {
