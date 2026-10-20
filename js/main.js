@@ -4,6 +4,9 @@
 (function () {
     'use strict';
 
+    /* Prefilled in every "Text Alexis" message so the quote starts with the right details */
+    var QUOTE_QUESTIONS = 'Hello, Thanks for reaching out! To provide a quote please answer the following:\n\nAddress?\n\nWhat\u2019s the situation?\n\nHow soon do you want it fixed?\n\nAny pictures?\n\nThank you!';
+
     var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     /* ---------------------------------------------------------------
@@ -134,10 +137,9 @@
             var body = form.message.value.trim();
             var name = form.name.value.trim();
             if (name) body = (body ? body + '\n\n' : '') + '- ' + name;
-            if (!body) return 'sms:' + p.tel;
-            /* iOS uses &body=, everything else ?body= */
-            var sep = /iPhone|iPad|iPod/.test(navigator.userAgent) ? '&' : '?';
-            return 'sms:' + p.tel + sep + 'body=' + encodeURIComponent(body);
+            if (!body) body = QUOTE_QUESTIONS;
+            /* "?&body=" works on both iOS and Android */
+            return 'sms:' + p.tel + '?&body=' + encodeURIComponent(body);
         }
 
         function refreshText() {
